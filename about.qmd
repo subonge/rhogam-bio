@@ -1,0 +1,26 @@
+---
+title: "About"
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/subonge
+---
+
+## 박수영 (Suyeong Park)
+
+**PhD Student** @ UT Southwestern Medical Center
+
+면역학과 유전학을 전공하고 있습니다. RhoGAM으로 태어나 면역학에 관심을 갖게 된 것은 아니지만, 이제는 면역 시스템의 비밀을 푸는 것이 제 일입니다.
+
+## Research Interests
+
+- Immunology
+- Genetics
+- Human Thymus
+
+## Education
+
+- **PhD** Immunology & Genetics, UT Southwestern Medical Center (진행중)
+- **학사** 서울대학교

@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "RhoGAM Boy"
+  description: "Immunology & Genetics PhD @ UTSW | 면역학과 유전학을 공부하는 박사과정생의 기록"
+  site-url: https://rhogam.bio
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: life.qmd
+        text: Life @ UTSW
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/subonge
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

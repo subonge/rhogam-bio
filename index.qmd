@@ -1,0 +1,18 @@
+---
+title: "RhoGAM Boy"
+subtitle: "Immunology & Genetics PhD @ UTSW"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  feed: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+안녕하세요! 저는 UT Southwestern Medical Center에서 면역학과 유전학을 공부하는 박사과정생 **박수영**입니다.
+
+RhoGAM으로 태어나, 이제는 면역학을 연구합니다. 이 블로그에는 연구 기록과 UTSW에서의 일상을 담습니다.

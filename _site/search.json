@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "PhD Student @ UT Southwestern Medical Center\n면역학과 유전학을 전공하고 있습니다. RhoGAM으로 태어나 면역학에 관심을 갖게 된 것은 아니지만, 이제는 면역 시스템의 비밀을 푸는 것이 제 일입니다."
+  },
+  {
+    "objectID": "about.html#박수영-suyeong-park",
+    "href": "about.html#박수영-suyeong-park",
+    "title": "About",
+    "section": "",
+    "text": "PhD Student @ UT Southwestern Medical Center\n면역학과 유전학을 전공하고 있습니다. RhoGAM으로 태어나 면역학에 관심을 갖게 된 것은 아니지만, 이제는 면역 시스템의 비밀을 푸는 것이 제 일입니다."
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "About",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nImmunology\nGenetics\nHuman Thymus"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\nPhD Immunology & Genetics, UT Southwestern Medical Center (진행중)\n학사 서울대학교"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "면역 시스템의 발달과 기능에 관한 연구를 진행하고 있습니다.\n\n\n\n유전체 분석을 통해 면역 관련 유전자 네트워크를 탐구합니다."
+  },
+  {
+    "objectID": "research.html#연구-분야",
+    "href": "research.html#연구-분야",
+    "title": "Research",
+    "section": "",
+    "text": "면역 시스템의 발달과 기능에 관한 연구를 진행하고 있습니다.\n\n\n\n유전체 분석을 통해 면역 관련 유전자 네트워크를 탐구합니다."
+  },
+  {
+    "objectID": "research.html#연구-노트",
+    "href": "research.html#연구-노트",
+    "title": "Research",
+    "section": "연구 노트",
+    "text": "연구 노트\n논문 리뷰, 실험 기록, 아이디어 등을 정리할 예정입니다."
+  },
+  {
+    "objectID": "life.html",
+    "href": "life.html",
+    "title": "Life @ UTSW",
+    "section": "",
+    "text": "UT Southwestern Medical Center 박사과정생으로서의 생활을 기록합니다.\n주간 일기, 달라스 생활, 미국 박사과정 적응기 등을 올릴 예정입니다."
+  },
+  {
+    "objectID": "life.html#utsw에서의-일상",
+    "href": "life.html#utsw에서의-일상",
+    "title": "Life @ UTSW",
+    "section": "",
+    "text": "UT Southwestern Medical Center 박사과정생으로서의 생활을 기록합니다.\n주간 일기, 달라스 생활, 미국 박사과정 적응기 등을 올릴 예정입니다."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "RhoGAM Boy",
+    "section": "",
+    "text": "안녕하세요! 저는 UT Southwestern Medical Center에서 면역학과 유전학을 공부하는 박사과정생 박수영입니다.\nRhoGAM으로 태어나, 이제는 면역학을 연구합니다. 이 블로그에는 연구 기록과 UTSW에서의 일상을 담습니다.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 18, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+  }
+]
