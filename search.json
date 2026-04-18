@@ -16,30 +16,51 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Suyeong Park",
     "section": "",
-    "text": "PhD Student @ UT Southwestern Medical Center\n면역학과 유전학을 전공하고 있습니다. RhoGAM으로 태어나 면역학에 관심을 갖게 된 것은 아니지만, 이제는 면역 시스템의 비밀을 푸는 것이 제 일입니다."
+    "text": "저는 2026년 9월부터 UT Southwestern Medical Center에서 Basic Biomedical Sciences 박사과정을 시작하는 RhoGAM Boy입니다. 면역학과 유전체학의 교차점에서 T세포의 비밀을 풀어가고 있습니다."
   },
   {
-    "objectID": "about.html#박수영-suyeong-park",
-    "href": "about.html#박수영-suyeong-park",
-    "title": "About",
+    "objectID": "about.html#안녕하세요-박수영입니다",
+    "href": "about.html#안녕하세요-박수영입니다",
+    "title": "Suyeong Park",
     "section": "",
-    "text": "PhD Student @ UT Southwestern Medical Center\n면역학과 유전학을 전공하고 있습니다. RhoGAM으로 태어나 면역학에 관심을 갖게 된 것은 아니지만, 이제는 면역 시스템의 비밀을 푸는 것이 제 일입니다."
-  },
-  {
-    "objectID": "about.html#research-interests",
-    "href": "about.html#research-interests",
-    "title": "About",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nImmunology\nGenetics\nHuman Thymus"
+    "text": "저는 2026년 9월부터 UT Southwestern Medical Center에서 Basic Biomedical Sciences 박사과정을 시작하는 RhoGAM Boy입니다. 면역학과 유전체학의 교차점에서 T세포의 비밀을 풀어가고 있습니다."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
-    "title": "About",
+    "title": "Suyeong Park",
     "section": "Education",
-    "text": "Education\n\nPhD Immunology & Genetics, UT Southwestern Medical Center (진행중)\n학사 서울대학교"
+    "text": "Education\nPh.D. in Basic Biomedical Sciences (Incoming, Sep 2026) UT Southwestern Medical Center · Dallas, Texas\nMaster of Science in Pharmaceutical Sciences (2022–2024) Seoul National University, College of Pharmacy · GPA 4.19/4.30 Thesis: Study on the Developmental Landscape of Human Innate T cells in the Thymus Using Single-cell Transcriptomics\nDoctor of Pharmacy (Pharm.D.) (2018–2022) Seoul National University, College of Pharmacy · GPA 3.73/4.30, Cum Laude"
+  },
+  {
+    "objectID": "about.html#publications",
+    "href": "about.html#publications",
+    "title": "Suyeong Park",
+    "section": "Publications",
+    "text": "Publications\nLee M*, Park S*, Choi J, et al. (2025) Human MAIT Cells Undergo Clonal Selection and Expansion during Thymic Maturation and Aging. Experimental & Molecular Medicine · *Co-first authors\nLee Y, Choi J, Lee M, …, Park S, et al. (2026) RUNX2-AP-1 axis drives the differentiation of cytotoxic resident effector CD8 T cells in alopecia areata. Manuscript submitted to Nature Immunology"
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "Suyeong Park",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nInnate T cell development: NKT cells, MAIT cells, γδ T cells의 흉선 내 발달 및 성숙\nT cell exhaustion in autoimmunity: 자가면역 질환에서 CD8⁺ T세포의 소진 메커니즘\nTCR repertoire & clonality: 전사체와 연계한 TCR 클론 다양성 분석\nImmunogenomics: eQTL 분석을 통한 면역 관련 유전자 네트워크 규명"
+  },
+  {
+    "objectID": "about.html#technical-skills",
+    "href": "about.html#technical-skills",
+    "title": "Suyeong Park",
+    "section": "Technical Skills",
+    "text": "Technical Skills\nComputational Linux · R · Python · scRNA-seq · Bulk/pseudo-bulk RNA-seq · Pathway analysis · Pseudotime analysis · eQTL analysis · Gene module analysis (hdWGCNA) · TCR repertoire profiling\nWet Lab MACS purification · Flow cytometry · Adoptive T cell transfer · Mouse colony maintenance · Genetic backcrossing\nSoftware FlowJo · GraphPad Prism"
+  },
+  {
+    "objectID": "about.html#honors-awards",
+    "href": "about.html#honors-awards",
+    "title": "Suyeong Park",
+    "section": "Honors & Awards",
+    "text": "Honors & Awards\n\nSelf-Development Essay Contest — Top 10, Ministry of National Defense (2025)\nHandok-Jaeseok Foundation Scholarship — $21,000 total (2018–2022)\nHana Mirae-Injae Scholarship — $9,000 total (2020–2022)\nNational Scholarship, Korea Student Aid Foundation — $10,000 total (2019–2021)\nAcademic Excellence Scholarship, SNU — $6,000 total (2018–2020)"
   },
   {
     "objectID": "posts/welcome/index.html",
