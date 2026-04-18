@@ -1,16 +1,73 @@
 ---
 title: "Research"
 page-layout: full
+toc: true
 ---
 
-## 연구 분야
+## Research Interests
 
-### Immunology
-면역 시스템의 발달과 기능에 관한 연구를 진행하고 있습니다.
+저는 **인간 면역계의 발달과 자가면역**에 관심이 있습니다. 특히 흉선에서 T세포가 어떻게 만들어지고 선택되는지, 그리고 자가면역 질환에서 T세포가 어떻게 오작동하는지를 단일세포 전사체학과 유전체학 도구로 탐구합니다.
 
-### Genetics
-유전체 분석을 통해 면역 관련 유전자 네트워크를 탐구합니다.
+---
 
-## 연구 노트
+## Publications
 
-*논문 리뷰, 실험 기록, 아이디어 등을 정리할 예정입니다.*
+### Human MAIT Cells Undergo Clonal Selection and Expansion during Thymic Maturation and Aging
+**Lee M\*, Park S\*, Choi J, Bae SY, Ryu HS, Kim M, Kwak JG, Lee YJ. (2025)**
+*Experimental & Molecular Medicine* · \*Co-first authors
+
+흉선에서 MAIT 세포가 성숙하는 과정에서 클론 선택과 팽창이 일어난다는 것을 단일세포 전사체 분석으로 규명한 연구입니다.
+
+---
+
+### RUNX2-AP-1 axis drives the differentiation of cytotoxic resident effector CD8 T cells in alopecia areata
+**Lee Y, Choi J, Lee M, Kim S, Kang JJ, Shin S, Kim TH, Ji SH, Park S, et al. (2026)**
+*Manuscript submitted to Nature Immunology*
+
+원형탈모증에서 RUNX2-AP-1 축이 세포독성 CD8⁺ T세포의 분화를 어떻게 조절하는지 밝힌 연구입니다.
+
+---
+
+## Research Experience
+
+### Functional Genomics Laboratory, SNU College of Medicine
+*Research Assistant · Oct 2024 – Mar 2025 · Advisor: Murim Choi, Ph.D.*
+
+**Integrative Study of Public ScRNA-seq Datasets**
+- 여러 자가면역 질환에서 공유되는 CD4⁺, CD8⁺ T세포의 전사체 특성 규명
+- TCR 레퍼토리 다양성과 유전적 변이의 연관성 분석
+
+**Gene Module–based Interactive-eQTL Analysis**
+- COVID-19 환자 데이터에서 hdWGCNA로 유전자 모듈 구성
+- 면역 관련 유전자 네트워크에 연결된 interactive-eQTL 동정
+
+---
+
+### T Cell Development Laboratory, SNU College of Pharmacy
+*Graduate Researcher · Mar 2022 – Feb 2024 · Advisor: You Jeong Lee, M.D., Ph.D.*
+
+**Developmental Profiling of Human Thymic Innate T Cells**
+- NKT cells, MAIT cells, γδ T cells의 흉선 내 성숙 과정 전사체 분석
+- TCR 클론 다양성과 전사체 프로파일의 연계 분석
+
+**CD8⁺ T Cell Exhaustion in Autoimmunity (Alopecia Areata)**
+- C3H/HeJ 마우스 모델에서 자가반응성 CD8⁺ T세포의 소진 전사 특성 규명
+- 자가반응성 T세포의 기원 및 이동 경로 탐색
+
+---
+
+## Technical Skills
+
+### Computational Biology
+| 분야 | 도구 |
+|------|------|
+| 언어 | R, Python, Linux |
+| Single-cell | scRNA-seq, Pseudotime analysis, hdWGCNA |
+| Bulk sequencing | Pseudo-bulk/bulk-seq, Pathway analysis |
+| Immunogenomics | eQTL analysis, TCR repertoire & clonality profiling |
+
+### Wet Lab
+- MACS purification
+- Flow cytometry (FlowJo)
+- Adoptive T cell transfer
+- Mouse colony maintenance & genetic backcrossing
