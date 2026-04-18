@@ -1,1 +1,58 @@
-/* css styles */
+/* Mobile-first responsive styles */
+
+/* 기본 폰트 및 가독성 */
+body {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* 모바일에서 테이블 스크롤 가능하게 */
+table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 모바일에서 이미지 넘침 방지 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 모바일 (768px 이하) */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.2rem; }
+
+  /* 네비게이션 패딩 조정 */
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  /* 본문 여백 조정 */
+  .page-columns .column-body {
+    padding: 0 1rem;
+  }
+
+  /* About 페이지 프로필 중앙 정렬 */
+  .about-entity {
+    text-align: center;
+  }
+
+  /* 블로그 카드 간격 */
+  .quarto-post {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* 태블릿 (768px ~ 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15.5px;
+  }
+}
