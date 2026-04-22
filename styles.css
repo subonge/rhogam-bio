@@ -1,5 +1,60 @@
 /* Mobile-first responsive styles */
 
+/* 콘텐츠 중앙 정렬 */
+#quarto-content > * {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  padding: 1rem 2rem 0.5rem;
+}
+
+.navbar-container {
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+.navbar-brand-container {
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  order: 1;
+}
+
+#navbarCollapse {
+  flex: 1 !important;
+  order: 2;
+  justify-content: center !important;
+}
+
+.navbar-nav.navbar-nav-scroll.me-auto {
+  flex: 1 !important;
+  justify-content: center !important;
+  margin: 0 !important;
+}
+
+.navbar-nav.navbar-nav-scroll.ms-auto {
+  margin-left: auto !important;
+}
+
+#quarto-search {
+  order: 3;
+}
+
+.navbar-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  padding: 0.4rem 1rem !important;
+}
+
 /* 기본 폰트 및 가독성 */
 body {
   font-size: 16px;
