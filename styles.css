@@ -79,11 +79,22 @@
 /* 홈 배너 */
 .quarto-title-banner {
   background-color: #1e293b !important;
+  text-align: center;
+  padding: 3rem 1rem !important;
+}
+
+.quarto-title-banner .quarto-title {
+  text-align: center;
 }
 
 .quarto-title-banner h1,
 .quarto-title-banner .subtitle {
   color: #ffffff !important;
+  text-align: center;
+}
+
+.quarto-title-banner h1 {
+  font-size: 2.8rem;
 }
 
 .quarto-title-banner .subtitle::after {
@@ -93,6 +104,46 @@
   font-style: italic;
   font-size: 1rem;
   margin-top: 0.4rem;
+  text-align: center;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  .quarto-title-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .quarto-title-banner .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .navbar-container {
+    flex-wrap: wrap !important;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-brand-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.3rem !important;
+  }
+
+  #navbarCollapse {
+    width: 100%;
+  }
+
+  .navbar-nav.navbar-nav-scroll.me-auto {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .quarto-title h1.title {
+    font-size: 1.6rem;
+  }
+
+  .quarto-about-jolla {
+    padding: 0 1rem;
+  }
 }
 
 /* 포스트 헤더 레이아웃 */
