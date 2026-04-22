@@ -43,10 +43,14 @@
   order: 3;
 }
 
-.navbar-title {
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.5px;
+.navbar-logo {
+  height: 36px !important;
+  width: auto !important;
+  max-height: none !important;
+}
+
+.navbar {
+  min-height: 60px !important;
 }
 
 .navbar-nav .nav-link {
