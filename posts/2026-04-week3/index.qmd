@@ -1,0 +1,21 @@
+---
+title: "첫 번째 주간 기록"
+date: "2026-04-22"
+categories: [weekly, life]
+description: "UTSW 첫 주를 보내며"
+---
+
+## 이번 주
+
+이번 주는 랩 미팅 준비로 바빴다. single-cell RNA-seq 데이터를 처음으로 직접 다뤄봤는데, 생각보다 훨씬 손이 많이 갔다.
+
+## 읽은 논문
+
+- **Smith et al. (2025)** — TCR repertoire diversity in memory T cells
+- **Kim et al. (2024)** — CRISPR screening in primary human T cells
+
+## 메모
+
+> 논문 읽을 때 Introduction보다 Methods를 먼저 읽는 습관을 들여야겠다.
+
+다음 주에는 flow cytometry 프로토콜을 배울 예정이다.
