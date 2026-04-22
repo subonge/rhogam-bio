@@ -1,0 +1,7 @@
+---
+title: "첫 번째 기록"
+date: "2026-04-18"
+categories: [weekly, life]
+---
+
+안녕하세요!
