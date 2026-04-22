@@ -1,0 +1,19 @@
+/* 홈 배너 배경 어둡게 + 텍스트 흰색 */
+.quarto-title-banner {
+  background-color: #1e293b !important;
+}
+
+.quarto-title-banner h1,
+.quarto-title-banner .subtitle {
+  color: #ffffff !important;
+}
+
+/* 태그라인 */
+.quarto-title-banner .subtitle::after {
+  content: "Rescued by RhoGAM, Researching for next RhoGAM";
+  display: block;
+  color: #ffffff !important;
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}

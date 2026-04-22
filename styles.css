@@ -59,6 +59,117 @@
   padding: 0.4rem 1rem !important;
 }
 
+/* About me 페이지 */
+.quarto-about-jolla .about-entity {
+  text-align: center;
+}
+
+.quarto-about-jolla h2 {
+  text-align: center;
+}
+
+.quarto-about-jolla p,
+.quarto-about-jolla ul,
+.quarto-about-jolla ol,
+.quarto-about-jolla table,
+.quarto-about-jolla blockquote {
+  text-align: left;
+}
+
+/* 홈 배너 */
+.quarto-title-banner {
+  background-color: #1e293b !important;
+}
+
+.quarto-title-banner h1,
+.quarto-title-banner .subtitle {
+  color: #ffffff !important;
+}
+
+.quarto-title-banner .subtitle::after {
+  content: "Rescued by RhoGAM, Researching for next RhoGAM";
+  display: block;
+  color: #ffffff;
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+
+/* 포스트 헤더 레이아웃 */
+
+#title-block-header {
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.quarto-title h1.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+/* description 숨기기 */
+.description {
+  display: none;
+}
+
+/* "Published" 라벨 숨기기 */
+.quarto-title-meta-heading {
+  display: none;
+}
+
+/* 날짜 + 카테고리 한 줄, 중앙 정렬 */
+.quarto-title-meta {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 0 !important;
+}
+
+.quarto-title-meta > div {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quarto-title-meta-contents {
+  display: flex !important;
+  align-items: center;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+  margin: 0 !important;
+}
+
+/* 카테고리 스타일 (날짜 옆에 / Theme) */
+.quarto-title .quarto-categories,
+.quarto-title-meta .quarto-categories {
+  display: inline-flex;
+  gap: 0.2rem;
+  margin: 0;
+}
+
+.quarto-category {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.quarto-category::before {
+  content: "/ ";
+}
+
 /* 기본 폰트 및 가독성 */
 body {
   font-size: 16px;

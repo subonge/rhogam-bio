@@ -1,0 +1,14 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // 포스트 헤더: 카테고리를 날짜 옆으로 이동
+  var titleBlock = document.getElementById('title-block-header');
+  if (titleBlock) {
+    var cats = titleBlock.querySelector('.quarto-title .quarto-categories');
+    var metaInner = titleBlock.querySelector('.quarto-title-meta > div');
+    if (cats && metaInner) {
+      metaInner.appendChild(cats);
+    }
+  }
+
+});
+</script>

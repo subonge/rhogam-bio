@@ -1,14 +1,14 @@
 ---
-title: "RhoGAM Boy"
-subtitle: "Immunology & Genetics PhD @ UTSW"
+title: "PhD in US"
 listing:
   contents: posts/*/index.qmd
   sort: "date desc"
   type: table
-  categories: true
-  feed: true
+  categories: false
   sort-ui: false
   filter-ui: false
+  include:
+    categories: "PhD in US"
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
