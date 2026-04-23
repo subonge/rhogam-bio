@@ -84,7 +84,15 @@
 }
 
 .quarto-title-banner .quarto-title {
-  text-align: center;
+  text-align: center !important;
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.quarto-title-banner .quarto-title h1,
+.quarto-title-banner .quarto-title .subtitle {
+  text-align: center !important;
 }
 
 .quarto-title-banner h1,
