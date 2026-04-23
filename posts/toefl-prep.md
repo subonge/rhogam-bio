@@ -5,7 +5,7 @@ categories: [PhD in US]
 description: "미국 박사 지원을 위한 TOEFL 준비 경험 — 섹션별로 어떻게 다르게 접근했는지 정리했다"
 image: images/toefl-prep.png
 ---
-![[토플준비.png]]
+![](<images/toefl-prep.png>)
 
 TOEFL은 미국 박사 지원의 첫 번째 관문이다. 점수 자체보다 중요한 건 **어느 섹션에 얼마나 시간을 쓸지**를 정하는 것이다. 나는 리딩과 리스닝은 독학으로 만점에 가깝게 올리고, 스피킹과 라이팅은 학원을 다녔다. 그 이유와 방법을 정리해본다.
 

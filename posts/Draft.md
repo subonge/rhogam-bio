@@ -4,8 +4,8 @@ date: 2026-04-23
 categories:
   - PhD in US
 description: 한 줄 설명
-image: images/파일명.png
 draft: true
+image: images/파일명.png
 ---
 
 
