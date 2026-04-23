@@ -1,8 +1,0 @@
----
-title: "박사과정 인터뷰 후기 — UTSW"
-date: "2026-04-12"
-categories: [PhD in US]
-description: "prospective student visit에서 실제로 어떤 질문을 받았는지, 어떻게 준비했는지 정리했다"
----
-
-테스트 게시물입니다.

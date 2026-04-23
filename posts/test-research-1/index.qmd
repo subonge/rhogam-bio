@@ -1,8 +1,0 @@
----
-title: "Single-cell RNA-seq 분석 입문"
-date: "2026-04-18"
-categories: [Research]
-description: "Seurat으로 scRNA-seq 데이터를 처음 다뤄본 경험 — 설치부터 클러스터링까지"
----
-
-테스트 게시물입니다.

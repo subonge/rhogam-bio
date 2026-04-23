@@ -1,7 +1,7 @@
 ---
 title: "Research"
 listing:
-  contents: posts/*/index.qmd
+  contents: posts
   sort: "date desc"
   type: grid
   categories: false

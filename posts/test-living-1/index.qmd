@@ -1,9 +1,0 @@
----
-title: "댈러스 정착기 — 차 없이 살기"
-date: "2026-04-14"
-categories: [Living in US]
-image: thumbnail.jpg
-description: "대중교통이 불편하기로 유명한 댈러스에서 차 없이 첫 달을 버틴 방법"
----
-
-테스트 게시물입니다.

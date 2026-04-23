@@ -2,7 +2,7 @@
 title: "RhoGAM Boy"
 subtitle: "Immunology & Genetics PhD @ UTSW"
 listing:
-  contents: posts/*/index.qmd
+  contents: posts
   sort: "date desc"
   type: grid
   categories: true
