@@ -4,7 +4,7 @@ subtitle: "Immunology & Genetics PhD @ UTSW"
 listing:
   contents: posts/*/index.qmd
   sort: "date desc"
-  type: table
+  type: grid
   categories: true
   feed: true
   sort-ui: false

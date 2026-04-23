@@ -221,6 +221,11 @@
   content: "/ ";
 }
 
+/* 그리드 카드: 제목과 카테고리 사이 간격 */
+.quarto-grid-item .listing-categories {
+  margin-top: 0.6rem;
+}
+
 /* 기본 폰트 및 가독성 */
 body {
   font-size: 16px;

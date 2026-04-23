@@ -3,7 +3,7 @@ title: "Research"
 listing:
   contents: posts/*/index.qmd
   sort: "date desc"
-  type: table
+  type: grid
   categories: false
   sort-ui: false
   filter-ui: false
