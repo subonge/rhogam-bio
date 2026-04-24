@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 /* Mobile-first responsive styles */
 
 /* 콘텐츠 중앙 정렬 */
@@ -49,6 +51,14 @@
   max-height: none !important;
 }
 
+.navbar-title {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  color: #1B263B !important;
+  letter-spacing: -0.01em;
+}
+
 .navbar {
   min-height: 60px !important;
 }
@@ -78,7 +88,7 @@
 
 /* 홈 배너 */
 .quarto-title-banner {
-  background-color: #1e293b !important;
+  background: linear-gradient(135deg, #1B263B 0%, #1e3a6e 100%) !important;
   text-align: center;
   padding: 3rem 1rem !important;
 }
