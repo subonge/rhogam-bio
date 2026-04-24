@@ -14,19 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var content = document.getElementById('quarto-document-content');
   if (!content || !window.location.pathname.includes('/posts/')) return;
 
-  // 현재 페이지 카테고리 추출
-  var catEls = document.querySelectorAll('.quarto-category');
-  var currentCats = Array.from(catEls).map(el => el.textContent.trim());
-  if (currentCats.length === 0) return;
-
   var currentUrl = decodeURIComponent(window.location.pathname);
 
   fetch('/posts-data.json')
     .then(r => r.json())
     .then(posts => {
+      // 현재 글을 JSON에서 찾아 카테고리 결정
+      var currentPost = posts.find(p => p.url === currentUrl);
+      if (!currentPost || currentPost.categories.length === 0) return;
+
       var related = posts.filter(p => {
         if (p.url === currentUrl) return false;
-        return p.categories.some(c => currentCats.includes(c));
+        return p.categories.some(c => currentPost.categories.includes(c));
       }).slice(0, 3);
 
       if (related.length === 0) return;
