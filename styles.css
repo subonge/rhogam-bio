@@ -255,6 +255,32 @@
   margin-top: 0.6rem;
 }
 
+/* 그리드 카드 hover */
+.quarto-grid-item {
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.quarto-grid-item:hover {
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+.quarto-grid-item:hover .card-title,
+.quarto-grid-item:hover .listing-title {
+  color: #2563EB !important;
+}
+
+/* 카테고리 태그 hover */
+.quarto-category {
+  transition: color 0.15s;
+}
+
+.quarto-category:hover {
+  color: #2563EB !important;
+  cursor: pointer;
+}
+
 /* 기본 폰트 및 가독성 */
 body {
   font-size: 16px;
