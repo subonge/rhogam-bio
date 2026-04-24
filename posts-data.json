@@ -1,0 +1,22 @@
+[
+  {
+    "title": "TOEFL 준비 전략 — 리딩·리스닝은 독학, 스피킹·라이팅은 학원",
+    "date": "2026-04-23",
+    "description": "미국 박사 지원을 위한 TOEFL 준비 경험 — 섹션별로 어떻게 다르게 접근했는지 정리했다",
+    "image": "/posts/images/toefl-prep.png",
+    "categories": [
+      "PhD in US"
+    ],
+    "url": "/posts/toefl-prep.html"
+  },
+  {
+    "title": "미국 이공계 박사과정 지원 전략 — SOP부터 추천서까지",
+    "date": "2026-04-23",
+    "description": "SOP, Personal Statement, 추천서, CV까지 — 지원 서류 하나하나를 어떻게 준비했는지 정리했다",
+    "image": "/posts/images/phd-application.png",
+    "categories": [
+      "PhD in US"
+    ],
+    "url": "/posts/미국 박사과정 지원전략.html"
+  }
+]

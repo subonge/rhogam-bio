@@ -9,6 +9,8 @@ listing:
   filter-ui: false
   include:
     categories: "PhD in US"
+  exclude:
+    draft: true
 page-layout: full
 title-block-banner: false
 ---

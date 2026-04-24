@@ -1,6 +1,8 @@
 project:
   type: website
   pre-render: ./add-thumbnails.sh
+  resources:
+    - posts-data.json
 
 website:
   title: "RhoGAM Boy"

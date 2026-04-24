@@ -10,5 +10,57 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // 관련 글 표시 (포스트 페이지에서만)
+  var content = document.getElementById('quarto-document-content');
+  if (!content || !window.location.pathname.includes('/posts/')) return;
+
+  // 현재 페이지 카테고리 추출
+  var catEls = document.querySelectorAll('.quarto-category');
+  var currentCats = Array.from(catEls).map(el => el.textContent.trim());
+  if (currentCats.length === 0) return;
+
+  var currentUrl = decodeURIComponent(window.location.pathname);
+
+  fetch('/posts-data.json')
+    .then(r => r.json())
+    .then(posts => {
+      var related = posts.filter(p => {
+        if (p.url === currentUrl) return false;
+        return p.categories.some(c => currentCats.includes(c));
+      }).slice(0, 3);
+
+      if (related.length === 0) return;
+
+      var section = document.createElement('div');
+      section.style.cssText = 'margin-top: 3rem; border-top: 1px solid #e2e8f0; padding-top: 2rem;';
+      section.innerHTML = '<h3 style="margin-bottom: 1.2rem; font-size: 1.1rem; color: #475569;">관련 글</h3>';
+
+      var grid = document.createElement('div');
+      grid.style.cssText = 'display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem;';
+
+      related.forEach(p => {
+        var card = document.createElement('a');
+        card.href = encodeURI(p.url);
+        card.style.cssText = 'display: block; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit; transition: box-shadow 0.2s;';
+        card.onmouseover = () => card.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+        card.onmouseout  = () => card.style.boxShadow = '';
+
+        var imgHtml = p.image
+          ? `<img src="${p.image}" style="width:100%; height:130px; object-fit:cover;" alt="">`
+          : `<div style="width:100%; height:130px; background:#f1f5f9;"></div>`;
+
+        card.innerHTML = imgHtml + `
+          <div style="padding: 0.8rem;">
+            <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 0.3rem;">${p.categories[0] || ''}</div>
+            <div style="font-size: 0.95rem; font-weight: 600; line-height: 1.4;">${p.title}</div>
+          </div>`;
+
+        grid.appendChild(card);
+      });
+
+      section.appendChild(grid);
+      content.appendChild(section);
+    })
+    .catch(() => {});
 });
 </script>
