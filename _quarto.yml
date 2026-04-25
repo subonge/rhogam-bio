@@ -3,6 +3,8 @@ project:
   pre-render: ./add-thumbnails.sh
   resources:
     - posts-data.json
+    - CV1.png
+    - CV2.png
 
 website:
   title: "RhoGAM Boy"
@@ -10,7 +12,7 @@ website:
   site-url: https://rhogam.bio
   bread-crumbs: true
   navbar:
-    logo: logo.png
+    logo: logo.svg
     logo-alt: "rhogam.bio logo"
     left:
       - href: index.qmd
@@ -34,3 +36,4 @@ format:
     toc: true
     date-format: "D MMM YYYY"
     include-after-body: _restructure.html
+    lightbox: true

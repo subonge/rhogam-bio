@@ -15,85 +15,22 @@ about:
       href: mailto:tommy02@snu.ac.kr
 ---
 
-## 안녕하세요, 박수영입니다
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
 
-저는 2026년 9월부터 **UT Southwestern Medical Center**에서 Basic Biomedical Sciences 박사과정을 시작하는 RhoGAM Boy입니다. 면역학과 유전체학의 교차점에서 T세포의 비밀을 풀어가고 있습니다.
+<a href="CV1.png" data-lightbox="cv" style="display: block; transition: transform 0.2s; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.12);" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''">
+<img src="CV1.png" style="width: 100%; display: block;" alt="CV Page 1"/>
+</a>
 
----
+<a href="CV2.png" data-lightbox="cv" style="display: block; transition: transform 0.2s; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.12);" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''">
+<img src="CV2.png" style="width: 100%; display: block;" alt="CV Page 2"/>
+</a>
 
-## Education
+</div>
 
-**Ph.D. in Basic Biomedical Sciences** *(Incoming, Sep 2026)*
-UT Southwestern Medical Center · Dallas, Texas
-
-**Master of Science in Pharmaceutical Sciences** *(2022–2024)*
-Seoul National University, College of Pharmacy · GPA 4.19/4.30
-Thesis: *Study on the Developmental Landscape of Human Innate T cells in the Thymus Using Single-cell Transcriptomics*
-
-**Doctor of Pharmacy (Pharm.D.)** *(2018–2022)*
-Seoul National University, College of Pharmacy · GPA 3.73/4.30, *Cum Laude*
-
----
-
-## Research Interests
-
-저는 **인간 면역계의 발달과 자가면역**에 관심이 있습니다. 특히 흉선에서 T세포가 어떻게 만들어지고 선택되는지, 그리고 자가면역 질환에서 T세포가 어떻게 오작동하는지를 단일세포 전사체학과 유전체학 도구로 탐구합니다.
-
-- **Innate T cell development**: NKT cells, MAIT cells, γδ T cells의 흉선 내 발달 및 성숙
-- **T cell exhaustion in autoimmunity**: 자가면역 질환에서 CD8⁺ T세포의 소진 메커니즘
-- **TCR repertoire & clonality**: 전사체와 연계한 TCR 클론 다양성 분석
-- **Immunogenomics**: eQTL 분석을 통한 면역 관련 유전자 네트워크 규명
-
----
-
-## Publications
-
-### Human MAIT Cells Undergo Clonal Selection and Expansion during Thymic Maturation and Aging
-**Lee M\*, Park S\*, Choi J, Bae SY, Ryu HS, Kim M, Kwak JG, Lee YJ. (2025)**
-*Experimental & Molecular Medicine* · \*Co-first authors
-
-흉선에서 MAIT 세포가 성숙하는 과정에서 클론 선택과 팽창이 일어난다는 것을 단일세포 전사체 분석으로 규명한 연구입니다.
-
-### RUNX2-AP-1 axis drives the differentiation of cytotoxic resident effector CD8 T cells in alopecia areata
-**Lee Y, Choi J, Lee M, Kim S, Kang JJ, Shin S, Kim TH, Ji SH, Park S, et al. (2026)**
-*Manuscript submitted to Nature Immunology*
-
-원형탈모증에서 RUNX2-AP-1 축이 세포독성 CD8⁺ T세포의 분화를 어떻게 조절하는지 밝힌 연구입니다.
-
----
-
-## Research Experience
-
-### Functional Genomics Laboratory, SNU College of Medicine
-*Research Assistant · Oct 2024 – Mar 2025 · Advisor: Murim Choi, Ph.D.*
-
-- 여러 자가면역 질환에서 공유되는 CD4⁺, CD8⁺ T세포의 전사체 특성 규명
-- TCR 레퍼토리 다양성과 유전적 변이의 연관성 분석
-- COVID-19 환자 데이터에서 hdWGCNA로 유전자 모듈 구성 및 interactive-eQTL 동정
-
-### T Cell Development Laboratory, SNU College of Pharmacy
-*Graduate Researcher · Mar 2022 – Feb 2024 · Advisor: You Jeong Lee, M.D., Ph.D.*
-
-- NKT cells, MAIT cells, γδ T cells의 흉선 내 성숙 과정 전사체 분석
-- TCR 클론 다양성과 전사체 프로파일의 연계 분석
-- C3H/HeJ 마우스 모델에서 자가반응성 CD8⁺ T세포의 소진 전사 특성 규명
-
----
-
-## Technical Skills
-
-**Computational**
-Linux · R · Python · scRNA-seq · Bulk/pseudo-bulk RNA-seq · Pathway analysis · Pseudotime analysis · eQTL analysis · Gene module analysis (hdWGCNA) · TCR repertoire profiling
-
-**Wet Lab**
-MACS purification · Flow cytometry · Adoptive T cell transfer · Mouse colony maintenance · Genetic backcrossing
-
----
-
-## Honors & Awards
-
-- Self-Development Essay Contest — Top 10, Ministry of National Defense *(2025)*
-- Handok-Jaeseok Foundation Scholarship — $21,000 total *(2018–2022)*
-- Hana Mirae-Injae Scholarship — $9,000 total *(2020–2022)*
-- National Scholarship, Korea Student Aid Foundation — $10,000 total *(2019–2021)*
-- Academic Excellence Scholarship, SNU — $6,000 total *(2018–2020)*
+<style>
+@media (max-width: 768px) {
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>
