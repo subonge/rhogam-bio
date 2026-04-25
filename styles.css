@@ -99,7 +99,7 @@
 
 /* 홈 배너 */
 .quarto-title-banner {
-  background: linear-gradient(135deg, #1B263B 0%, #1e3a6e 100%) !important;
+  background: linear-gradient(135deg, #1B263B 0%, #2563EB 100%) !important;
   text-align: center;
   padding: 3rem 1rem !important;
 }
