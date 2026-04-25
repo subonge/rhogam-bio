@@ -10,7 +10,7 @@ website:
   site-url: https://rhogam.bio
   bread-crumbs: true
   navbar:
-    logo: logo.svg
+    logo: logo.png
     logo-alt: "rhogam.bio logo"
     left:
       - href: index.qmd
