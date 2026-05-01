@@ -25,17 +25,32 @@ about:
 
 <div id="cv-modal" onclick="closeModal()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:9999; align-items:center; justify-content:center;">
   <button onclick="closeModal()" style="position:fixed; top:1.2rem; right:1.2rem; background:white; border:none; border-radius:50%; width:2.2rem; height:2.2rem; font-size:1.2rem; cursor:pointer; z-index:10000; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.3);">✕</button>
-  <img id="cv-modal-img" src="" onclick="event.stopPropagation()" style="max-width:90vw; max-height:90vh; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,0.4);"/>
+  <img id="cv-modal-img" src="" onclick="toggleZoom(event)" style="max-width:90vw; max-height:90vh; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,0.4); cursor:zoom-in; transition:transform 0.3s ease; transform-origin:center;"/>
 </div>
 
 <script>
+var zoomed = false;
 function openModal(src) {
   var modal = document.getElementById('cv-modal');
-  document.getElementById('cv-modal-img').src = src;
+  var img = document.getElementById('cv-modal-img');
+  img.src = src;
+  img.style.transform = '';
+  img.style.cursor = 'zoom-in';
+  zoomed = false;
   modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 }
+function toggleZoom(e) {
+  e.stopPropagation();
+  var img = document.getElementById('cv-modal-img');
+  zoomed = !zoomed;
+  img.style.transform = zoomed ? 'scale(2)' : '';
+  img.style.cursor = zoomed ? 'zoom-out' : 'zoom-in';
+}
 function closeModal() {
+  var img = document.getElementById('cv-modal-img');
+  img.style.transform = '';
+  zoomed = false;
   document.getElementById('cv-modal').style.display = 'none';
   document.body.style.overflow = '';
 }
