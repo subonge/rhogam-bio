@@ -45,6 +45,17 @@
   order: 3;
 }
 
+#quarto-search .aa-SubmitButton,
+#quarto-search svg,
+.navbar .quarto-search-button {
+  transition: color 0.15s;
+}
+
+#quarto-search:hover svg {
+  color: #2563EB !important;
+  fill: #2563EB !important;
+}
+
 .navbar-logo {
   height: 36px !important;
   width: auto !important;
