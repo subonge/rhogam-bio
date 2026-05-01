@@ -1,4 +1,19 @@
 <style>
+/* Waline 레이아웃 커스텀 */
+#waline .wl-comment {
+  display: flex;
+  flex-direction: column;
+}
+#waline .wl-panel { order: 1; }
+#waline .wl-meta-head { order: 2; }
+#waline .wl-cards { order: 3; }
+
+/* 새로고침 버튼, 정렬 옵션 숨기기 */
+#waline .wl-refresh,
+#waline .wl-sort {
+  display: none !important;
+}
+
 /* 기본 TOC 사이드바 숨기기 */
 #quarto-margin-sidebar {
   display: none !important;
