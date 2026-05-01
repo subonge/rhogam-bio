@@ -17,15 +17,32 @@ about:
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
 
-<a href="CV1.png" data-lightbox="cv" style="display: block; transition: transform 0.2s; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.12);" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''">
-<img src="CV1.png" style="width: 100%; display: block;" alt="CV Page 1"/>
-</a>
+<img src="CV1.png" onclick="openModal(this.src)" style="width: 100%; display: block; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''" alt="CV Page 1"/>
 
-<a href="CV2.png" data-lightbox="cv" style="display: block; transition: transform 0.2s; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.12);" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''">
-<img src="CV2.png" style="width: 100%; display: block;" alt="CV Page 2"/>
-</a>
+<img src="CV2.png" onclick="openModal(this.src)" style="width: 100%; display: block; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''" alt="CV Page 2"/>
 
 </div>
+
+<div id="cv-modal" onclick="closeModal()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:9999; align-items:center; justify-content:center;">
+  <button onclick="closeModal()" style="position:fixed; top:1.2rem; right:1.2rem; background:white; border:none; border-radius:50%; width:2.2rem; height:2.2rem; font-size:1.2rem; cursor:pointer; z-index:10000; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.3);">✕</button>
+  <img id="cv-modal-img" src="" onclick="event.stopPropagation()" style="max-width:90vw; max-height:90vh; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,0.4);"/>
+</div>
+
+<script>
+function openModal(src) {
+  var modal = document.getElementById('cv-modal');
+  document.getElementById('cv-modal-img').src = src;
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('cv-modal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+</script>
 
 <style>
 @media (max-width: 768px) {
