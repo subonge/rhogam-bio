@@ -1,5 +1,129 @@
+<style>
+/* 기본 TOC 사이드바 숨기기 */
+#quarto-margin-sidebar {
+  display: none !important;
+}
+
+/* TOC 토글 버튼 */
+#toc-toggle-btn {
+  position: fixed;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: #1B263B;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.2s;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.05em;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+#toc-toggle-btn:hover {
+  background: #2563EB;
+}
+
+/* TOC 플로팅 패널 */
+#toc-floating-panel {
+  position: fixed;
+  right: -320px;
+  top: 60px;
+  width: 280px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(8px);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -4px 0 24px rgba(0,0,0,0.1);
+  z-index: 999;
+  transition: right 0.3s ease;
+  padding: 1.2rem 1rem;
+}
+#toc-floating-panel.open {
+  right: 0;
+}
+#toc-floating-panel .toc-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+#toc-floating-panel nav a {
+  display: block;
+  font-size: 0.88rem;
+  color: #475569;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  line-height: 1.5;
+  transition: color 0.15s;
+  border-left: 2px solid transparent;
+  padding-left: 0.6rem;
+}
+#toc-floating-panel nav a:hover {
+  color: #2563EB;
+  border-left-color: #2563EB;
+}
+#toc-floating-panel nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#toc-floating-panel nav ul ul a {
+  padding-left: 1.4rem;
+  font-size: 0.83rem;
+  color: #64748b;
+}
+</style>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  // 포스트 페이지에서만 TOC 버튼 표시
+  if (window.location.pathname.includes('/posts/')) {
+    var toc = document.querySelector('nav#TOC');
+    if (toc) {
+      // 플로팅 패널 생성
+      var panel = document.createElement('div');
+      panel.id = 'toc-floating-panel';
+      panel.innerHTML = '<div class="toc-title">목차</div>';
+      var navClone = toc.cloneNode(true);
+      panel.appendChild(navClone);
+      document.body.appendChild(panel);
+
+      // 토글 버튼 생성
+      var btn = document.createElement('button');
+      btn.id = 'toc-toggle-btn';
+      btn.textContent = '목차';
+      document.body.appendChild(btn);
+
+      var open = false;
+      btn.addEventListener('click', function () {
+        open = !open;
+        panel.classList.toggle('open', open);
+        btn.style.background = open ? '#2563EB' : '#1B263B';
+      });
+
+      // 패널 바깥 클릭 시 닫기
+      document.addEventListener('click', function (e) {
+        if (open && !panel.contains(e.target) && e.target !== btn) {
+          open = false;
+          panel.classList.remove('open');
+          btn.style.background = '#1B263B';
+        }
+      });
+    }
+  }
+
   // 네비바 RhoGAM Boy → Rho[GAM] Boy 색상 처리
   var navTitle = document.querySelector('.navbar-title');
   if (navTitle) {
