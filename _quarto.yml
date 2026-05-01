@@ -10,6 +10,7 @@ website:
   title: "RhoGAM Boy"
   description: "Immunology & Genetics PhD @ UTSW | 면역학과 유전학을 공부하는 박사과정생의 기록"
   site-url: https://rhogam.bio
+  google-analytics: "G-BN9QL5KS5M"
   bread-crumbs: true
   navbar:
     logo: logo.svg
