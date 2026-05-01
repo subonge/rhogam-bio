@@ -80,6 +80,11 @@
   color: #1B263B !important;
 }
 
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link.show:hover {
+  color: #2563EB !important;
+}
+
 /* About me 페이지 */
 .quarto-about-jolla .about-entity {
   text-align: center;
