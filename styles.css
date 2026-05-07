@@ -299,11 +299,11 @@
 
 
 /* 포스트 페이지 본문 중앙 정렬 */
-.page-layout-article .page-columns {
+.page-columns {
   grid-template-columns: minmax(0, 1fr) !important;
 }
 
-.page-layout-article .column-body {
+.column-body {
   grid-column: 1 !important;
   max-width: 1100px;
   margin-left: auto !important;
