@@ -4,7 +4,6 @@ date: 2026-05-07
 categories:
   - Living in US
 description: I-20 발급, SEVIS 비용 납부, DS-160 작성, 인터뷰 예약, 당일 준비물까지 — 미국 박사과정 입학 전 비자 발급 전 과정을 정리했다.
-draft: false
 ---
 ![[us-visa-f1.png]]
 
