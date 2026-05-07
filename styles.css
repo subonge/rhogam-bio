@@ -297,20 +297,6 @@
   cursor: pointer;
 }
 
-/* 포스트 본문 너비 제한 및 중앙 정렬 */
-.page-columns {
-  grid-template-columns: 1fr !important;
-}
-
-.column-body {
-  grid-column: 1 !important;
-  max-width: 740px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 1.5rem;
-}
 
 /* 기본 폰트 및 가독성 */
 body {
