@@ -231,21 +231,28 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('comment-submit').onmouseout = function(){ this.style.background='#1B263B'; };
 
   function loadComments() {
-    fetch(SCRIPT_URL + '?page=' + encodeURIComponent(pageId))
-      .then(r => r.json())
-      .then(comments => {
-        var list = document.getElementById('comment-list');
-        if (!comments.length) { list.innerHTML = '<p style="color:#94a3b8; font-size:0.9rem;">아직 댓글이 없습니다.</p>'; return; }
-        list.innerHTML = comments.reverse().map(c => `
-          <div style="padding:0.9rem 0; border-bottom:1px solid #f1f5f9;">
-            <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.3rem;">
-              <span style="font-weight:600; font-size:0.9rem; color:#1B263B;">${c.name}</span>
-              <span style="font-size:0.8rem; color:#94a3b8;">${new Date(c.timestamp).toLocaleDateString('ko-KR')}</span>
-            </div>
-            <p style="margin:0; font-size:0.95rem; color:#475569; line-height:1.6;">${c.comment}</p>
+    var cbName = 'cb_' + Date.now();
+    window[cbName] = function(comments) {
+      delete window[cbName];
+      var old = document.getElementById('_jsonp_comment');
+      if (old) old.remove();
+      var list = document.getElementById('comment-list');
+      if (!list) return;
+      if (!comments.length) { list.innerHTML = '<p style="color:#94a3b8; font-size:0.9rem;">아직 댓글이 없습니다.</p>'; return; }
+      list.innerHTML = comments.reverse().map(c => `
+        <div style="padding:0.9rem 0; border-bottom:1px solid #f1f5f9;">
+          <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.3rem;">
+            <span style="font-weight:600; font-size:0.9rem; color:#1B263B;">${c.name}</span>
+            <span style="font-size:0.8rem; color:#94a3b8;">${new Date(c.timestamp).toLocaleDateString('ko-KR')}</span>
           </div>
-        `).join('');
-      }).catch(() => {});
+          <p style="margin:0; font-size:0.95rem; color:#475569; line-height:1.6;">${c.comment}</p>
+        </div>
+      `).join('');
+    };
+    var s = document.createElement('script');
+    s.id = '_jsonp_comment';
+    s.src = SCRIPT_URL + '?page=' + encodeURIComponent(pageId) + '&callback=' + cbName;
+    document.head.appendChild(s);
   }
 
   loadComments();
