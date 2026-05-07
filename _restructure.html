@@ -120,17 +120,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var open = false;
       btn.addEventListener('click', function () {
-        open = !open;
-        panel.classList.toggle('open', open);
-        btn.style.background = open ? '#2563EB' : '#1B263B';
+        open = true;
+        panel.classList.add('open');
+        btn.style.display = 'none';
       });
 
       // 패널 바깥 클릭 시 닫기
       document.addEventListener('click', function (e) {
-        if (open && !panel.contains(e.target) && e.target !== btn) {
+        if (open && !panel.contains(e.target)) {
           open = false;
           panel.classList.remove('open');
-          btn.style.background = '#1B263B';
+          btn.style.display = '';
         }
       });
     }
