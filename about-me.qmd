@@ -25,7 +25,7 @@ about:
 
 <div id="cv-modal" onclick="closeModal()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:9999; justify-content:center; overflow-y:auto; padding:2rem 0;">
   <button onclick="closeModal()" style="position:fixed; top:1.2rem; right:1.2rem; background:white; border:none; border-radius:50%; width:2.2rem; height:2.2rem; font-size:1.2rem; cursor:pointer; z-index:10000; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.3);">✕</button>
-  <img id="cv-modal-img" src="" onclick="toggleZoom(event)" style="display:block; margin:auto; max-width:90vw; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,0.4); cursor:zoom-in; transition:transform 0.3s ease; transform-origin:top center;"/>
+  <img id="cv-modal-img" src="" onclick="toggleZoom(event)" style="display:block; margin:auto; max-width:90vw; max-height:90vh; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,0.4); cursor:zoom-in; transition:max-width 0.3s ease, max-height 0.3s ease;"/>
 </div>
 
 <script>
