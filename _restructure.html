@@ -104,7 +104,8 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.appendChild(btn);
 
       var open = false;
-      btn.addEventListener('click', function () {
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
         open = true;
         panel.classList.add('open');
         btn.style.display = 'none';
