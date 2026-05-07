@@ -1,19 +1,4 @@
 <style>
-/* Waline 레이아웃 커스텀 */
-#waline .wl-comment {
-  display: flex;
-  flex-direction: column;
-}
-#waline .wl-panel { order: 1; }
-#waline .wl-meta-head { order: 2; }
-#waline .wl-cards { order: 3; }
-
-/* 새로고침 버튼, 정렬 옵션 숨기기 */
-#waline .wl-refresh,
-#waline .wl-sort {
-  display: none !important;
-}
-
 /* 기본 TOC 사이드바 숨기기 */
 #quarto-margin-sidebar {
   display: none !important;
@@ -227,28 +212,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  if (!window.location.pathname.includes('/posts/')) return;
-
-  var container = document.createElement('div');
-  container.id = 'waline';
-  container.style.cssText = 'margin-top: 3rem; border-top: 1px solid #e2e8f0; padding-top: 2rem;';
-
-  var content = document.getElementById('quarto-document-content');
-  if (content) content.appendChild(container);
-
-  import('https://unpkg.com/@waline/client@v3/dist/waline.js').then(({ init }) => {
-    init({
-      el: '#waline',
-      serverURL: 'https://waline-delta-umber-39.vercel.app',
-      lang: 'ko',
-      meta: ['nick', 'mail'],
-      requiredMeta: ['nick'],
-      wordLimit: 0,
-      pageSize: 10,
-    });
-  });
-});
-</script>
