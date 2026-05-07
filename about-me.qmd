@@ -34,22 +34,36 @@ function openModal(src) {
   var modal = document.getElementById('cv-modal');
   var img = document.getElementById('cv-modal-img');
   img.src = src;
-  img.style.transform = '';
+  img.style.maxWidth = '90vw';
+  img.style.maxHeight = '90vh';
   img.style.cursor = 'zoom-in';
   zoomed = false;
   modal.style.display = 'flex';
+  modal.style.alignItems = 'center';
   document.body.style.overflow = 'hidden';
 }
 function toggleZoom(e) {
   e.stopPropagation();
+  var modal = document.getElementById('cv-modal');
   var img = document.getElementById('cv-modal-img');
   zoomed = !zoomed;
-  img.style.transform = zoomed ? 'scale(2)' : '';
-  img.style.cursor = zoomed ? 'zoom-out' : 'zoom-in';
+  if (zoomed) {
+    img.style.maxWidth = '160vw';
+    img.style.maxHeight = 'none';
+    img.style.cursor = 'zoom-out';
+    modal.style.alignItems = 'flex-start';
+    modal.scrollTop = 0;
+  } else {
+    img.style.maxWidth = '90vw';
+    img.style.maxHeight = '90vh';
+    img.style.cursor = 'zoom-in';
+    modal.style.alignItems = 'center';
+  }
 }
 function closeModal() {
   var img = document.getElementById('cv-modal-img');
-  img.style.transform = '';
+  img.style.maxWidth = '90vw';
+  img.style.maxHeight = '90vh';
   zoomed = false;
   document.getElementById('cv-modal').style.display = 'none';
   document.body.style.overflow = '';
