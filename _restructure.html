@@ -258,12 +258,13 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.disabled = true; btn.textContent = '등록 중...';
     fetch(SCRIPT_URL, {
       method: 'POST',
+      mode: 'no-cors',
       body: JSON.stringify({ page: pageId, name, comment }),
     }).then(() => {
       document.getElementById('comment-name').value = '';
       document.getElementById('comment-body').value = '';
       btn.disabled = false; btn.textContent = '등록';
-      loadComments();
+      setTimeout(loadComments, 1500);
     }).catch(() => { btn.disabled = false; btn.textContent = '등록'; });
   });
 });
