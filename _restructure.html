@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch(() => {});
 
   // 댓글 기능
-  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxTXAIx9x3QeRfgKu7M0oVlb1XdqV_Nh6S47PUpEzb01MaLJh5THXmGrT_iK4OC7UaTuw/exec';
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbznc7w4vGnbgef_oY1o1iCRnKKuJv69AlU_RgQrWX-xTq4xaWw7iG-ur4GIkD4KhtIB-A/exec';
   var pageId = decodeURIComponent(window.location.pathname);
 
   var commentSection = document.createElement('div');
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch(SCRIPT_URL, {
       method: 'POST',
       mode: 'no-cors',
-      body: JSON.stringify({ page: pageId, name, comment }),
+      body: new URLSearchParams({ page: pageId, name: name, comment: comment }),
     }).then(() => {
       document.getElementById('comment-name').value = '';
       document.getElementById('comment-body').value = '';
