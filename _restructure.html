@@ -92,8 +92,10 @@ document.addEventListener('DOMContentLoaded', function () {
       // 플로팅 패널 생성
       var panel = document.createElement('div');
       panel.id = 'toc-floating-panel';
-      panel.innerHTML = '<div class="toc-title">목차</div>';
+      panel.innerHTML = '<div class="toc-title">Table of Contents</div>';
       var navClone = toc.cloneNode(true);
+      var cloneTitle = navClone.querySelector('#toc-title');
+      if (cloneTitle) cloneTitle.remove();
       panel.appendChild(navClone);
       document.body.appendChild(panel);
 
