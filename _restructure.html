@@ -289,10 +289,22 @@ document.addEventListener('DOMContentLoaded', function () {
       mode: 'no-cors',
       body: new URLSearchParams({ page: pageId, name: name, comment: comment }),
     }).then(() => {
+      var list = document.getElementById('comment-list');
+      var noMsg = list.querySelector('p');
+      if (noMsg) noMsg.remove();
+      var newItem = document.createElement('div');
+      newItem.style.cssText = 'padding:0.9rem 0; border-bottom:1px solid #f1f5f9;';
+      newItem.innerHTML = `
+        <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.3rem;">
+          <span style="font-weight:600; font-size:0.9rem; color:#1B263B;">${name}</span>
+          <span style="font-size:0.8rem; color:#94a3b8;">${new Date().toLocaleDateString('ko-KR')}</span>
+        </div>
+        <p style="margin:0; font-size:0.95rem; color:#475569; line-height:1.6;">${comment}</p>
+      `;
+      list.insertBefore(newItem, list.firstChild);
       document.getElementById('comment-name').value = '';
       document.getElementById('comment-body').value = '';
       btn.disabled = false; btn.textContent = '등록';
-      setTimeout(loadComments, 1500);
     }).catch(() => { btn.disabled = false; btn.textContent = '등록'; });
   });
 });
