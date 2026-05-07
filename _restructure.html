@@ -209,6 +209,63 @@ document.addEventListener('DOMContentLoaded', function () {
       content.appendChild(section);
     })
     .catch(() => {});
+
+  // 댓글 기능
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxTXAIx9x3QeRfgKu7M0oVlb1XdqV_Nh6S47PUpEzb01MaLJh5THXmGrT_iK4OC7UaTuw/exec';
+  var pageId = decodeURIComponent(window.location.pathname);
+
+  var commentSection = document.createElement('div');
+  commentSection.style.cssText = 'margin-top: 3rem; border-top: 1px solid #e2e8f0; padding-top: 2rem;';
+  commentSection.innerHTML = `
+    <h3 style="font-size:1.1rem; color:#475569; margin-bottom:1.2rem;">댓글</h3>
+    <div id="comment-list" style="margin-bottom:1.5rem;"></div>
+    <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:500px;">
+      <input id="comment-name" placeholder="이름" style="padding:0.5rem 0.8rem; border:1px solid #e2e8f0; border-radius:6px; font-size:0.95rem; outline:none;"/>
+      <textarea id="comment-body" placeholder="댓글을 입력하세요..." rows="3" style="padding:0.5rem 0.8rem; border:1px solid #e2e8f0; border-radius:6px; font-size:0.95rem; resize:vertical; outline:none; font-family:inherit;"></textarea>
+      <button id="comment-submit" style="align-self:flex-end; background:#1B263B; color:white; border:none; border-radius:6px; padding:0.45rem 1.2rem; font-size:0.9rem; cursor:pointer; transition:background 0.2s;">등록</button>
+    </div>
+  `;
+  content.appendChild(commentSection);
+
+  document.getElementById('comment-submit').onmouseover = function(){ this.style.background='#2563EB'; };
+  document.getElementById('comment-submit').onmouseout = function(){ this.style.background='#1B263B'; };
+
+  function loadComments() {
+    fetch(SCRIPT_URL + '?page=' + encodeURIComponent(pageId))
+      .then(r => r.json())
+      .then(comments => {
+        var list = document.getElementById('comment-list');
+        if (!comments.length) { list.innerHTML = '<p style="color:#94a3b8; font-size:0.9rem;">아직 댓글이 없습니다.</p>'; return; }
+        list.innerHTML = comments.reverse().map(c => `
+          <div style="padding:0.9rem 0; border-bottom:1px solid #f1f5f9;">
+            <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.3rem;">
+              <span style="font-weight:600; font-size:0.9rem; color:#1B263B;">${c.name}</span>
+              <span style="font-size:0.8rem; color:#94a3b8;">${new Date(c.timestamp).toLocaleDateString('ko-KR')}</span>
+            </div>
+            <p style="margin:0; font-size:0.95rem; color:#475569; line-height:1.6;">${c.comment}</p>
+          </div>
+        `).join('');
+      }).catch(() => {});
+  }
+
+  loadComments();
+
+  document.getElementById('comment-submit').addEventListener('click', function() {
+    var name = document.getElementById('comment-name').value.trim();
+    var comment = document.getElementById('comment-body').value.trim();
+    if (!name || !comment) { alert('이름과 댓글을 입력해주세요.'); return; }
+    var btn = this;
+    btn.disabled = true; btn.textContent = '등록 중...';
+    fetch(SCRIPT_URL, {
+      method: 'POST',
+      body: JSON.stringify({ page: pageId, name, comment }),
+    }).then(() => {
+      document.getElementById('comment-name').value = '';
+      document.getElementById('comment-body').value = '';
+      btn.disabled = false; btn.textContent = '등록';
+      loadComments();
+    }).catch(() => { btn.disabled = false; btn.textContent = '등록'; });
+  });
 });
 </script>
 
