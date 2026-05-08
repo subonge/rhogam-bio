@@ -298,12 +298,12 @@
 }
 
 
-/* 포스트 페이지 본문 중앙 정렬 */
-.page-columns {
+/* 포스트 페이지 본문 중앙 정렬 (홈 제외) */
+body:not(.fullcontent) .page-columns {
   grid-template-columns: minmax(0, 1fr) !important;
 }
 
-.column-body {
+body:not(.fullcontent) .column-body {
   grid-column: 1 !important;
   max-width: 1100px;
   margin-left: auto !important;
