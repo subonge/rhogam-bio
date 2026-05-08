@@ -4,10 +4,11 @@ date: 2026-05-07
 categories:
   - Living in US
 description: I-20 발급, SEVIS 비용 납부, DS-160 작성, 인터뷰 예약, 당일 준비물까지 — 미국 박사과정 입학 전 비자 발급 전 과정을 정리했다.
+image: images/us-visa-f1.png
 ---
-![[us-visa-f1.png]]
+![](<images/us-visa-f1.png>)
 
-# 미국 박사 유학 장학금 전략: 지원 전 vs 합격 후
+## 미국 박사 유학 장학금 전략: 지원 전 vs 합격 후
 
 미국 박사과정을 준비하다 보면 생각보다 빨리 마주치는 문제가 있다. 바로 돈 문제다.
 
