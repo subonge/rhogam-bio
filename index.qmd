@@ -5,7 +5,6 @@ listing:
   contents: posts
   sort: "date desc"
   type: grid
-  grid-columns: 4
   categories: false
   feed: true
   sort-ui: false
