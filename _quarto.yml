@@ -35,7 +35,7 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
     date-format: "D MMM YYYY"
     include-after-body: _restructure.html
     lightbox: true

@@ -87,16 +87,28 @@
 document.addEventListener('DOMContentLoaded', function () {
   // 포스트 페이지에서만 TOC 버튼 표시
   if (window.location.pathname.includes('/posts/')) {
-    var toc = document.querySelector('nav#TOC');
-    if (toc) {
+    var headings = document.querySelectorAll('#quarto-document-content h2, #quarto-document-content h3');
+    if (headings.length > 0) {
+      // 헤딩으로 TOC 직접 생성
+      var nav = document.createElement('nav');
+      var ul = document.createElement('ul');
+      headings.forEach(function(h) {
+        if (!h.id) return;
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent;
+        if (h.tagName === 'H3') li.style.paddingLeft = '0.8rem';
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+      nav.appendChild(ul);
+
       // 플로팅 패널 생성
       var panel = document.createElement('div');
       panel.id = 'toc-floating-panel';
       panel.innerHTML = '<div class="toc-title">Table of Contents</div>';
-      var navClone = toc.cloneNode(true);
-      var cloneTitle = navClone.querySelector('#toc-title');
-      if (cloneTitle) cloneTitle.remove();
-      panel.appendChild(navClone);
+      panel.appendChild(nav);
       document.body.appendChild(panel);
 
       // 토글 버튼 생성
