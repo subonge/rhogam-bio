@@ -299,6 +299,13 @@
 
 
 
+/* TOC 없을 때 그리드 비대칭 보정 (오른쪽 TOC 컬럼 제거) */
+@media (min-width: 992px) {
+  body:not(.fullcontent) .page-columns {
+    grid-template-columns: [screen-start] 1.5em [screen-start-inset] 5fr [page-start page-start-inset] 35px [body-start-outset] 35px [body-start] 1.5em [body-content-start] minmax(500px, calc(850px - 3em)) [body-content-end] 1.5em [body-end] 35px [body-end-outset] 35px [page-end] 5fr [screen-end-inset] 1.5em [screen-end] !important;
+  }
+}
+
 /* 기본 폰트 및 가독성 */
 body {
   font-size: 16px;
