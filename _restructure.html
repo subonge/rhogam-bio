@@ -93,10 +93,11 @@ document.addEventListener('DOMContentLoaded', function () {
       var nav = document.createElement('nav');
       var ul = document.createElement('ul');
       headings.forEach(function(h) {
-        if (!h.id) return;
+        var anchorId = h.id || h.getAttribute('data-anchor-id');
+        if (!anchorId) return;
         var li = document.createElement('li');
         var a = document.createElement('a');
-        a.href = '#' + h.id;
+        a.href = '#' + anchorId;
         a.textContent = h.textContent;
         if (h.tagName === 'H3') li.style.paddingLeft = '0.8rem';
         li.appendChild(a);
