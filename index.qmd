@@ -1,5 +1,5 @@
 ---
-title: "MAGohR"
+title: "GAMRho"
 subtitle: "Immunology & Genetics PhD @ UTSW"
 listing:
   contents: posts
