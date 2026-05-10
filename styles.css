@@ -143,7 +143,7 @@
 }
 
 .quarto-title-banner .subtitle::after {
-  content: "Rescued by RhoGAM, Researching for next RhoGAM \"MAGohR\"";
+  content: 'Rescued by RhoGAM, Researching for next RhoGAM "MAGohR"';
   display: block;
   color: #ffffff;
   font-style: italic;
