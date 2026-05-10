@@ -1,5 +1,5 @@
 ---
-title: "RhoGAM Boy"
+title: "MAGohR"
 subtitle: "Immunology & Genetics PhD @ UTSW"
 listing:
   contents: posts

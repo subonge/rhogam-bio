@@ -143,7 +143,7 @@
 }
 
 .quarto-title-banner .subtitle::after {
-  content: "Rescued by RhoGAM, Researching for next RhoGAM";
+  content: "Rescued by RhoGAM, Researching for next RhoGAM \"MAGohR\"";
   display: block;
   color: #ffffff;
   font-style: italic;
@@ -323,6 +323,12 @@ table {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* 코드블록 여백 넘침 방지 */
+pre {
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 /* 모바일 (768px 이하) */
