@@ -266,6 +266,16 @@
   content: "/ ";
 }
 
+/* 카테고리 필터 사이드바 숨기기 (카드 태그는 유지) */
+#quarto-listing-category {
+  display: none !important;
+}
+
+/* 사이드바 숨길 때 content가 column-page-left로 축소되는 것 방지 */
+main.content.column-page-left {
+  grid-column: page-start / page-end !important;
+}
+
 /* 그리드 카드: 제목과 카테고리 사이 간격 */
 .quarto-grid-item .listing-categories {
   margin-top: 0.6rem;
