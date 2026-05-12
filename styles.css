@@ -172,6 +172,7 @@
     width: auto !important;
     text-align: left !important;
     margin-bottom: 0 !important;
+    order: 1;
   }
 
   #quarto-search {
@@ -180,18 +181,19 @@
   }
 
   .navbar-toggler {
-    order: 3;
+    order: 2;
+    flex-shrink: 0;
   }
 
   #navbarCollapse {
-    order: 4;
+    order: 3;
     width: 100%;
     flex-basis: 100%;
   }
 
   .navbar-nav.navbar-nav-scroll.me-auto {
     flex-wrap: wrap !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
   }
 
   .quarto-title h1.title {
