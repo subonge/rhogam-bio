@@ -169,10 +169,13 @@ TOEFL 100점 이상인 경우에 대부분의 Program에 지원이 가능했고,
 
 TOEFL은 최근 2년 이내 응시 결과 중 섹션별 최고점을 합산해 제출할 수 있는 **MyBest Scores** 제도를 운영한다. 단, Stanford 외에는 이를 제출 허락하는 경우는 없었다.
 
-::: {.callout-tip}
-TOEFL 준비 전략에 관해 별도 글을 작성했으니 참고.  
-→ [TOEFL 준비 전략 — 리딩·리스닝은 독학, 스피킹·라이팅은 학원](/posts/toefl-prep.html)
-:::
+<a href="/posts/toefl-prep.html" style="display:flex;align-items:center;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;margin:1.2rem 0;transition:box-shadow 0.2s,transform 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(37,99,235,0.15)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='';this.style.transform=''">
+  <img src="/posts/images/toefl-prep.png" style="width:140px;height:90px;object-fit:cover;flex-shrink:0;" alt="">
+  <div style="padding:0.8rem 1.2rem;">
+    <div style="font-size:0.78rem;color:#64748b;margin-bottom:0.3rem;">PhD in US</div>
+    <div style="font-weight:600;color:#1B263B;font-size:0.95rem;line-height:1.4;">TOEFL 준비 전략 — 리딩·리스닝은 독학, 스피킹·라이팅은 학원</div>
+  </div>
+</a>
 
 ---
 
@@ -198,10 +201,13 @@ TOEFL 준비 전략에 관해 별도 글을 작성했으니 참고.
 
 ✅ **좋은 예**: Performed scRNA-seq analysis on 12 human thymic samples using Seurat, identifying 8 distinct T cell developmental trajectories
 
-::: {.callout-tip}
-좀 더 구체적인 CV 지침을 위해 별도 글을 작성했으니 참고.  
-→ [미국 박사 지원 CV 쓰는 법 — 바텀업과 탑다운](/posts/cv-preparation.html)
-:::
+<a href="/posts/cv-preparation.html" style="display:flex;align-items:center;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;margin:1.2rem 0;transition:box-shadow 0.2s,transform 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(37,99,235,0.15)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='';this.style.transform=''">
+  <img src="/posts/images/CV_writing.png" style="width:140px;height:90px;object-fit:cover;flex-shrink:0;" alt="">
+  <div style="padding:0.8rem 1.2rem;">
+    <div style="font-size:0.78rem;color:#64748b;margin-bottom:0.3rem;">PhD in US</div>
+    <div style="font-weight:600;color:#1B263B;font-size:0.95rem;line-height:1.4;">미국 박사 지원 CV 쓰는 법 — 바텀업과 탑다운</div>
+  </div>
+</a>
 
 
 ---
