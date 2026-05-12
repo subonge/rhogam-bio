@@ -168,13 +168,25 @@
   }
 
   .navbar-brand-container {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0.3rem !important;
+    flex: 1 1 auto !important;
+    width: auto !important;
+    text-align: left !important;
+    margin-bottom: 0 !important;
+  }
+
+  #quarto-search {
+    order: 2;
+    flex-shrink: 0;
+  }
+
+  .navbar-toggler {
+    order: 3;
   }
 
   #navbarCollapse {
+    order: 4;
     width: 100%;
+    flex-basis: 100%;
   }
 
   .navbar-nav.navbar-nav-scroll.me-auto {
