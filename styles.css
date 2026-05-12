@@ -167,20 +167,20 @@
     padding: 0.5rem 0;
   }
 
+  .navbar-toggler {
+    order: 1;
+    flex: 0 0 auto;
+  }
+
   .navbar-brand-container {
     flex: 1 1 auto !important;
     width: auto !important;
     text-align: left !important;
     margin: 0 !important;
-    order: 1;
+    order: 2;
   }
 
   #quarto-search {
-    order: 2;
-    flex: 0 0 auto;
-  }
-
-  .navbar-toggler {
     order: 3;
     flex: 0 0 auto;
   }
