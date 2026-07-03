@@ -1,5 +1,35 @@
 [
   {
+    "title": "미국 유학 첫 차 구매 준비: 신차·중고차 구매 핵심 정리",
+    "date": "2026-07-03",
+    "description": "신차·중고차·CPO 비교부터 딜러 협상까지, 달라스 도착 전 차 구매 타임라인 정리",
+    "image": "/posts/images/us-car.png",
+    "categories": [
+      "Living in US"
+    ],
+    "url": "/posts/us-car.html"
+  },
+  {
+    "title": "미국 유학 휴대폰 세팅: Mint Mobile로 미국 번호 만들기",
+    "date": "2026-07-02",
+    "description": "Mint Mobile eSIM으로 미국 번호 만들고, 한국 번호는 인증용으로 유지하는 세팅 정리",
+    "image": "/posts/images/us-mobile.png",
+    "categories": [
+      "Living in US"
+    ],
+    "url": "/posts/us-mobile.html"
+  },
+  {
+    "title": "미국 도착 후 첫 은행계좌와 신용카드 세팅하기",
+    "date": "2026-07-01",
+    "description": "Chase checking account 개설부터 첫 신용카드 선택까지, 미국 도착 직후 금융 세팅 정리",
+    "image": "/posts/images/us-account.png",
+    "categories": [
+      "Living in US"
+    ],
+    "url": "/posts/bank-account.html"
+  },
+  {
     "title": "왜 어떤 사람은 코로나로 죽고, 어떤 사람은 아무렇지 않을까",
     "date": "2026-05-12",
     "description": "2020년 Science에 발표된 연구는 중증 COVID-19 환자의 10% 이상에서 자신의 면역 무기를 스스로 파괴하는 자가항체를 발견했다. 인터페론이라는 단백질, 그리고 그것을 무력화하는 항체 이야기.",
@@ -8,6 +38,16 @@
       "Research"
     ],
     "url": "/posts/ifn-autoantibodies-covid.html"
+  },
+  {
+    "title": "흉선 세포 지도: T세포는 어떻게 '나'를 배우는가",
+    "date": "2026-05-12",
+    "description": "2024년 Nature에 발표된 인간 흉선 공간 세포 지도는 T세포가 자기와 비자기를 구분하는 법을 배우는 장소의 3차원 구조를 처음으로 완전히 그려냈다.",
+    "image": "/posts/images/human-thymus-spatial.png",
+    "categories": [
+      "Research"
+    ],
+    "url": "/posts/thymus-spatial-atlas.html"
   },
   {
     "title": "미국 F-1 학생 비자 발급 과정 — I-20부터 인터뷰 당일까지",
