@@ -8,6 +8,7 @@ draft: false
 image: images/us-account.png
 ---
 ![](images/us-account.png)
+
 # 미국 도착 후 첫 은행계좌와 신용카드 세팅하기
 
 미국에 도착하면 생각보다 빨리 돈과 관련된 일들을 처리해야 합니다.  

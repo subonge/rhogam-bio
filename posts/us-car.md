@@ -9,6 +9,7 @@ image: images/us-car.png
 ---
 ![](images/us-car.png)
 
+
 # 미국 유학 첫 차 구매 준비: 신차·중고차 구매 핵심 정리
 
 미국 유학 생활에서 자동차는 꽤 큰 지출입니다.  
