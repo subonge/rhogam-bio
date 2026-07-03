@@ -3,11 +3,11 @@ title: "미국 유학 휴대폰 세팅: Mint Mobile로 미국 번호 만들기"
 date: 2026-07-02
 categories:
   - Living in US
-description: 한 줄 설명
+description: Mint Mobile eSIM으로 미국 번호 만들고, 한국 번호는 인증용으로 유지하는 세팅 정리
 draft: false
-image: images/파일명.png
+image: images/us-mobile.png
 ---
-![[us-mobile.png]]
+![](images/us-mobile.png)
 # 미국 유학 휴대폰 세팅: Mint Mobile로 미국 번호 만들기
 
 미국에 도착하면 가장 먼저 필요한 것 중 하나가 **미국 전화번호**입니다.  

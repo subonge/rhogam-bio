@@ -3,11 +3,11 @@ title: "미국 유학 첫 차 구매 준비: 신차·중고차 구매 핵심 정
 date: 2026-07-03
 categories:
   - Living in US
-description: 한 줄 설명
+description: 신차·중고차·CPO 비교부터 딜러 협상까지, 달라스 도착 전 차 구매 타임라인 정리
 draft: false
-image: images/파일명.png
+image: images/us-car.png
 ---
-![[us-car.png]]
+![](images/us-car.png)
 
 # 미국 유학 첫 차 구매 준비: 신차·중고차 구매 핵심 정리
 

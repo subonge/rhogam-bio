@@ -3,11 +3,11 @@ title: 미국 도착 후 첫 은행계좌와 신용카드 세팅하기
 date: 2026-07-01
 categories:
   - Living in US
-description: 한 줄 설명
+description: Chase checking account 개설부터 첫 신용카드 선택까지, 미국 도착 직후 금융 세팅 정리
 draft: false
-image: images/파일명.png
+image: images/us-account.png
 ---
-![[us-account.png]]
+![](images/us-account.png)
 # 미국 도착 후 첫 은행계좌와 신용카드 세팅하기
 
 미국에 도착하면 생각보다 빨리 돈과 관련된 일들을 처리해야 합니다.  
