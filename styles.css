@@ -354,6 +354,19 @@ img {
   height: auto;
 }
 
+/* 일기 포스트 본문 사진: 폭을 줄이고 가운데 정렬 (세로 사진 가독성) */
+.diary-photo {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+}
+/* 라이트박스 앵커(인라인)로 감싼 사진을 문단 기준으로 가운데 정렬 */
+p:has(> a.lightbox > .diary-photo),
+p:has(> .diary-photo) {
+  text-align: center;
+  margin: 1.2rem 0;
+}
+
 /* 코드블록 여백 넘침 방지 */
 pre {
   overflow-x: auto;
