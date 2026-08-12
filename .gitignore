@@ -4,3 +4,6 @@
 **/*.quarto_ipynb
 **/*.canvas
 .obsidian/
+
+# Quarto 단일 파일 렌더 부산물
+**/*_files/
