@@ -354,17 +354,64 @@ img {
   height: auto;
 }
 
-/* 일기 포스트 본문 사진: 폭을 줄이고 가운데 정렬 (세로 사진 가독성) */
-.diary-photo {
+/* =========================================================
+   일기 포스트 (frontmatter: body-classes: diary-post)
+   → 본문 이미지는 클래스 없이 자동 스타일. 사진만 넣으면 됨.
+   ========================================================= */
+
+/* 단독 사진: 폭 제한 + 가운데 정렬 (세로 사진 가독성) */
+.diary-post main img {
   max-width: 450px;
   width: 100%;
   height: auto;
+  border-radius: 6px;
 }
-/* 라이트박스 앵커(인라인)로 감싼 사진을 문단 기준으로 가운데 정렬 */
-p:has(> a.lightbox > .diary-photo),
-p:has(> .diary-photo) {
+.diary-post main p:has(> a.lightbox),
+.diary-post main p:has(> img) {
   text-align: center;
   margin: 1.2rem 0;
+}
+
+/* 가로 스크롤 사진 갤러리: ::: {.photo-row} 로 감싼 여러 장을 한 줄에 */
+.diary-post .photo-row {
+  display: flex;
+  align-items: flex-start; /* 세로로 늘어나지 않게 (비율 유지) */
+  justify-content: safe center; /* 들어맞으면 가운데, 넘치면 왼쪽부터 스크롤 */
+  gap: 0.6rem;
+  overflow-x: auto;
+  margin: 1.2rem 0;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+.diary-post .photo-row > p {
+  margin: 0;
+  flex: 0 0 auto; /* 각 사진이 줄어들지 않고 넘치면 스크롤 */
+  scroll-snap-align: start;
+  text-align: left;
+}
+.diary-post .photo-row {
+  cursor: grab;
+}
+.diary-post .photo-row.dragging,
+.diary-post .photo-row.dragging img {
+  cursor: grabbing;
+}
+.diary-post .photo-row img {
+  height: 320px;
+  width: auto; /* 높이만 고정, 폭은 원본 비율대로 */
+  max-width: none;
+  display: block;
+  border-radius: 6px;
+  cursor: zoom-in;
+  user-select: none;
+}
+/* 스크롤바를 얇게 */
+.diary-post .photo-row::-webkit-scrollbar {
+  height: 8px;
+}
+.diary-post .photo-row::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 /* 코드블록 여백 넘침 방지 */

@@ -1,0 +1,47 @@
+<!-- .photo-row 를 마우스로 잡아끌어 좌우 스크롤 (드래그 후에는 라이트박스가 안 열리게) -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.photo-row').forEach(function (row) {
+    var isDown = false, startX = 0, startScroll = 0, moved = false;
+    row.addEventListener('mousedown', function (e) {
+      isDown = true; moved = false;
+      startX = e.pageX;
+      startScroll = row.scrollLeft;
+      row.classList.add('dragging');
+    });
+    window.addEventListener('mouseup', function () {
+      isDown = false; row.classList.remove('dragging');
+    });
+    row.addEventListener('mousemove', function (e) {
+      if (!isDown) return;
+      var walk = e.pageX - startX;
+      if (Math.abs(walk) > 4) moved = true;
+      row.scrollLeft = startScroll - walk;
+    });
+    // 드래그였으면 클릭(라이트박스 열기)을 막음
+    row.addEventListener('click', function (e) {
+      if (moved) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+    // 이미지 기본 드래그(고스트 이미지) 방지
+    row.querySelectorAll('img').forEach(function (img) {
+      img.addEventListener('dragstart', function (e) { e.preventDefault(); });
+    });
+  });
+
+  // 라이트박스(확대) 상태에서 휠/트랙패드 스크롤로 좌우 사진 넘기기
+  var wheelLock = false;
+  window.addEventListener('wheel', function (e) {
+    var open = document.querySelector('.glightbox-container');
+    if (!open || open.offsetParent === null) return; // 라이트박스 안 열려있으면 무시
+    if (wheelLock) return;
+    var delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+    if (Math.abs(delta) < 8) return;
+    var btn = open.querySelector(delta > 0 ? '.gnext' : '.gprev');
+    if (btn) {
+      btn.click();
+      wheelLock = true;
+      setTimeout(function () { wheelLock = false; }, 400); // 연속 넘김 방지
+    }
+  }, { passive: true });
+});
+</script>

@@ -6,6 +6,9 @@ project:
     - CV1.png
     - CV2.png
 
+filters:
+  - photo-row-group.lua
+
 website:
   title: "GAMRho"
   description: "Immunology & Genetics PhD @ UTSW | 면역학과 유전학을 공부하는 박사과정생의 기록"
@@ -37,5 +40,7 @@ format:
     css: styles.css
     toc: false
     date-format: "D MMM YYYY"
-    include-after-body: _restructure.html
+    include-after-body:
+      - _restructure.html
+      - photo-row-drag.html
     lightbox: true
