@@ -6,7 +6,7 @@ categories:
 description: CV는 경력의 목록이 아니라 연구자로서의 나를 설득하는 문서다. 재료를 먼저 쌓고, 그다음 이야기를 설계하라.
 image: ../images/phd-in-us/CV_writing.png
 ---
-![](<images/CV_writing.png>)
+![](<../images/phd-in-us/CV_writing.png>)
 
 
 CV를 처음 쓰려고 하면 이상하게 막막하다.  

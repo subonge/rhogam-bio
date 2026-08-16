@@ -6,7 +6,7 @@ categories:
 description: 풀브라이트, KFAS부터 정수·일주·관정까지 — 한국에서 미국 박사 가는 사람이 노릴 수 있는 장학금을 시점별로 정리했다.
 image: ../images/phd-in-us/phd-scholarship.png
 ---
-![](<images/phd-scholarship.png>)
+![](<../images/phd-in-us/phd-scholarship.png>)
 
 ## 미국 박사 유학 장학금 전략: 지원 전 vs 합격 후
 
