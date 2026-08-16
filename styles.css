@@ -9,6 +9,13 @@
   margin-right: auto;
 }
 
+/* 본문(main.content)은 항상 그리드 트랙 폭에 맞춤.
+   width가 auto면 사진 갤러리(.photo-row) 같은 넓은 콘텐츠가 있는 글만
+   트랙(약 800px)보다 넓게(최대 1000px까지) 늘어나 글마다 폭이 들쭉날쭉해짐. */
+.page-layout-article main.content {
+  width: 100% !important;
+}
+
 /* 네비게이션 바 */
 .navbar {
   padding: 1rem 2rem 0.5rem;
