@@ -1,9 +1,19 @@
 [
   {
+    "title": "온몸에 있는 접착 단백질이 없어졌는데, 왜 피부에서만 문제가 생겼을까",
+    "date": "2026-08-19",
+    "description": "2026년 Science Immunology에 발표된 연구는 LFA-1이라는 흔한 백혈구 접착 단백질이 완전히 없는 사람들을 보고했다. 전신 면역은 멀쩡한데, 딱 피부에서만 사마귀가 끊이지 않았던 이유.",
+    "image": "/posts/research/../images/research/lfa1-integrin.png",
+    "categories": [
+      "Research"
+    ],
+    "url": "/posts/research/lfa1-skin-immunity.html"
+  },
+  {
     "title": "미국 정착 2주차 — 오리엔테이션과 살림 채우기",
-    "date": "2026-08-14",
+    "date": "2026-08-16",
     "description": "정착 2주차. 텍사스 운전면허 취득부터 소파·스탠딩데스크로 집을 채우고, 드디어 대학원 오리엔테이션이 시작된 한 주.",
-    "image": "/posts/living-in-us/diary/../../images/living-in-us/2026-08-week2/d3-student-center.jpg",
+    "image": "/posts/living-in-us/diary/../../images/living-in-us/2026-08-week2/d1-uhaul-truck.jpg",
     "categories": [
       "Living in US"
     ],
