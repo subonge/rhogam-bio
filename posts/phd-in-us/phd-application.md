@@ -4,9 +4,9 @@ date: 2026-04-23
 categories:
   - PhD in US
 description: SOP, Personal Statement, 추천서, CV까지 — 지원 서류 하나하나를 어떻게 준비했는지 정리했다
-image: images/phd-application.png
+image: ../images/phd-in-us/phd-application.png
 ---
-![](images/phd-application.png)
+![](../images/phd-in-us/phd-application.png)
 
 미국 박사과정 지원은 단순히 서류를 모아서 내는 게 아니다. 지원자가 왜 연구를 하고 싶은지, 왜 이 학교인지, 그리고 앞으로 어떤 연구자가 될지를 설득하는 과정이다. 나는 면역학·유전학 쪽으로 지원했고, 최종적으로 UTSW(UT Southwestern Medical Center) PhD 프로그램에 합격했다. 그 과정에서 배운 것들을 최대한 구체적으로 정리해본다.
 

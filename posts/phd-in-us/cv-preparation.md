@@ -4,7 +4,7 @@ date: 2026-05-01
 categories:
   - PhD in US
 description: CV는 경력의 목록이 아니라 연구자로서의 나를 설득하는 문서다. 재료를 먼저 쌓고, 그다음 이야기를 설계하라.
-image: images/CV_writing.png
+image: ../images/phd-in-us/CV_writing.png
 ---
 ![](<images/CV_writing.png>)
 

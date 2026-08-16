@@ -5,9 +5,9 @@ categories:
   - Living in US
 description: Chase checking account 개설부터 첫 신용카드 선택까지, 미국 도착 직후 금융 세팅 정리
 draft: false
-image: images/us-account.png
+image: ../images/living-in-us/us-account.png
 ---
-![](images/us-account.png)
+![](../images/living-in-us/us-account.png)
 
 # 미국 도착 후 첫 은행계좌와 신용카드 세팅하기
 

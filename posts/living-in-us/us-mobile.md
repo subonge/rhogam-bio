@@ -5,9 +5,9 @@ categories:
   - Living in US
 description: Mint Mobile eSIM으로 미국 번호 만들고, 한국 번호는 인증용으로 유지하는 세팅 정리
 draft: false
-image: images/us-mobile.png
+image: ../images/living-in-us/us-mobile.png
 ---
-![](images/us-mobile.png)
+![](../images/living-in-us/us-mobile.png)
 
 # 미국 유학 휴대폰 세팅: Mint Mobile로 미국 번호 만들기
 

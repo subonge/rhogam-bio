@@ -4,9 +4,9 @@ date: 2026-05-12
 categories:
   - Research
 description: "2020년 Science에 발표된 연구는 중증 COVID-19 환자의 10% 이상에서 자신의 면역 무기를 스스로 파괴하는 자가항체를 발견했다. 인터페론이라는 단백질, 그리고 그것을 무력화하는 항체 이야기."
-image: images/autoantibodies.jpeg
+image: ../images/research/autoantibodies.jpeg
 ---
-![](images/autoantibodies.jpeg)
+![](../images/research/autoantibodies.jpeg)
 
 2020년 초, 전 세계가 COVID-19 앞에서 한 가지 수수께끼를 풀지 못하고 있었다.
 

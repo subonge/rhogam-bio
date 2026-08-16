@@ -2,21 +2,21 @@
 title: 새 글 제목
 date: 2026-04-23
 categories:
-  - PhD in US
+  - Living in US
 description: 한 줄 설명
 draft: true
-image: images/파일명.png
+image: ../../images/living-in-us/파일명.png
 # ↓ 사진 위주 일기 글이면 이 줄 유지 (사진 자동 스타일 + 가로 스크롤 갤러리). 일반 글이면 지워도 됨
 body-classes: diary-post
 ---
 
 <!--
 =====================================================================
- 사용법 (이 파일을 posts/diary/2026-08-weekN.md 로 복사해서 씀)
+ 사용법 (이 파일을 posts/living-in-us/diary/2026-08-weekN.md 로 복사해서 씀)
  1) 위 프론트매터에서 title / date / description / image 만 바꾸기
     - body-classes: diary-post 줄은 그대로 둘 것 (사진 자동 스타일)
     - draft: true → 다 쓰고 공개할 때 false 로
- 2) 사진은 posts/images/2026-08-weekN/ 폴더에 넣고,
+ 2) 사진은 posts/images/living-in-us/2026-08-weekN/ 폴더에 넣고,
     Obsidian 편집창으로 드래그하면 경로가 자동으로 들어감
  3) 아래 예시 구조를 참고해서 실제 일기를 쓰면 됨
 =====================================================================
@@ -30,7 +30,7 @@ body-classes: diary-post
 
 그날 있었던 일을 편하게 쓴다. 사진 한 장은 그냥 이렇게 넣으면 됨 (클릭하면 확대):
 
-![](../images/2026-08-weekN/사진.jpg)
+![](../../images/living-in-us/2026-08-weekN/사진.jpg)
 
 ---
 
@@ -40,11 +40,11 @@ body-classes: diary-post
 `::: {.photo-row}` 로 감싸고 **사진 사이에 빈 줄**을 넣는다:
 
 ::: {.photo-row}
-![](../images/2026-08-weekN/사진1.jpg)
+![](../../images/living-in-us/2026-08-weekN/사진1.jpg)
 
-![](../images/2026-08-weekN/사진2.jpg)
+![](../../images/living-in-us/2026-08-weekN/사진2.jpg)
 
-![](../images/2026-08-weekN/사진3.jpg)
+![](../../images/living-in-us/2026-08-weekN/사진3.jpg)
 :::
 
 ---
@@ -115,7 +115,7 @@ body-classes: diary-post
 
 ```
 [링크 텍스트](URL)
-![이미지 설명](images/파일명.png)
+![이미지 설명](../../images/living-in-us/파일명.png)
 ```
 
 ### 사진 — 일기 (body-classes: diary-post 필요)
@@ -123,16 +123,16 @@ body-classes: diary-post
 사진 한 장 (클릭하면 확대됨). 경로는 Obsidian에 파일을 드래그하면 자동 입력됨:
 
 ```
-![](../images/2026-08-weekN/사진.jpg)
+![](../../images/living-in-us/2026-08-weekN/사진.jpg)
 ```
 
 여러 장을 한 줄에 나란히(좌우 스크롤 + 넘기기). `::: {.photo-row}` 로 감싸고 **사진 사이에 빈 줄**을 넣는다:
 
 ```
 ::: {.photo-row}
-![](../images/2026-08-weekN/사진1.jpg)
+![](../../images/living-in-us/2026-08-weekN/사진1.jpg)
 
-![](../images/2026-08-weekN/사진2.jpg)
+![](../../images/living-in-us/2026-08-weekN/사진2.jpg)
 :::
 ```
 

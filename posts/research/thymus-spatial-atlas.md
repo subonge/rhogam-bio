@@ -4,9 +4,9 @@ date: 2026-05-12
 categories:
   - Research
 description: "2024년 Nature에 발표된 인간 흉선 공간 세포 지도는 T세포가 자기와 비자기를 구분하는 법을 배우는 장소의 3차원 구조를 처음으로 완전히 그려냈다."
-image: images/human-thymus-spatial.png
+image: ../images/research/human-thymus-spatial.png
 ---
-![](images/human-thymus-spatial.png)
+![](../images/research/human-thymus-spatial.png)
 
 면역계에서 가장 기묘한 장기가 있다면, 흉선(thymus)일 것이다.
 

@@ -4,7 +4,7 @@ date: 2026-05-07
 categories:
   - PhD in US
 description: 풀브라이트, KFAS부터 정수·일주·관정까지 — 한국에서 미국 박사 가는 사람이 노릴 수 있는 장학금을 시점별로 정리했다.
-image: images/phd-scholarship.png
+image: ../images/phd-in-us/phd-scholarship.png
 ---
 ![](<images/phd-scholarship.png>)
 

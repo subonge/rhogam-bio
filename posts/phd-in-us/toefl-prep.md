@@ -3,7 +3,7 @@ title: "TOEFL 준비 전략 — 리딩·리스닝은 독학, 스피킹·라이�
 date: "2026-04-23"
 categories: [PhD in US]
 description: "미국 박사 지원을 위한 TOEFL 준비 경험 — 섹션별로 어떻게 다르게 접근했는지 정리했다"
-image: images/toefl-prep.png
+image: ../images/phd-in-us/toefl-prep.png
 ---
 ![](<images/toefl-prep.png>)
 

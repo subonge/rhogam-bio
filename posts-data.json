@@ -3,120 +3,120 @@
     "title": "미국 정착 2주차 — 오리엔테이션과 살림 채우기",
     "date": "2026-08-14",
     "description": "정착 2주차. 텍사스 운전면허 취득부터 소파·스탠딩데스크로 집을 채우고, 드디어 대학원 오리엔테이션이 시작된 한 주.",
-    "image": "/posts/diary/../images/2026-08-week2/d3-student-center.jpg",
+    "image": "/posts/living-in-us/diary/../../images/living-in-us/2026-08-week2/d3-student-center.jpg",
     "categories": [
       "Living in US"
     ],
-    "url": "/posts/diary/2026-08-week2.html"
+    "url": "/posts/living-in-us/diary/2026-08-week2.html"
   },
   {
     "title": "미국 정착 일주일 — 댈러스 도착 후 첫 7일",
     "date": "2026-08-09",
     "description": "UTSW 박사과정을 시작하러 댈러스에 도착한 첫 일주일. 공항 도착부터 학생증 발급, 차 구매, 집 꾸미기, 첫 텍사스 바비큐까지 하루하루의 기록.",
-    "image": "/posts/diary/../images/2026-08-week1/d3-student-id.jpg",
+    "image": "/posts/living-in-us/diary/../../images/living-in-us/2026-08-week1/d3-student-id.jpg",
     "categories": [
       "Living in US"
     ],
-    "url": "/posts/diary/2026-08-week1.html"
+    "url": "/posts/living-in-us/diary/2026-08-week1.html"
   },
   {
     "title": "미국 유학 첫 차 구매 준비: 신차·중고차 구매 핵심 정리",
     "date": "2026-07-03",
     "description": "신차·중고차·CPO 비교부터 딜러 협상까지, 달라스 도착 전 차 구매 타임라인 정리",
-    "image": "/posts/images/us-car.png",
+    "image": "/posts/living-in-us/../images/living-in-us/us-car.png",
     "categories": [
       "Living in US"
     ],
-    "url": "/posts/us-car.html"
+    "url": "/posts/living-in-us/us-car.html"
   },
   {
     "title": "미국 유학 휴대폰 세팅: Mint Mobile로 미국 번호 만들기",
     "date": "2026-07-02",
     "description": "Mint Mobile eSIM으로 미국 번호 만들고, 한국 번호는 인증용으로 유지하는 세팅 정리",
-    "image": "/posts/images/us-mobile.png",
+    "image": "/posts/living-in-us/../images/living-in-us/us-mobile.png",
     "categories": [
       "Living in US"
     ],
-    "url": "/posts/us-mobile.html"
+    "url": "/posts/living-in-us/us-mobile.html"
   },
   {
     "title": "미국 도착 후 첫 은행계좌와 신용카드 세팅하기",
     "date": "2026-07-01",
     "description": "Chase checking account 개설부터 첫 신용카드 선택까지, 미국 도착 직후 금융 세팅 정리",
-    "image": "/posts/images/us-account.png",
+    "image": "/posts/living-in-us/../images/living-in-us/us-account.png",
     "categories": [
       "Living in US"
     ],
-    "url": "/posts/bank-account.html"
+    "url": "/posts/living-in-us/bank-account.html"
   },
   {
     "title": "왜 어떤 사람은 코로나로 죽고, 어떤 사람은 아무렇지 않을까",
     "date": "2026-05-12",
     "description": "2020년 Science에 발표된 연구는 중증 COVID-19 환자의 10% 이상에서 자신의 면역 무기를 스스로 파괴하는 자가항체를 발견했다. 인터페론이라는 단백질, 그리고 그것을 무력화하는 항체 이야기.",
-    "image": "/posts/images/autoantibodies.jpeg",
+    "image": "/posts/research/../images/research/autoantibodies.jpeg",
     "categories": [
       "Research"
     ],
-    "url": "/posts/ifn-autoantibodies-covid.html"
+    "url": "/posts/research/ifn-autoantibodies-covid.html"
   },
   {
     "title": "흉선 세포 지도: T세포는 어떻게 '나'를 배우는가",
     "date": "2026-05-12",
     "description": "2024년 Nature에 발표된 인간 흉선 공간 세포 지도는 T세포가 자기와 비자기를 구분하는 법을 배우는 장소의 3차원 구조를 처음으로 완전히 그려냈다.",
-    "image": "/posts/images/human-thymus-spatial.png",
+    "image": "/posts/research/../images/research/human-thymus-spatial.png",
     "categories": [
       "Research"
     ],
-    "url": "/posts/thymus-spatial-atlas.html"
+    "url": "/posts/research/thymus-spatial-atlas.html"
   },
   {
     "title": "미국 F-1 학생 비자 발급 과정 — I-20부터 인터뷰 당일까지",
     "date": "2026-05-07",
     "description": "I-20 발급, SEVIS 비용 납부, DS-160 작성, 인터뷰 예약, 당일 준비물까지 — 미국 박사과정 입학 전 비자 발급 전 과정을 정리했다.",
-    "image": "/posts/images/us-visa-f1.png",
+    "image": "/posts/living-in-us/../images/living-in-us/us-visa-f1.png",
     "categories": [
       "Living in US"
     ],
-    "url": "/posts/us-visa-f1.html"
+    "url": "/posts/living-in-us/us-visa-f1.html"
   },
   {
     "title": "미국 박사 유학 장학금 전략: 지원 전 vs 합격 후",
     "date": "2026-05-07",
     "description": "풀브라이트, KFAS부터 정수·일주·관정까지 — 한국에서 미국 박사 가는 사람이 노릴 수 있는 장학금을 시점별로 정리했다.",
-    "image": "/posts/images/phd-scholarship.png",
+    "image": "/posts/phd-in-us/../images/phd-in-us/phd-scholarship.png",
     "categories": [
       "PhD in US"
     ],
-    "url": "/posts/phd-scholarship.html"
+    "url": "/posts/phd-in-us/phd-scholarship.html"
   },
   {
     "title": "미국 박사 지원 CV 쓰는 법 — 바텀업과 탑다운",
     "date": "2026-05-01",
     "description": "CV는 경력의 목록이 아니라 연구자로서의 나를 설득하는 문서다. 재료를 먼저 쌓고, 그다음 이야기를 설계하라.",
-    "image": "/posts/images/CV_writing.png",
+    "image": "/posts/phd-in-us/../images/phd-in-us/CV_writing.png",
     "categories": [
       "PhD in US"
     ],
-    "url": "/posts/cv-preparation.html"
+    "url": "/posts/phd-in-us/cv-preparation.html"
   },
   {
     "title": "미국 이공계 박사과정 지원 전략 — SOP부터 추천서까지",
     "date": "2026-04-23",
     "description": "SOP, Personal Statement, 추천서, CV까지 — 지원 서류 하나하나를 어떻게 준비했는지 정리했다",
-    "image": "/posts/images/phd-application.png",
+    "image": "/posts/phd-in-us/../images/phd-in-us/phd-application.png",
     "categories": [
       "PhD in US"
     ],
-    "url": "/posts/phd-application.html"
+    "url": "/posts/phd-in-us/phd-application.html"
   },
   {
     "title": "TOEFL 준비 전략 — 리딩·리스닝은 독학, 스피킹·라이팅은 학원",
     "date": "2026-04-23",
     "description": "미국 박사 지원을 위한 TOEFL 준비 경험 — 섹션별로 어떻게 다르게 접근했는지 정리했다",
-    "image": "/posts/images/toefl-prep.png",
+    "image": "/posts/phd-in-us/../images/phd-in-us/toefl-prep.png",
     "categories": [
       "PhD in US"
     ],
-    "url": "/posts/toefl-prep.html"
+    "url": "/posts/phd-in-us/toefl-prep.html"
   }
 ]
