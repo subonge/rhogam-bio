@@ -6,6 +6,7 @@ categories:
 description: 개인간 거래(private-party)로 산 2022 Santa Fe XRT 실제 후기. 가격 판단 기준부터 PPI, Carfax, deposit, cashier's check, bill of sale, title transfer, tax office 등록, 그리고 이후 정비 계획까지.
 draft: false
 image: ../images/living-in-us/us-car-actual.jpg
+body-classes: diary-post
 ---
 ![](../images/living-in-us/us-car-actual.jpg)
 
