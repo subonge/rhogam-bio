@@ -1,5 +1,15 @@
 [
   {
+    "title": "미국 정착 3주차 — 수업 시작, 본격 텍사스 적응기",
+    "date": "2026-08-23",
+    "description": "정착 3주차. 대학원 수업이 시작된 한 주. 랩 생활을 앞두고 텍사스 나들이.",
+    "image": "/posts/diary/../images/diary/2026-08-week3/w3-d6-goldees3.jpeg",
+    "categories": [
+      "Living in US"
+    ],
+    "url": "/posts/diary/2026-08-week3.html"
+  },
+  {
     "title": "온몸에 있는 접착 단백질이 없어졌는데, 왜 피부에서만 문제가 생겼을까",
     "date": "2026-08-19",
     "description": "2026년 Science Immunology에 발표된 연구는 LFA-1이라는 흔한 백혈구 접착 단백질이 완전히 없는 사람들을 보고했다. 전신 면역은 멀쩡한데, 딱 피부에서만 사마귀가 끊이지 않았던 이유.",
@@ -23,21 +33,21 @@
     "title": "미국 정착 2주차 — 오리엔테이션과 살림 채우기",
     "date": "2026-08-16",
     "description": "정착 2주차. 텍사스 운전면허 취득부터 소파·스탠딩데스크로 집을 채우고, 드디어 대학원 오리엔테이션이 시작된 한 주.",
-    "image": "/posts/living-in-us/diary/../../images/living-in-us/2026-08-week2/d1-uhaul-truck.jpg",
+    "image": "/posts/diary/../images/diary/2026-08-week2/d1-uhaul-truck.jpg",
     "categories": [
       "Living in US"
     ],
-    "url": "/posts/living-in-us/diary/2026-08-week2.html"
+    "url": "/posts/diary/2026-08-week2.html"
   },
   {
     "title": "미국 정착 일주일 — 댈러스 도착 후 첫 7일",
     "date": "2026-08-09",
     "description": "UTSW 박사과정을 시작하러 댈러스에 도착한 첫 일주일. 공항 도착부터 학생증 발급, 차 구매, 집 꾸미기, 첫 텍사스 바비큐까지 하루하루의 기록.",
-    "image": "/posts/living-in-us/diary/../../images/living-in-us/2026-08-week1/d3-student-id.jpg",
+    "image": "/posts/diary/../images/diary/2026-08-week1/d3-student-id.jpg",
     "categories": [
       "Living in US"
     ],
-    "url": "/posts/living-in-us/diary/2026-08-week1.html"
+    "url": "/posts/diary/2026-08-week1.html"
   },
   {
     "title": "미국 유학 첫 차 구매 준비: 신차·중고차 구매 핵심 정리",
