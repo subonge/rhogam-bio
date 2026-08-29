@@ -1,6 +1,6 @@
 ---
 title: "GAMRho"
-subtitle: "Immunology & Genetics PhD @ UTSW"
+subtitle: "Immunology PhD @ UTSW"
 listing:
   contents: posts
   sort: "date desc"
