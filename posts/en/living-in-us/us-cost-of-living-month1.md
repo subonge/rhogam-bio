@@ -6,12 +6,12 @@ categories:
   - Living in US
 description: "Splitting a full month of Dallas spending into recurring monthly costs vs. one-time settling-in costs, to find out what my 'real' monthly cost of living actually is."
 draft: false
-image: ../images/living-in-us/watch_hamilton.jpeg
+image: ../../images/living-in-us/watch_hamilton.jpeg
 ---
 
-![](../images/living-in-us/us-cost-of-living-month1-summary.jpeg)
+![](../../images/living-in-us/us-cost-of-living-month1-summary.jpeg)
 
-It's been another month since my [first two weeks of settling-in expenses](us-cost-of-living.en.html). This time I looked at August 2 – September 13, which is close enough to call it **a full month of actually living here**. Last time was "just spend and see." This time I was more deliberate about splitting things into **recurring** (money that goes out every month) and **one-time** (settling-in costs that only happened once).
+It's been another month since my [first two weeks of settling-in expenses](us-cost-of-living.html). This time I looked at August 2 – September 13, which is close enough to call it **a full month of actually living here**. Last time was "just spend and see." This time I was more deliberate about splitting things into **recurring** (money that goes out every month) and **one-time** (settling-in costs that only happened once).
 
 ## At a glance
 
@@ -83,7 +83,7 @@ The single biggest line item inside Shopping ($2,725.24) was a **watch**. I deci
 
 I'd never owned a proper watch, so I figured this was as good a time as any to try one. An unexpected $100 discount brought the tax-included total to $676.56. Set next to the closet haul ($606.94) or the big Amazon orders, this watch was clearly the #1 "just for me" purchase of the month.
 
-![](../images/living-in-us/watch_hamilton.jpeg)
+![](../../images/living-in-us/watch_hamilton.jpeg)
 
 ### Travel — two plane tickets, Cancún and DC
 
@@ -94,7 +94,7 @@ Most of the Travel/Leisure line ($1,926.14) is two flights.
 | Cancún (Frontier) | ~$1,300 | **~$650** — I also booked a companion's ticket |
 | DC (Southwest) | ~$400 | ~$400 |
 
-The Cancún ticket shows as $1,314.74 on the card, but that charge covers a companion's ticket too, not just mine — so my real share is roughly half, around **$650**. This is [the flight I booked to put my anxiety to rest](../diary/2026-08-week4.en.html), on impulse, two days before an exam.
+The Cancún ticket shows as $1,314.74 on the card, but that charge covers a companion's ticket too, not just mine — so my real share is roughly half, around **$650**. This is [the flight I booked to put my anxiety to rest](../diary/2026-08-week4.html), on impulse, two days before an exam.
 
 The DC flight was entirely mine, so the full $405.80 is my actual spend.
 

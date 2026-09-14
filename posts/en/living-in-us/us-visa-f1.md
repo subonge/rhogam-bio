@@ -6,9 +6,9 @@ categories:
   - Living in US
 description: "A step-by-step walkthrough of the whole F-1 visa process before starting a US PhD program — I-20 issuance, the SEVIS fee, filling out the DS-160, scheduling the interview, and what to bring on the day."
 draft: false
-image: ../images/living-in-us/us-visa-f1.png
+image: ../../images/living-in-us/us-visa-f1.png
 ---
-![](<../images/living-in-us/us-visa-f1.png>)
+![](<../../images/living-in-us/us-visa-f1.png>)
 
 
 One of the first practical things you have to deal with after getting into a US PhD program is the visa. The first time through, the terminology and steps are unfamiliar enough that it's hard to know where to even start. This post walks through the entire F-1 student visa process, in order.

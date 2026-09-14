@@ -6,9 +6,9 @@ categories:
   - PhD in US
 description: "A breakdown of how I prepared every application document, from the SOP and Personal Statement to letters of recommendation and my CV"
 draft: false
-image: ../images/phd-in-us/phd-application.png
+image: ../../images/phd-in-us/phd-application.png
 ---
-![](../images/phd-in-us/phd-application.png)
+![](../../images/phd-in-us/phd-application.png)
 
 Applying to a US PhD program isn't just about assembling a stack of documents. It's a process of convincing an admissions committee why you want to do research, why this particular school, and what kind of researcher you'll become. I applied in immunology and genetics, and I was ultimately admitted to the PhD program at UTSW (UT Southwestern Medical Center). Here's everything I learned along the way, as concretely as I can put it.
 
@@ -171,7 +171,7 @@ a 100 on the old scale converts to roughly a 5.0–5.5 on the new one.
 TOEFL runs a **MyBest Scores** program that lets you submit your highest section scores across all attempts from the past two years. That said, in my experience, no school besides Stanford actually accepted it.
 
 ```{=html}
-<a href="/posts/toefl-prep.en.html" class="post-link-card">
+<a href="/posts/en/toefl-prep.html" class="post-link-card">
   <img src="/posts/images/toefl-prep.png" alt="">
   <div class="post-link-card-body">
     <div class="post-link-card-category">PhD in US</div>
@@ -205,7 +205,7 @@ Don't just list what you did — use bullet points to describe your specific con
 ✅ **Good example**: Performed scRNA-seq analysis on 12 human thymic samples using Seurat, identifying 8 distinct T cell developmental trajectories
 
 ```{=html}
-<a href="/posts/cv-preparation.en.html" class="post-link-card">
+<a href="/posts/en/cv-preparation.html" class="post-link-card">
   <img src="/posts/images/CV_writing.png" alt="">
   <div class="post-link-card-body">
     <div class="post-link-card-category">PhD in US</div>

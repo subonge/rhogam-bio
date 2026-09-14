@@ -6,10 +6,10 @@ categories:
   - Research
 description: "A 2020 Science paper found that more than 10% of severe COVID-19 patients carried autoantibodies that were destroying their own immune weapons. The story of interferon, and the antibodies that neutralize it."
 draft: false
-image: ../images/research/autoantibodies.jpeg
+image: ../../images/research/autoantibodies.jpeg
 ---
 
-![](../images/research/autoantibodies.jpeg)
+![](../../images/research/autoantibodies.jpeg)
 
 In early 2020, the world was stuck on one unsolved puzzle about COVID-19.
 

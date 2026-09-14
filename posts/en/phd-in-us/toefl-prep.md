@@ -5,9 +5,9 @@ date: "2026-04-23"
 categories: [PhD in US]
 description: "My TOEFL prep experience for US PhD applications — how I approached each section differently"
 draft: false
-image: ../images/phd-in-us/toefl-prep.png
+image: ../../images/phd-in-us/toefl-prep.png
 ---
-![](<../images/phd-in-us/toefl-prep.png>)
+![](<../../images/phd-in-us/toefl-prep.png>)
 
 TOEFL is the first gate you pass through when applying to a US PhD program. What matters more than the score itself is deciding **how much time to put into each section**. I pushed Reading and Listening close to a perfect score through self-study, while I took a prep course for Speaking and Writing. Here's why, and how.
 

@@ -6,13 +6,13 @@ categories:
   - Living in US
 description: "A real write-up of buying a 2022 Santa Fe XRT through a private-party sale — how I judged the price, PPI, Carfax, deposit, cashier's check, bill of sale, title transfer, registering at the tax office, and the maintenance plan I set up afterward."
 draft: false
-image: ../images/living-in-us/us-car-actual.jpg
+image: ../../images/living-in-us/us-car-actual.jpg
 body-classes: diary-post
 ---
 
-![](../images/living-in-us/us-car-actual.jpg)
+![](../../images/living-in-us/us-car-actual.jpg)
 
-In my last post ([Getting Ready to Buy My First Car in the US](us-car.en.html)), I wrote up how I prepared before arriving, assuming I'd be buying from a dealer. What actually happened was different — I ended up buying a 2022 Hyundai Santa Fe XRT through a **private-party** sale instead. I saw the listing in a Korean community group, the car looked like it was in good shape, and I decided to handle the whole thing myself. This post walks through what that process actually looked like, step by step.
+In my last post ([Getting Ready to Buy My First Car in the US](us-car.html)), I wrote up how I prepared before arriving, assuming I'd be buying from a dealer. What actually happened was different — I ended up buying a 2022 Hyundai Santa Fe XRT through a **private-party** sale instead. I saw the listing in a Korean community group, the car looked like it was in good shape, and I decided to handle the whole thing myself. This post walks through what that process actually looked like, step by step.
 
 ---
 
@@ -38,7 +38,7 @@ In the end, it wasn't so much "I got a deal" as "I paid a bit more, but for a ca
 
 For reference, I checked the original window sticker (Monroney Label) from when the car was new — MSRP was $32,300, and with dealer-installed options (floor mats, cargo net, cargo tray, cargo cover, mud guards, bumper appliqué, wheel locks) the total came to $34,340. After a little over three years and 74k miles, it had depreciated by almost half.
 
-![](../images/living-in-us/us-car-window-sticker.jpg)
+![](../../images/living-in-us/us-car-window-sticker.jpg)
 
 ---
 
@@ -77,9 +77,9 @@ Before heading out for the PPI, I grabbed a quick breakfast, and when I looked a
 
 ::: {.photo-row}
 
-![](../images/living-in-us/us-car-breakfast-place.jpg)
+![](../../images/living-in-us/us-car-breakfast-place.jpg)
 
-![](../images/living-in-us/us-car-breakfast-plate.jpg)
+![](../../images/living-in-us/us-car-breakfast-plate.jpg)
 :::
 
 ## Step 2. PPI (Pre-Purchase Inspection)
@@ -156,11 +156,11 @@ Once the process was done, I got a Texas license plate and inspection sticker on
 The odometer read 74,607 miles — not far off from the 74,532 miles at the PPI — by the time the car officially became mine.
 
 ::: {.photo-row}
-![](../images/living-in-us/us-car-taxoffice-sign.jpg)
+![](../../images/living-in-us/us-car-taxoffice-sign.jpg)
 
-![](../images/living-in-us/us-car-taxoffice-building.jpg)
+![](../../images/living-in-us/us-car-taxoffice-building.jpg)
 
-![](../images/living-in-us/us-car-driving.jpg)
+![](../../images/living-in-us/us-car-driving.jpg)
 :::
 
 ---

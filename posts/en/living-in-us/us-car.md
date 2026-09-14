@@ -6,10 +6,10 @@ categories:
   - Living in US
 description: "From new vs. used vs. CPO to negotiating with dealers — my car-buying timeline before landing in Dallas."
 draft: false
-image: ../images/living-in-us/us-car.png
+image: ../../images/living-in-us/us-car.png
 ---
 
-![](../images/living-in-us/us-car.png)
+![](../../images/living-in-us/us-car.png)
 
 
 # Getting Ready to Buy My First Car in the US: New vs. Used, the Essentials

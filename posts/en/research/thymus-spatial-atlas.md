@@ -6,9 +6,9 @@ categories:
   - Research
 description: "Published in Nature in 2024, the human thymus spatial cell atlas is the first to fully map the three-dimensional structure of the place where T cells learn to distinguish self from non-self."
 draft: false
-image: ../images/research/human-thymus-spatial.png
+image: ../../images/research/human-thymus-spatial.png
 ---
-![](../images/research/human-thymus-spatial.png)
+![](../../images/research/human-thymus-spatial.png)
 
 If there's one organ in the immune system that qualifies as truly strange, it's the thymus.
 

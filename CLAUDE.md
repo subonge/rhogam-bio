@@ -56,39 +56,48 @@ categories: [weekly, research]
 자동으로 찾아 연결하고, 번역이 없는 페이지에서는 자동으로 비활성화된다. 인라인
 "Read in English"/"한국어로 보기" 링크는 안 씀 — 네비바 스위처가 그 역할을 함.
 
-**파일 위치 (섹션마다 다름):**
+**파일 위치: 영문판은 전부 `posts/en/` 아래에, 한글판과 같은 하위 구조로 미러링한다**
+(파일명에 `.en`은 안 붙임 — `posts/en/` 자체가 언어 구분자):
 
-- `posts/diary/` (주간 일기)만 예외적으로 영문판을 **별도 하위 폴더**에 둔다 —
-  한글판만 `posts/diary/`에 그대로 보이게 하려는 의도.
-  ```
-  posts/diary/2026-08-weekN.md       # 한국어 원본
-  posts/diary/en/2026-08-weekN.md    # 영어 번역본 (파일명에 .en 안 붙임, 폴더로 구분)
-  ```
-  영문판은 폴더가 한 단계 더 들어가므로, 이미지 상대경로를 `../images/...`가
-  아니라 `../../images/...`로 한 단계 더 올려야 함. 같은 폴더(en/) 안에서
-  다른 주차로 거는 링크는 `.en` 없이 그냥 `weekN.html`.
-- **그 외 모든 섹션** (`posts/living-in-us/`, `posts/research/`, `posts/phd-in-us/`
-  등)은 같은 폴더에 파일명으로만 구분:
-  ```
-  posts/<폴더>/<slug>.md       # 한국어 원본
-  posts/<폴더>/<slug>.en.md    # 영어 번역본 (같은 폴더, 파일명에 .en만 추가)
-  ```
+```
+posts/living-in-us/<slug>.md    # 한국어 원본
+posts/en/living-in-us/<slug>.md # 영어 번역본
+
+posts/diary/2026-08-weekN.md    # 한국어 원본
+posts/en/diary/2026-08-weekN.md # 영어 번역본
+
+posts/research/<slug>.md        # 한국어 원본
+posts/en/research/<slug>.md     # 영어 번역본
+
+posts/phd-in-us/<slug>.md       # 한국어 원본
+posts/en/phd-in-us/<slug>.md    # 영어 번역본
+```
+
+`posts/<섹션>/`은 언제나 한글판만 보이고, 영문판은 전부 `posts/en/<섹션>/`에 모여있다.
+`lang-switcher.html`은 URL의 `/posts/` 뒤에 `en/`가 붙어있는지만 보고 짝을 계산하므로,
+새 섹션이 생겨도 이 규칙만 지키면 스위처 코드를 안 고쳐도 된다.
+
+**이미지 경로 주의**: 영문판은 원본보다 디렉토리가 한 단계 더 깊다
+(`posts/<섹션>/` → `posts/en/<섹션>/`). 그래서 상대 이미지 경로는 원본의
+`../images/...`가 아니라 `../../images/...`로 한 단계 더 올려야 한다
+(frontmatter의 `image:` 필드도 동일). diary만 예외 — 원래도 이미 2단계 깊이였어서
+`../../images/...` 그대로 유지.
 
 **공통 규칙:**
 - 영문판 frontmatter 맨 위에 `lang: en` 추가 (리스팅 페이지들이 이 필드로
   영문판을 걸러내서 한글판만 목록에 뜨게 함 — `index.qmd`/`living-in-us.qmd`/
   `research.qmd`/`phd-in-us.qmd`의 `listing.exclude`와 `add-thumbnails.sh`
   양쪽에 이미 반영되어 있음).
-- 마크다운/Quarto 구조(헤딩, `::: {.callout-*}`, `::: {.photo-row}`, 표, 이미지 경로)는
-  두 버전에서 100% 동일하게 유지 — 이미지 경로는 (위 예외 제외) 절대 바꾸지 않는다.
+- 마크다운/Quarto 구조(헤딩, `::: {.callout-*}`, `::: {.photo-row}`, 표)는
+  두 버전에서 100% 동일하게 유지.
 - 본문만 자연스러운 영어로 번역 (직역 금지, 원문의 톤 유지). 숫자/날짜/고유명사는 그대로.
-- frontmatter: `title`/`description`만 번역, `date`/`categories`/`image`는 동일하게,
-  `draft`는 두 버전 다 같은 값으로 (보통 `false`).
-- 글 안에서 다른 포스트로 거는 내부 링크는, 그 포스트도 영어 버전이 있다면
-  영문판 경로로 걸어준다 (없으면 일단 한글판 경로로).
-- 스타일 참고용 예시 쌍: `posts/living-in-us/us-cost-of-living-month1.md` / `.en.md`
-  (일반 섹션), `posts/diary/2026-08-week3.md` / `posts/diary/en/2026-08-week3.md`
-  (diary 섹션)
+- frontmatter: `title`/`description`만 번역, `date`/`categories`/`image`는 동일하게
+  (단 위 이미지 경로 규칙 적용), `draft`는 두 버전 다 같은 값으로 (보통 `false`).
+- 글 안에서 다른 포스트로 거는 내부 링크: 같은 섹션 안이면 그냥 `<slug>.html`
+  (같은 `posts/en/<섹션>/` 폴더 안이라 `.en` 불필요), 다른 섹션이면
+  `../<섹션>/<slug>.html` — 즉 한글판 링크에서 `.en` 안 붙이고 그대로 쓰면 됨.
+- 스타일 참고용 예시 쌍: `posts/living-in-us/us-cost-of-living-month1.md` /
+  `posts/en/living-in-us/us-cost-of-living-month1.md`
 
 주간 일기 작성 워크플로우는 `posts/diary/_workflow.md`에 더 자세히 정리되어 있음
 (사이트에는 발행되지 않는 내부 메모 파일).

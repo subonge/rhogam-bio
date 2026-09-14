@@ -6,10 +6,10 @@ categories:
   - PhD in US
 description: "From Fulbright and KFAS to Jeongsu, Iljoo, and Kwanjeong — a timing-based rundown of the scholarships a Korean student heading to a US PhD can realistically go after."
 draft: false
-image: ../images/phd-in-us/phd-scholarship.png
+image: ../../images/phd-in-us/phd-scholarship.png
 ---
 
-![](<../images/phd-in-us/phd-scholarship.png>)
+![](<../../images/phd-in-us/phd-scholarship.png>)
 
 ## Scholarship Strategy for a US PhD: Before You Apply vs. After You're In
 

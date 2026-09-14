@@ -5,9 +5,9 @@ date: 2026-05-01
 categories:
   - PhD in US
 description: A CV isn't a list of your experiences — it's a document that argues you're a researcher. Pile up the raw material first, then design the story.
-image: ../images/phd-in-us/CV_writing.png
+image: ../../images/phd-in-us/CV_writing.png
 ---
-![](<../images/phd-in-us/CV_writing.png>)
+![](<../../images/phd-in-us/CV_writing.png>)
 
 
 The first time you sit down to write a CV, it's strangely paralyzing.  

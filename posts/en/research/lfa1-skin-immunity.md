@@ -6,9 +6,9 @@ categories:
   - Research
 description: A 2026 Science Immunology paper reports people who completely lack LFA-1, a common leukocyte adhesion protein. Their systemic immunity was intact — so why did warts never stop appearing, and only on the skin?
 draft: false
-image: ../images/research/lfa1-integrin.png
+image: ../../images/research/lfa1-integrin.png
 ---
-![](../images/research/lfa1-integrin.png)
+![](../../images/research/lfa1-integrin.png)
 
 What happens when a single protein, broadly expressed across every leukocyte in the body, is simply gone?
 

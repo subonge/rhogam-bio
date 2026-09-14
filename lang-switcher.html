@@ -50,16 +50,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var path = window.location.pathname;
   if (path === '' || path === '/') path = '/index.html';
 
-  // Diary posts keep English versions in their own posts/diary/en/ folder
-  // (plain filenames, no .en suffix) instead of the usual same-folder
-  // "<slug>.en.html" sibling used everywhere else.
-  var diaryPrefix = '/posts/diary/';
-  var diaryIdx = path.indexOf(diaryPrefix);
+  // All post translations live under a parallel posts/en/<section>/ tree,
+  // e.g. posts/living-in-us/us-car.html <-> posts/en/living-in-us/us-car.html.
+  var postsPrefix = '/posts/';
+  var postsIdx = path.indexOf(postsPrefix);
   var isEnglish, korPath, engPath;
 
-  if (diaryIdx !== -1) {
-    var rest = path.slice(diaryIdx + diaryPrefix.length); // "2026-08-week1.html" or "en/2026-08-week1.html"
-    var base = path.slice(0, diaryIdx + diaryPrefix.length);
+  if (postsIdx !== -1) {
+    var rest = path.slice(postsIdx + postsPrefix.length); // "diary/week1.html" or "en/diary/week1.html"
+    var base = path.slice(0, postsIdx + postsPrefix.length);
     if (rest.indexOf('en/') === 0) {
       isEnglish = true;
       korPath = base + rest.slice(3);
@@ -70,6 +69,9 @@ document.addEventListener('DOMContentLoaded', function () {
       engPath = base + 'en/' + rest;
     }
   } else {
+    // Non-post pages (About me, section index pages, etc.) have no
+    // translation tree yet; fall back to a same-folder ".en.html" guess,
+    // which the availability check below will disable if it 404s.
     isEnglish = /\.en\.html$/.test(path);
     korPath = isEnglish ? path.replace(/\.en\.html$/, '.html') : path;
     engPath = isEnglish ? path : path.replace(/\.html$/, '.en.html');

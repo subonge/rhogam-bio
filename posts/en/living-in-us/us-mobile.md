@@ -6,10 +6,10 @@ categories:
   - Living in US
 description: "Notes on getting a US number with a Mint Mobile eSIM while keeping my Korean number alive for verification texts"
 draft: false
-image: ../images/living-in-us/us-mobile.png
+image: ../../images/living-in-us/us-mobile.png
 ---
 
-![](../images/living-in-us/us-mobile.png)
+![](../../images/living-in-us/us-mobile.png)
 
 # Setting Up Your Phone for US Grad School: Getting a US Number with Mint Mobile
 

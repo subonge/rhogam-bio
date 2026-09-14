@@ -6,10 +6,10 @@ categories:
   - Living in US
 description: "From opening a Chase checking account to picking a first credit card — sorting out my finances right after landing in the US."
 draft: false
-image: ../images/living-in-us/us-account.png
+image: ../../images/living-in-us/us-account.png
 ---
 
-![](../images/living-in-us/us-account.png)
+![](../../images/living-in-us/us-account.png)
 
 # Setting Up My First US Bank Account and Credit Card
 
