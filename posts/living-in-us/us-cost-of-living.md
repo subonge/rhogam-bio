@@ -1,11 +1,11 @@
 ---
-title: "미국 생활 물가 체험하기 — 정착 초기 실제 지출 정리"
+title: 미국 생활 물가 예상 - 2주간의 데이터
 date: 2026-08-24
 categories:
   - Living in US
-description: "댈러스 도착 후 2주(8월 2일~14일) 동안 실제로 쓴 돈을 차량·집·식비·쇼핑·여행·구독 6개 테마로 나눠 정리했다. 항목별로 뭘 예상하면 되는지, 보험은 어떻게 골랐는지까지."
-draft: true
-image: ../images/living-in-us/us-cost-of-living-dashboard.jpg
+description: 댈러스 도착 후 2주(8월 2일~14일) 동안 실제로 쓴 돈을 차량·집·식비·쇼핑·여행·구독 6개 테마로 나눠 정리.
+draft: false
+image: ../images/living-in-us/us-cost-leisure-stockyards.jpg
 ---
 ![](../images/living-in-us/us-cost-of-living-dashboard.jpg)
 
