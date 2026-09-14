@@ -50,9 +50,30 @@ document.addEventListener('DOMContentLoaded', function () {
   var path = window.location.pathname;
   if (path === '' || path === '/') path = '/index.html';
 
-  var isEnglish = /\.en\.html$/.test(path);
-  var korPath = isEnglish ? path.replace(/\.en\.html$/, '.html') : path;
-  var engPath = isEnglish ? path : path.replace(/\.html$/, '.en.html');
+  // Diary posts keep English versions in their own posts/diary/en/ folder
+  // (plain filenames, no .en suffix) instead of the usual same-folder
+  // "<slug>.en.html" sibling used everywhere else.
+  var diaryPrefix = '/posts/diary/';
+  var diaryIdx = path.indexOf(diaryPrefix);
+  var isEnglish, korPath, engPath;
+
+  if (diaryIdx !== -1) {
+    var rest = path.slice(diaryIdx + diaryPrefix.length); // "2026-08-week1.html" or "en/2026-08-week1.html"
+    var base = path.slice(0, diaryIdx + diaryPrefix.length);
+    if (rest.indexOf('en/') === 0) {
+      isEnglish = true;
+      korPath = base + rest.slice(3);
+      engPath = path;
+    } else {
+      isEnglish = false;
+      korPath = path;
+      engPath = base + 'en/' + rest;
+    }
+  } else {
+    isEnglish = /\.en\.html$/.test(path);
+    korPath = isEnglish ? path.replace(/\.en\.html$/, '.html') : path;
+    engPath = isEnglish ? path : path.replace(/\.html$/, '.en.html');
+  }
 
   korLink.href = korPath;
   engLink.href = engPath;

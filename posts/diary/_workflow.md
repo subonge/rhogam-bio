@@ -21,14 +21,21 @@ rhogam.bio 주간 일기 새 글 작성해줘. (메모리의 "주별 일기 연�
 5. posts/diary/2026-08-weekN.md 생성 — 프론트매터에 body-classes: diary-post,
    categories: Living in US, 대표사진 image 지정, draft: false
 6. 사진 여러 장은 ::: {.photo-row} 갤러리(사이 빈 줄), 한 장이면 그냥 ![](../../images/...)
-7. **영어 버전도 같이 생성**: 같은 폴더에 posts/diary/2026-08-weekN.en.md로 번역본 작성.
-   - 구조(헤딩/photo-row/이미지 경로/callout fence)는 100% 동일하게, 본문만 자연스러운
+7. **영어 버전도 같이 생성**: diary는 예외적으로 별도 하위 폴더 posts/diary/en/에
+   2026-08-weekN.md (파일명에 .en 안 붙임, 폴더로만 구분)로 번역본 작성.
+   - posts/diary/ 폴더 자체엔 한글판만 보이게 하려는 의도 — 다른 섹션(living-in-us 등)은
+     같은 폴더에 <slug>.en.md로 두지만 diary만 이렇게 다름
+   - 구조(헤딩/photo-row/callout fence)는 100% 동일하게, 본문만 자연스러운
      영어로 번역 (직역 X, 원문의 톤/감정 유지)
-   - 프론트매터: title/description만 영역, date/categories/image/body-classes는 동일,
-     draft는 한글판과 동일하게 맞추기
-   - 한글판 frontmatter 바로 아래에 `🇺🇸 [Read in English](2026-08-weekN.en.html)` 한 줄 추가
-   - 영문판 frontmatter 바로 아래에 `🇰🇷 [한국어로 보기](2026-08-weekN.html)` 한 줄 추가
-   - 스타일 참고용 예시 쌍: posts/living-in-us/us-cost-of-living-month1.md / .en.md
+   - 이미지 상대경로 주의: en/ 폴더가 한 단계 더 들어가므로 ../images/...가 아니라
+     ../../images/...로 한 단계 더 올려야 함 (frontmatter의 image: 필드도 동일)
+   - en/ 폴더 안에서 다른 주차로 거는 링크는 .en 없이 그냥 weekN.html
+   - 프론트매터: 맨 위에 lang: en 추가 (리스팅 페이지가 이걸로 영문판을 걸러내서
+     한글판만 목록에 뜨게 함), title/description만 번역, date/categories/image/
+     body-classes는 한글판과 동일 값 유지, draft는 한글판과 동일하게 맞추기
+   - 인라인 "Read in English"/"한국어로 보기" 링크는 넣지 않음 — 네비바 KOR/ENG
+     스위처(lang-switcher.html)가 이미 그 역할을 자동으로 함
+   - 스타일 참고용 예시 쌍: posts/diary/2026-08-week3.md / posts/diary/en/2026-08-week3.md
 8. quarto preview 로 localhost 확인까지 (한글/영문 페이지 둘 다)
 
 - 사진 보고 추측한 부분은 맨 끝에 "확인 요청"으로 정리해줘.
