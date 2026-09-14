@@ -1,4 +1,5 @@
 ---
+lang: en
 title: "Buying a Used Car Privately in Texas — From PPI to Registration to My Maintenance Plan"
 date: 2026-08-18
 categories:
@@ -8,8 +9,6 @@ draft: false
 image: ../images/living-in-us/us-car-actual.jpg
 body-classes: diary-post
 ---
-
-🇰🇷 [한국어로 보기](us-car-review.html)
 
 ![](../images/living-in-us/us-car-actual.jpg)
 

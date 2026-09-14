@@ -57,6 +57,9 @@ for filepath in all_files:
     if re.search(r'^draft:\s*true', fm, re.MULTILINE):
         continue
 
+    if re.search(r'^lang:\s*en', fm, re.MULTILINE):
+        continue
+
     def get_field(pattern, text):
         m = re.search(pattern, text, re.MULTILINE)
         return m.group(1).strip().strip('"\'') if m else ''

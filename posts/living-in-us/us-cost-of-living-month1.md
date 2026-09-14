@@ -7,8 +7,6 @@ description: 매달 반복되는 고정비와 정착 초기에만 몰린 일회�
 draft: false
 image: ../images/living-in-us/watch_hamilton.jpeg
 ---
-🇺🇸 [Read in English](us-cost-of-living-month1.en.html)
-
 ![](../images/living-in-us/us-cost-of-living-month1-summary.jpeg)
 
 지난 [정착 초기 2주 지출 정리](us-cost-of-living.html) 이후로 한 달이 더 지났다. 이번엔 8월 2일부터 9월 13일까지, 그러니까 실질적으로 **한 달 살아본 결과**를 전부 뜯어봤다. 저번 글에서는 "일단 다 써보자" 였다면 이번엔 조금 더 냉정하게 나눠봤다. 매달 나갈 돈(recurring)과 이번 달에만 몰린 정착 비용(one-time)을 기준으로 삼았다.

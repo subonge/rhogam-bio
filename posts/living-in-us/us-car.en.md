@@ -1,4 +1,5 @@
 ---
+lang: en
 title: "Getting Ready to Buy My First Car in the US: New vs. Used, the Essentials"
 date: 2026-07-03
 categories:
@@ -7,8 +8,6 @@ description: "From new vs. used vs. CPO to negotiating with dealers — my car-b
 draft: false
 image: ../images/living-in-us/us-car.png
 ---
-
-🇰🇷 [한국어로 보기](us-car.html)
 
 ![](../images/living-in-us/us-car.png)
 

@@ -11,6 +11,7 @@ listing:
     categories: "Living in US"
   exclude:
     draft: true
+    lang: en
 page-layout: full
 title-block-banner: false
 ---

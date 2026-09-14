@@ -1,4 +1,5 @@
 ---
+lang: en
 title: "US Cost of Living — My First Month, By the Numbers"
 date: 2026-09-13
 categories:
@@ -7,8 +8,6 @@ description: "Splitting a full month of Dallas spending into recurring monthly c
 draft: false
 image: ../images/living-in-us/watch_hamilton.jpeg
 ---
-
-🇰🇷 [한국어로 보기](us-cost-of-living-month1.html)
 
 ![](../images/living-in-us/us-cost-of-living-month1-summary.jpeg)
 

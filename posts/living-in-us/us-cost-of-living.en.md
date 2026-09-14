@@ -1,4 +1,5 @@
 ---
+lang: en
 title: "US Cost of Living, Estimated — Two Weeks of Data"
 date: 2026-08-24
 categories:
@@ -7,8 +8,6 @@ description: "Breaking down everything I actually spent in my first two weeks in
 draft: false
 image: ../images/living-in-us/us-cost-leisure-stockyards.jpg
 ---
-
-🇰🇷 [한국어로 보기](us-cost-of-living.html)
 
 ![](../images/living-in-us/us-cost-of-living-dashboard.jpg)
 

@@ -1,4 +1,5 @@
 ---
+lang: en
 title: "Setting Up My First US Bank Account and Credit Card"
 date: 2026-07-01
 categories:
@@ -7,8 +8,6 @@ description: "From opening a Chase checking account to picking a first credit ca
 draft: false
 image: ../images/living-in-us/us-account.png
 ---
-
-🇰🇷 [한국어로 보기](bank-account.html)
 
 ![](../images/living-in-us/us-account.png)
 

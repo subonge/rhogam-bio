@@ -1,4 +1,5 @@
 ---
+lang: en
 title: "Getting a US F-1 Student Visa — From I-20 to Interview Day"
 date: 2026-05-07
 categories:
@@ -7,8 +8,6 @@ description: "A step-by-step walkthrough of the whole F-1 visa process before st
 draft: false
 image: ../images/living-in-us/us-visa-f1.png
 ---
-🇰🇷 [한국어로 보기](us-visa-f1.html)
-
 ![](<../images/living-in-us/us-visa-f1.png>)
 
 

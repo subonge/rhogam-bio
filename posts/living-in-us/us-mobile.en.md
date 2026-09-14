@@ -1,4 +1,5 @@
 ---
+lang: en
 title: "Setting Up Your Phone for US Grad School: Getting a US Number with Mint Mobile"
 date: 2026-07-02
 categories:
@@ -7,8 +8,6 @@ description: "Notes on getting a US number with a Mint Mobile eSIM while keeping
 draft: false
 image: ../images/living-in-us/us-mobile.png
 ---
-
-🇰🇷 [한국어로 보기](us-mobile.html)
 
 ![](../images/living-in-us/us-mobile.png)
 
