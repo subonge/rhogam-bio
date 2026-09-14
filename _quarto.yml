@@ -43,4 +43,5 @@ format:
     include-after-body:
       - _restructure.html
       - photo-row-drag.html
+      - lang-switcher.html
     lightbox: true

@@ -21,7 +21,15 @@ rhogam.bio 주간 일기 새 글 작성해줘. (메모리의 "주별 일기 연�
 5. posts/diary/2026-08-weekN.md 생성 — 프론트매터에 body-classes: diary-post,
    categories: Living in US, 대표사진 image 지정, draft: false
 6. 사진 여러 장은 ::: {.photo-row} 갤러리(사이 빈 줄), 한 장이면 그냥 ![](../../images/...)
-7. quarto preview 로 localhost 확인까지
+7. **영어 버전도 같이 생성**: 같은 폴더에 posts/diary/2026-08-weekN.en.md로 번역본 작성.
+   - 구조(헤딩/photo-row/이미지 경로/callout fence)는 100% 동일하게, 본문만 자연스러운
+     영어로 번역 (직역 X, 원문의 톤/감정 유지)
+   - 프론트매터: title/description만 영역, date/categories/image/body-classes는 동일,
+     draft는 한글판과 동일하게 맞추기
+   - 한글판 frontmatter 바로 아래에 `🇺🇸 [Read in English](2026-08-weekN.en.html)` 한 줄 추가
+   - 영문판 frontmatter 바로 아래에 `🇰🇷 [한국어로 보기](2026-08-weekN.html)` 한 줄 추가
+   - 스타일 참고용 예시 쌍: posts/living-in-us/us-cost-of-living-month1.md / .en.md
+8. quarto preview 로 localhost 확인까지 (한글/영문 페이지 둘 다)
 
 - 사진 보고 추측한 부분은 맨 끝에 "확인 요청"으로 정리해줘.
 - 발행(push)은 내가 "발행해줘" 하면 그때.

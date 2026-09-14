@@ -1,0 +1,81 @@
+<style>
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.lang-switcher .lang-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.35rem !important;
+  opacity: 0.55;
+  transition: opacity 0.15s, color 0.15s;
+}
+.lang-switcher .lang-link.active {
+  opacity: 1;
+  color: #2563EB !important;
+}
+.lang-switcher .lang-link.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
+.lang-switcher .lang-sep {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.75rem;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // "About me" 오른쪽에 KOR / ENG 언어 스위처 삽입
+  var aboutLink = document.querySelector('.navbar-nav.ms-auto a.nav-link[href$="about-me.html"]');
+  var aboutItem = aboutLink ? aboutLink.closest('li.nav-item') : null;
+  if (!aboutItem) return;
+
+  var li = document.createElement('li');
+  li.className = 'nav-item lang-switcher';
+  li.innerHTML =
+    '<a class="nav-link lang-link" id="lang-kor" href="#">KOR</a>' +
+    '<span class="lang-sep">/</span>' +
+    '<a class="nav-link lang-link" id="lang-eng" href="#">ENG</a>';
+  aboutItem.insertAdjacentElement('afterend', li);
+
+  var korLink = li.querySelector('#lang-kor');
+  var engLink = li.querySelector('#lang-eng');
+
+  var path = window.location.pathname;
+  if (path === '' || path === '/') path = '/index.html';
+
+  var isEnglish = /\.en\.html$/.test(path);
+  var korPath = isEnglish ? path.replace(/\.en\.html$/, '.html') : path;
+  var engPath = isEnglish ? path : path.replace(/\.html$/, '.en.html');
+
+  korLink.href = korPath;
+  engLink.href = engPath;
+
+  if (isEnglish) {
+    engLink.classList.add('active');
+  } else {
+    korLink.classList.add('active');
+  }
+
+  // 현재 안 보고 있는 언어 쪽만, 실제로 그 페이지가 있는지 확인해서
+  // 없으면 흐리게 비활성화 (아직 번역 안 된 글이 대부분이라 404 방지)
+  var otherLink = isEnglish ? korLink : engLink;
+  var otherPath = isEnglish ? korPath : engPath;
+  if (otherPath === path) return; // 홈 등 자기 자신 매칭 시 스킵
+
+  fetch(otherPath, { method: 'HEAD' })
+    .then(function (r) {
+      if (!r.ok) throw new Error('missing');
+    })
+    .catch(function () {
+      otherLink.classList.add('disabled');
+      otherLink.title = isEnglish ? '한국어 버전이 아직 없어요' : 'English version not available yet';
+    });
+});
+</script>
