@@ -47,15 +47,24 @@
 
 <script>
 (function () {
-  // 상위 메뉴 텍스트 → 전체 보기 페이지 매핑
-  // Home은 제외: 하위 항목(About me)이 다른 페이지의 섹션이 아니라 완전히
-  // 별도 페이지라서, 터치 기기에서 클릭 시 바로 이동해버리면 펼쳐볼 방법이
-  // 없어져 About me에 닿을 수 없게 된다. 기본 클릭-토글 동작을 그대로 둔다.
+  var hoverCapable = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  // 상위 메뉴 텍스트 → 전체 보기 페이지 매핑. PhD in US / Living in US /
+  // Research는 모든 기기에서 클릭 시 바로 이동 (하위 항목은 허브 페이지
+  // 안의 섹션이라 터치 기기에서도 스크롤로 다 닿을 수 있음).
   var overviewPages = {
     "PhD in US": "phd-in-us.html",
     "Living in US": "living-in-us.html",
     "Research": "research.html"
   };
+
+  // Home만 예외: hover 가능한 기기(데스크톱)에서는 Posts 클릭과 동일하게
+  // 바로 이동하되, 터치 기기에서는 기본 클릭-토글(펼치기) 동작을 유지한다 —
+  // About me는 다른 페이지의 섹션이 아니라 완전히 별도 페이지라서, 터치
+  // 기기에서 Home도 바로 이동해버리면 펼쳐서 About me로 갈 방법이 없어진다.
+  if (hoverCapable) {
+    overviewPages["Home"] = "index.html";
+  }
 
   document.querySelectorAll(".navbar-nav .nav-item.dropdown > .dropdown-toggle").forEach(function (toggle) {
     var label = toggle.textContent.trim();

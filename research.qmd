@@ -55,7 +55,3 @@ title-block-banner: false
 
 :::{#reviews}
 :::
-
-## My Research
-
-*Coming soon — PhD 과정에서 진행하는 프로젝트와 연구 여정을 이곳에 기록할 예정입니다.*

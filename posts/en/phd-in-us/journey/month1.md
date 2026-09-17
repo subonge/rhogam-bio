@@ -7,7 +7,10 @@ categories:
   - PhD Journey
 description: Adapting quickly to a new lab, how I read papers, and how I'm using rotations — three things I worked out during my first month of a US PhD.
 draft: false
+image: ../../../images/phd-in-us/journey/utsw.jpeg
 ---
+
+![](../../../images/phd-in-us/journey/utsw.jpeg)
 
 It's been a month since I started my PhD in the US.
 
