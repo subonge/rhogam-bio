@@ -1,0 +1,17 @@
+---
+title: "Living in US - Life in Dallas"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  include:
+    categories: "Life in Dallas"
+  exclude:
+    draft: true
+    lang: en
+page-layout: full
+title-block-banner: false
+---

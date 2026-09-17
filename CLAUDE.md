@@ -57,31 +57,40 @@ categories: [weekly, research]
 "Read in English"/"한국어로 보기" 링크는 안 씀 — 네비바 스위처가 그 역할을 함.
 
 **파일 위치: 영문판은 전부 `posts/en/` 아래에, 한글판과 같은 하위 구조로 미러링한다**
-(파일명에 `.en`은 안 붙임 — `posts/en/` 자체가 언어 구분자):
+(파일명에 `.en`은 안 붙임 — `posts/en/` 자체가 언어 구분자).
+
+카테고리 목록 페이지(`phd-in-us.qmd` 등)는 폴더 위치가 아니라 각 글 frontmatter의
+`categories:` 값으로 필터링되지만, 실제 파일도 그 서브카테고리를 반영한 폴더 밑에
+정리해둔다 (섹션 → 서브카테고리 2단 구조):
 
 ```
-posts/living-in-us/<slug>.md    # 한국어 원본
-posts/en/living-in-us/<slug>.md # 영어 번역본
+posts/phd-in-us/applying/<slug>.md   # 한국어 원본 (categories: PhD in US, Applying)
+posts/phd-in-us/funding/<slug>.md    #              (categories: PhD in US, Funding)
+posts/phd-in-us/tests/<slug>.md      #              (categories: PhD in US, Tests)
+posts/phd-in-us/visa/<slug>.md       #              (categories: PhD in US, Visa & Pre-departure)
+posts/en/phd-in-us/applying/<slug>.md  # 영어 번역본 (이하 동일 구조로 미러링)
 
-posts/diary/2026-08-weekN.md    # 한국어 원본
-posts/en/diary/2026-08-weekN.md # 영어 번역본
+posts/living-in-us/diary/2026-08-weekN.md  # 한국어 원본 (categories: Living in US, Life in Dallas)
+posts/living-in-us/guide/<slug>.md         #              (categories: Living in US, Practical Guide)
+posts/en/living-in-us/diary/2026-08-weekN.md  # 영어 번역본
+posts/en/living-in-us/guide/<slug>.md         # 영어 번역본
 
-posts/research/<slug>.md        # 한국어 원본
-posts/en/research/<slug>.md     # 영어 번역본
-
-posts/phd-in-us/<slug>.md       # 한국어 원본
-posts/en/phd-in-us/<slug>.md    # 영어 번역본
+posts/research/notes/<slug>.md       # 한국어 원본 (categories: Research, Research Notes)
+posts/en/research/notes/<slug>.md    # 영어 번역본
 ```
 
-`posts/<섹션>/`은 언제나 한글판만 보이고, 영문판은 전부 `posts/en/<섹션>/`에 모여있다.
-`lang-switcher.html`은 URL의 `/posts/` 뒤에 `en/`가 붙어있는지만 보고 짝을 계산하므로,
-새 섹션이 생겨도 이 규칙만 지키면 스위처 코드를 안 고쳐도 된다.
+`posts/<섹션>/...`은 언제나 한글판만 보이고, 영문판은 전부 `posts/en/<섹션>/...`에
+같은 서브폴더 구조로 모여있다. `lang-switcher.html`은 URL의 `/posts/` 뒤에 `en/`가
+붙어있는지만 보고 짝을 계산하므로, 새 섹션/서브카테고리가 생겨도 이 규칙만 지키면
+스위처 코드를 안 고쳐도 된다.
 
-**이미지 경로 주의**: 영문판은 원본보다 디렉토리가 한 단계 더 깊다
-(`posts/<섹션>/` → `posts/en/<섹션>/`). 그래서 상대 이미지 경로는 원본의
-`../images/...`가 아니라 `../../images/...`로 한 단계 더 올려야 한다
-(frontmatter의 `image:` 필드도 동일). diary만 예외 — 원래도 이미 2단계 깊이였어서
-`../../images/...` 그대로 유지.
+**이미지 경로 주의**: 이미지도 `posts/images/<섹션>/<서브카테고리>/...`로 글 폴더와
+동일한 구조를 따라간다 (예: `posts/images/phd-in-us/applying/CV_writing.png`,
+`posts/images/living-in-us/diary/2026-08-week1/...`). 상대 이미지 경로의 `../` 개수는
+글 파일이 `posts/` 밑에서 몇 단계 깊이인지에 따라 정해진다 — 한글판은
+`posts/<섹션>/<서브카테고리>/<slug>.md` (2단계)이므로 `../../images/...`, 영문판은
+`posts/en/<섹션>/<서브카테고리>/<slug>.md` (3단계)이므로 `../../../images/...`
+(frontmatter의 `image:` 필드도 동일 규칙).
 
 **공통 규칙:**
 - 영문판 frontmatter 맨 위에 `lang: en` 추가 (리스팅 페이지들이 이 필드로
@@ -96,11 +105,11 @@ posts/en/phd-in-us/<slug>.md    # 영어 번역본
 - 글 안에서 다른 포스트로 거는 내부 링크: 같은 섹션 안이면 그냥 `<slug>.html`
   (같은 `posts/en/<섹션>/` 폴더 안이라 `.en` 불필요), 다른 섹션이면
   `../<섹션>/<slug>.html` — 즉 한글판 링크에서 `.en` 안 붙이고 그대로 쓰면 됨.
-- 스타일 참고용 예시 쌍: `posts/living-in-us/us-cost-of-living-month1.md` /
-  `posts/en/living-in-us/us-cost-of-living-month1.md`
+- 스타일 참고용 예시 쌍: `posts/living-in-us/guide/us-cost-of-living-month1.md` /
+  `posts/en/living-in-us/guide/us-cost-of-living-month1.md`
 
-주간 일기 작성 워크플로우는 `posts/diary/_workflow.md`에 더 자세히 정리되어 있음
-(사이트에는 발행되지 않는 내부 메모 파일).
+주간 일기 작성 워크플로우는 `posts/living-in-us/diary/_workflow.md`에 더 자세히
+정리되어 있음 (사이트에는 발행되지 않는 내부 메모 파일).
 
 ## Deployment
 

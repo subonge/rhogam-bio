@@ -1,17 +1,57 @@
 ---
 title: "PhD in US"
 listing:
-  contents: posts
-  sort: "date desc"
-  type: grid
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  include:
-    categories: "PhD in US"
-  exclude:
-    draft: true
-    lang: en
+  - id: application
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "PhD Application"
+    exclude:
+      draft: true
+      lang: en
+  - id: journey
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "PhD Journey"
+    exclude:
+      draft: true
+      lang: en
+  - id: visa
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "VISA"
+    exclude:
+      draft: true
+      lang: en
 page-layout: full
 title-block-banner: false
 ---
+
+## PhD Application
+
+:::{#application}
+:::
+
+## PhD Journey
+
+:::{#journey}
+:::
+
+## VISA
+
+:::{#visa}
+:::

@@ -1,17 +1,40 @@
 ---
 title: "Living in US"
 listing:
-  contents: posts
-  sort: "date desc"
-  type: grid
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  include:
-    categories: "Living in US"
-  exclude:
-    draft: true
-    lang: en
+  - id: life-in-dallas
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "Life in Dallas"
+    exclude:
+      draft: true
+      lang: en
+  - id: practical-guide
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "Practical Guide"
+    exclude:
+      draft: true
+      lang: en
 page-layout: full
 title-block-banner: false
 ---
+
+## Life in Dallas
+
+:::{#life-in-dallas}
+:::
+
+## Practical Guide
+
+:::{#practical-guide}
+:::

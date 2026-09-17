@@ -1,0 +1,70 @@
+<style>
+/* 펼침 화살표(caret) 제거 */
+.navbar-nav .dropdown-toggle::after {
+  display: none;
+}
+
+/* Popper 없이 순수 CSS hover로 열기 때문에, 위치를 직접 고정 (안 그러면 메뉴끼리 겹침) */
+.navbar-nav .nav-item.dropdown {
+  position: relative;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: translateX(-50%) !important;
+  margin-top: 0;
+}
+
+/* 드롭다운을 가로 한 줄로, 모서리는 둥글게 (표시 여부는 아래 hover 규칙에서만 결정) */
+.navbar-nav .dropdown-menu {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  min-width: max-content;
+  padding: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  width: auto;
+  white-space: nowrap;
+  border-radius: 8px;
+}
+
+/* 마우스 있는 기기에서는 클릭 없이 hover로만 드롭다운 노출 */
+@media (hover: hover) and (pointer: fine) {
+  .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+    display: flex;
+  }
+}
+</style>
+
+<script>
+(function () {
+  // 상위 메뉴 텍스트 → 전체 보기 페이지 매핑
+  // Home은 제외: 하위 항목(About me)이 다른 페이지의 섹션이 아니라 완전히
+  // 별도 페이지라서, 터치 기기에서 클릭 시 바로 이동해버리면 펼쳐볼 방법이
+  // 없어져 About me에 닿을 수 없게 된다. 기본 클릭-토글 동작을 그대로 둔다.
+  var overviewPages = {
+    "PhD in US": "phd-in-us.html",
+    "Living in US": "living-in-us.html",
+    "Research": "research.html"
+  };
+
+  document.querySelectorAll(".navbar-nav .nav-item.dropdown > .dropdown-toggle").forEach(function (toggle) {
+    var label = toggle.textContent.trim();
+    var href = overviewPages[label];
+    if (!href) return;
+
+    // 상위 항목 클릭은 Bootstrap의 토글 가로채기 대신 바로 전체 보기 페이지로 이동
+    toggle.removeAttribute("data-bs-toggle");
+    toggle.setAttribute("href", href);
+  });
+})();
+</script>

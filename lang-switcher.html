@@ -31,10 +31,9 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  // "About me" 오른쪽에 KOR / ENG 언어 스위처 삽입
-  var aboutLink = document.querySelector('.navbar-nav.ms-auto a.nav-link[href$="about-me.html"]');
-  var aboutItem = aboutLink ? aboutLink.closest('li.nav-item') : null;
-  if (!aboutItem) return;
+  // 우측 네비(.navbar-nav.ms-auto) 맨 앞에 KOR / ENG 언어 스위처 삽입
+  var rightNav = document.querySelector('.navbar-nav.ms-auto');
+  if (!rightNav) return;
 
   var li = document.createElement('li');
   li.className = 'nav-item lang-switcher';
@@ -42,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     '<a class="nav-link lang-link" id="lang-kor" href="#">KOR</a>' +
     '<span class="lang-sep">/</span>' +
     '<a class="nav-link lang-link" id="lang-eng" href="#">ENG</a>';
-  aboutItem.insertAdjacentElement('afterend', li);
+  rightNav.insertBefore(li, rightNav.firstChild);
 
   var korLink = li.querySelector('#lang-kor');
   var engLink = li.querySelector('#lang-eng');

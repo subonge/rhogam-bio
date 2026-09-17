@@ -20,17 +20,35 @@ website:
     logo: logo.svg
     logo-alt: "rhogam.bio logo"
     left:
-      - href: index.qmd
-        text: Home
-      - href: phd-in-us.qmd
-        text: PhD in US
-      - href: living-in-us.qmd
-        text: Living in US
-      - href: research.qmd
-        text: Research
+      - text: Home
+        menu:
+          - href: index.qmd
+            text: Posts
+          - href: about-me.qmd
+            text: About me
+      - text: PhD in US
+        menu:
+          - href: phd-in-us-application.qmd
+            text: PhD Application
+          - href: phd-in-us-journey.qmd
+            text: PhD Journey
+          - href: phd-in-us-visa.qmd
+            text: VISA
+      - text: Living in US
+        menu:
+          - href: living-in-us-diary.qmd
+            text: Life in Dallas
+          - href: living-in-us-guide.qmd
+            text: Practical Guide
+      - text: Research
+        menu:
+          - href: research-autoantibodies.qmd
+            text: Autoantibodies
+          - href: research-human-genetics.qmd
+            text: Human Genetics
+          - href: research-reviews.qmd
+            text: Reviews
     right:
-      - href: about-me.qmd
-        text: About me
       - icon: github
         href: https://github.com/subonge
 
@@ -44,4 +62,5 @@ format:
       - _restructure.html
       - photo-row-drag.html
       - lang-switcher.html
+      - nav-dropdown.html
     lightbox: true

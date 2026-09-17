@@ -1,17 +1,61 @@
 ---
 title: "Research"
 listing:
-  contents: posts
-  sort: "date desc"
-  type: grid
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  include:
-    categories: "Research"
-  exclude:
-    draft: true
-    lang: en
+  - id: autoantibodies
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "Autoantibodies"
+    exclude:
+      draft: true
+      lang: en
+  - id: human-genetics
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "Human Genetics"
+    exclude:
+      draft: true
+      lang: en
+  - id: reviews
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "Reviews"
+    exclude:
+      draft: true
+      lang: en
 page-layout: full
 title-block-banner: false
 ---
+
+## Autoantibodies
+
+:::{#autoantibodies}
+:::
+
+## Human Genetics
+
+:::{#human-genetics}
+:::
+
+## Reviews
+
+:::{#reviews}
+:::
+
+## My Research
+
+*Coming soon — PhD 과정에서 진행하는 프로젝트와 연구 여정을 이곳에 기록할 예정입니다.*

@@ -1,0 +1,17 @@
+---
+title: "PhD in US - PhD Journey"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  include:
+    categories: "PhD Journey"
+  exclude:
+    draft: true
+    lang: en
+page-layout: full
+title-block-banner: false
+---
