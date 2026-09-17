@@ -48,10 +48,6 @@ website:
             text: Human Genetics
           - href: research-reviews.qmd
             text: Reviews
-    right:
-      - icon: github
-        href: https://github.com/subonge
-
 format:
   html:
     theme: cosmo

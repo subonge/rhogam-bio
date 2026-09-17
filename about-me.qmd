@@ -4,9 +4,6 @@ subtitle: "Pharm.D., M.S. | Incoming PhD Student @ UTSW"
 about:
   template: jolla
   links:
-    - icon: github
-      text: GitHub
-      href: https://github.com/subonge
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/psy97/

@@ -31,9 +31,17 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  // 우측 네비(.navbar-nav.ms-auto) 맨 앞에 KOR / ENG 언어 스위처 삽입
+  // 우측 네비(.navbar-nav.ms-auto) 맨 앞에 KOR / ENG 언어 스위처 삽입.
+  // navbar right:가 비어 있으면 Quarto가 이 컨테이너 자체를 안 만들기 때문에,
+  // 없으면 navbarCollapse 안에 직접 만들어준다.
   var rightNav = document.querySelector('.navbar-nav.ms-auto');
-  if (!rightNav) return;
+  if (!rightNav) {
+    var navbarCollapse = document.getElementById('navbarCollapse');
+    if (!navbarCollapse) return;
+    rightNav = document.createElement('ul');
+    rightNav.className = 'navbar-nav navbar-nav-scroll ms-auto';
+    navbarCollapse.appendChild(rightNav);
+  }
 
   var li = document.createElement('li');
   li.className = 'nav-item lang-switcher';
