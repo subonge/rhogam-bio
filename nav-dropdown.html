@@ -66,6 +66,11 @@
     overviewPages["Home"] = "index.html";
   }
 
+  // 글 페이지(/posts/.../)에서도 맞는 주소가 되도록, 페이지 깊이에 맞게 Quarto가
+  // 계산해둔 로고 링크(../../../index.html 등)에서 사이트 루트를 구한다.
+  var brand = document.querySelector(".navbar-brand");
+  var siteRoot = brand ? brand.href.replace(/index\.html$/, "") : "/";
+
   document.querySelectorAll(".navbar-nav .nav-item.dropdown > .dropdown-toggle").forEach(function (toggle) {
     var label = toggle.textContent.trim();
     var href = overviewPages[label];
@@ -73,7 +78,7 @@
 
     // 상위 항목 클릭은 Bootstrap의 토글 가로채기 대신 바로 전체 보기 페이지로 이동
     toggle.removeAttribute("data-bs-toggle");
-    toggle.setAttribute("href", href);
+    toggle.setAttribute("href", siteRoot + href);
   });
 })();
 </script>
