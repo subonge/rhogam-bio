@@ -78,10 +78,8 @@
 
   // hover 가능한 기기(데스크톱)에서는 상위 항목 클릭 시 바로 전체 보기 페이지로
   // 이동하고 하위 메뉴는 hover로 연다. 터치 기기(모바일)에서는 hover가 없으므로
-  // 상위 항목을 기본 클릭-토글(펼치기)로 두고, 펼친 목록 맨 위에 "전체 보기"
-  // 항목을 넣어 허브 페이지로 가는 길을 남긴다 (Home은 Posts가 이미 그 역할).
-  var isEnglish = window.location.pathname.indexOf("/posts/en/") !== -1;
-  var viewAllLabel = isEnglish ? "View all" : "전체 보기";
+  // 첫 탭은 하위 메뉴 펼치기, 펼쳐진 상태에서 한 번 더 탭하면 전체 보기 페이지로
+  // 이동한다.
 
   // 글 페이지(/posts/.../)에서도 맞는 주소가 되도록, 페이지 깊이에 맞게 Quarto가
   // 계산해둔 로고 링크(../../../index.html 등)에서 사이트 루트를 구한다.
@@ -97,13 +95,16 @@
       // 상위 항목 클릭은 Bootstrap의 토글 가로채기 대신 바로 전체 보기 페이지로 이동
       toggle.removeAttribute("data-bs-toggle");
       toggle.setAttribute("href", siteRoot + href);
-    } else if (label !== "Home") {
-      var menu = toggle.parentElement.querySelector(".dropdown-menu");
-      if (!menu) return;
-      var li = document.createElement("li");
-      li.innerHTML = '<a class="dropdown-item" href="' + siteRoot + href + '">' +
-        '<span class="dropdown-text">' + viewAllLabel + '</span></a>';
-      menu.insertBefore(li, menu.firstChild);
+    } else {
+      // Bootstrap의 드롭다운 토글은 document의 캡처 단계에서 실행되므로, 그보다
+      // 앞선 window 캡처 단계에서 먼저 확인한다. 이미 펼쳐져 있는(.show) 상태의
+      // 탭이면 Bootstrap이 닫아버리기 전에 가로채서 전체 보기 페이지로 이동.
+      window.addEventListener("click", function (e) {
+        if (!toggle.contains(e.target) || !toggle.classList.contains("show")) return;
+        e.preventDefault();
+        e.stopPropagation();
+        window.location.href = siteRoot + href;
+      }, true);
     }
   });
 })();
