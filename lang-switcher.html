@@ -1,4 +1,12 @@
 <style>
+/* 돋보기(모바일 order 4, 데스크톱 order 999) 바로 왼쪽에 오도록 order 3.
+   Bootstrap의 `.navbar .navbar-container > .navbar-nav { order: 20 }`을 덮어써야 함 */
+.navbar .navbar-container > .lang-switcher-nav {
+  order: 3 !important;
+  flex: 0 0 auto;
+  flex-direction: row;
+  margin-right: 0.25rem;
+}
 .lang-switcher {
   display: flex;
   align-items: center;
@@ -23,6 +31,22 @@
   pointer-events: none;
   cursor: default;
 }
+/* 좁은 화면(햄버거 메뉴 구간): 한 줄에 햄버거 · 로고 · KOR/ENG · 돋보기가 다
+   들어가도록 로고 영역을 줄어들 수 있게 하고 스위처 여백을 줄인다 */
+@media (max-width: 991px) {
+  .navbar .navbar-container > .navbar-brand-container {
+    flex: 1 1 0 !important;
+    min-width: 0;
+  }
+  .lang-switcher {
+    gap: 0.1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .lang-switcher .lang-link {
+    padding: 0.2rem 0.25rem !important;
+  }
+}
 .lang-switcher .lang-sep {
   color: rgba(255, 255, 255, 0.4);
   font-size: 0.75rem;
@@ -31,25 +55,23 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  // 우측 네비(.navbar-nav.ms-auto) 맨 앞에 KOR / ENG 언어 스위처 삽입.
-  // navbar right:가 비어 있으면 Quarto가 이 컨테이너 자체를 안 만들기 때문에,
-  // 없으면 navbarCollapse 안에 직접 만들어준다.
-  var rightNav = document.querySelector('.navbar-nav.ms-auto');
-  if (!rightNav) {
-    var navbarCollapse = document.getElementById('navbarCollapse');
-    if (!navbarCollapse) return;
-    rightNav = document.createElement('ul');
-    rightNav.className = 'navbar-nav navbar-nav-scroll ms-auto';
-    navbarCollapse.appendChild(rightNav);
-  }
+  // KOR / ENG 언어 스위처를 돋보기(#quarto-search) 바로 왼쪽에 삽입.
+  // 접이식 메뉴(navbarCollapse) 밖, 네비바 줄에 직접 두어서 모바일에서도
+  // 햄버거를 열지 않고 항상 보이게 한다. (순서는 styles.css의 order 값으로 결정)
+  var searchEl = document.getElementById('quarto-search');
+  var container = document.querySelector('.navbar-container');
+  if (!container) return;
 
+  var nav = document.createElement('ul');
+  nav.className = 'navbar-nav lang-switcher-nav';
   var li = document.createElement('li');
   li.className = 'nav-item lang-switcher';
   li.innerHTML =
     '<a class="nav-link lang-link" id="lang-kor" href="#">KOR</a>' +
     '<span class="lang-sep">/</span>' +
     '<a class="nav-link lang-link" id="lang-eng" href="#">ENG</a>';
-  rightNav.insertBefore(li, rightNav.firstChild);
+  nav.appendChild(li);
+  container.insertBefore(nav, searchEl && searchEl.parentNode === container ? searchEl : null);
 
   var korLink = li.querySelector('#lang-kor');
   var engLink = li.querySelector('#lang-eng');

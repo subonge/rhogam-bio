@@ -37,6 +37,25 @@
   border-radius: 8px;
 }
 
+/* 햄버거 메뉴(좁은 화면)에서는 떠 있는 팝업 대신 목록 안에서 세로로 펼침 */
+@media (max-width: 991px) {
+  .navbar-nav .nav-item.dropdown .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    min-width: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0 0 0.25rem 1rem;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
 /* 마우스 있는 기기에서는 클릭 없이 hover로만 드롭다운 노출 */
 @media (hover: hover) and (pointer: fine) {
   .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
@@ -49,22 +68,20 @@
 (function () {
   var hoverCapable = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
-  // 상위 메뉴 텍스트 → 전체 보기 페이지 매핑. PhD in US / Living in US /
-  // Research는 모든 기기에서 클릭 시 바로 이동 (하위 항목은 허브 페이지
-  // 안의 섹션이라 터치 기기에서도 스크롤로 다 닿을 수 있음).
+  // 상위 메뉴 텍스트 → 전체 보기 페이지 매핑.
   var overviewPages = {
+    "Home": "index.html",
     "PhD in US": "phd-in-us.html",
     "Living in US": "living-in-us.html",
     "Research": "research.html"
   };
 
-  // Home만 예외: hover 가능한 기기(데스크톱)에서는 Posts 클릭과 동일하게
-  // 바로 이동하되, 터치 기기에서는 기본 클릭-토글(펼치기) 동작을 유지한다 —
-  // About me는 다른 페이지의 섹션이 아니라 완전히 별도 페이지라서, 터치
-  // 기기에서 Home도 바로 이동해버리면 펼쳐서 About me로 갈 방법이 없어진다.
-  if (hoverCapable) {
-    overviewPages["Home"] = "index.html";
-  }
+  // hover 가능한 기기(데스크톱)에서는 상위 항목 클릭 시 바로 전체 보기 페이지로
+  // 이동하고 하위 메뉴는 hover로 연다. 터치 기기(모바일)에서는 hover가 없으므로
+  // 상위 항목을 기본 클릭-토글(펼치기)로 두고, 펼친 목록 맨 위에 "전체 보기"
+  // 항목을 넣어 허브 페이지로 가는 길을 남긴다 (Home은 Posts가 이미 그 역할).
+  var isEnglish = window.location.pathname.indexOf("/posts/en/") !== -1;
+  var viewAllLabel = isEnglish ? "View all" : "전체 보기";
 
   // 글 페이지(/posts/.../)에서도 맞는 주소가 되도록, 페이지 깊이에 맞게 Quarto가
   // 계산해둔 로고 링크(../../../index.html 등)에서 사이트 루트를 구한다.
@@ -76,9 +93,18 @@
     var href = overviewPages[label];
     if (!href) return;
 
-    // 상위 항목 클릭은 Bootstrap의 토글 가로채기 대신 바로 전체 보기 페이지로 이동
-    toggle.removeAttribute("data-bs-toggle");
-    toggle.setAttribute("href", siteRoot + href);
+    if (hoverCapable) {
+      // 상위 항목 클릭은 Bootstrap의 토글 가로채기 대신 바로 전체 보기 페이지로 이동
+      toggle.removeAttribute("data-bs-toggle");
+      toggle.setAttribute("href", siteRoot + href);
+    } else if (label !== "Home") {
+      var menu = toggle.parentElement.querySelector(".dropdown-menu");
+      if (!menu) return;
+      var li = document.createElement("li");
+      li.innerHTML = '<a class="dropdown-item" href="' + siteRoot + href + '">' +
+        '<span class="dropdown-text">' + viewAllLabel + '</span></a>';
+      menu.insertBefore(li, menu.firstChild);
+    }
   });
 })();
 </script>
