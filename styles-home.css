@@ -10,7 +10,7 @@
 
 /* 태그라인 */
 .quarto-title-banner .subtitle::after {
-  content: "Rescued by RhoGAM, Researching the next RhoGAM";
+  content: "Rescued by RhoGAM, Working toward the next RhoGAM";
   display: block;
   color: #ffffff !important;
   font-style: italic;
