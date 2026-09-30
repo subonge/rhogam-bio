@@ -1,6 +1,6 @@
 ---
 title: "Suyeong Park"
-subtitle: "Pharm.D., M.S. | Incoming PhD Student @ UTSW"
+subtitle: "Pharm.D., M.S. | PhD Student @ UTSW"
 about:
   template: jolla
   links:
