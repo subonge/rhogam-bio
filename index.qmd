@@ -1,6 +1,6 @@
 ---
 title: "RhoGAM Boy"
-subtitle: "Immunology PhD @ UTSW"
+subtitle: "Immunology PhD Student @ UTSW"
 listing:
   contents: posts
   sort: "date desc"
