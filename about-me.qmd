@@ -12,6 +12,8 @@ about:
       href: mailto:tommy02@snu.ac.kr
 ---
 
+<video src="videos/rhogam-boy-reel.mp4" poster="videos/rhogam-boy-reel-poster.png" autoplay muted playsinline controls preload="metadata" style="width: 100%; display: block; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);"></video>
+
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
 
 <img src="CV1.png" onclick="openModal(this.src)" style="width: 100%; display: block; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''" alt="CV Page 1"/>
