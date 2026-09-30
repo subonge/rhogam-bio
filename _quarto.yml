@@ -3,8 +3,7 @@ project:
   pre-render: ./add-thumbnails.sh
   resources:
     - posts-data.json
-    - CV1.png
-    - CV2.png
+    - cv/Suyeong-Park-CV.pdf
     - videos/rhogam-boy-reel.mp4
     - videos/rhogam-boy-reel-poster.png
 
