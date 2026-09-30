@@ -17,6 +17,7 @@ website:
   google-analytics: "G-BN9QL5KS5M"
   bread-crumbs: true
   navbar:
+    title: "GAMRho"
     logo: logo.svg
     logo-alt: "rhogam.bio logo"
     left:
