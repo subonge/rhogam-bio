@@ -1,0 +1,61 @@
+---
+lang: en
+title: "Suyeong Park"
+subtitle: "Pharm.D., M.S. | PhD Student @ UTSW"
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/psy97/
+    - icon: envelope
+      text: Email
+      href: mailto:tommy02@snu.ac.kr
+    - icon: file-earmark-person
+      text: CV
+      href: cv/Suyeong-Park-CV.pdf
+---
+
+```{=html}
+<style>
+.quarto-about-jolla h2 { text-align: left; }
+.quarto-about-jolla p, .quarto-about-jolla li { text-align: justify; }
+</style>
+```
+
+<video src="videos/rhogam-boy-reel.mp4" poster="videos/rhogam-boy-reel-poster.png" autoplay muted playsinline controls preload="metadata" style="width: 100%; display: block; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);"></video>
+
+## RhoGAM Boy
+
+Hi, I'm Suyeong. I owe my life to an antibody. As the second child of an Rh(D)-negative mother, I would not have been born safely without RhoGAM, an antibody therapy.
+
+That story led me to pharmacy, and then to immunology. I completed my Pharm.D. at Seoul National University and an M.S. in immunology at the same school, and I am now a first-year PhD student in immunology at UT Southwestern.
+
+The name of this blog, 'GAMRho', is the name of a therapy I hope to create one day. Just as RhoGAM saved me, I want to help protect lives like mine by developing 'GAMRho'. This blog will follow my journey toward that therapy, along with my many other interests.
+
+## Research interests
+
+Some antibodies save lives, while others attack our own bodies. I want to study where pathogenic autoantibodies, and the immunological origins that produce them, come from, through the lens of genetics.
+
+- **Inherited?** Which genetic factors contribute to the emergence of pathogenic immune clones?
+- **Selected?** How do T cell development and immune tolerance in the thymus give rise to autoreactive antibodies?
+- **Expanded?** Which clones expand through the somatic changes that come with age?
+
+## Education & Experience
+
+| Years | |
+|:--|:--|
+| 2026 – | **UT Southwestern Medical Center** · Ph.D. Program in Basic Biomedical Sciences |
+| 2024 – 2025 | **KATUSA** · Sergeant, 3-2 GSAB, 2nd Infantry Division (Battalion Senior KATUSA) |
+| 2024 – 2025 | **Seoul National University College of Medicine, Functional Genomics Lab** · Research Assistant (Murim Choi) |
+| 2022 – 2024 | **Seoul National University College of Pharmacy** · M.S., T Cell Development Lab (You Jeong Lee) |
+| 2018 – 2022 | **Seoul National University College of Pharmacy** · Pharm.D., licensed pharmacist in Korea |
+
+## Selected publication
+
+**Lee M\*, Park S\***, Choi J, Bae SY, Ryu HS, Kim M, Kwak JG, Lee YJ. [Human MAIT cells undergo clonal selection and expansion during thymic maturation and aging.](https://doi.org/10.1038/s12276-025-01509-x) *Experimental & Molecular Medicine* 57, 1789–1801 (2025). \*Co-first authors
+
+## CV
+
+My full CV is available as a [PDF](cv/Suyeong-Park-CV.pdf).
+If you'd like to talk, feel free to reach out at the email address listed on my CV.

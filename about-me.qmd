@@ -10,72 +10,52 @@ about:
     - icon: envelope
       text: Email
       href: mailto:tommy02@snu.ac.kr
+    - icon: file-earmark-person
+      text: CV
+      href: cv/Suyeong-Park-CV.pdf
 ---
+
+```{=html}
+<style>
+/* 소제목은 왼쪽, 본문은 양쪽 맞춤 (한글은 단어 단위로 줄바꿈) */
+.quarto-about-jolla h2 { text-align: left; }
+.quarto-about-jolla p, .quarto-about-jolla li { text-align: justify; word-break: keep-all; }
+</style>
+```
 
 <video src="videos/rhogam-boy-reel.mp4" poster="videos/rhogam-boy-reel-poster.png" autoplay muted playsinline controls preload="metadata" style="width: 100%; display: block; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);"></video>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+## RhoGAM Boy
 
-<img src="CV1.png" onclick="openModal(this.src)" style="width: 100%; display: block; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''" alt="CV Page 1"/>
+안녕하세요, 수영입니다. 저는 항체 하나에 생명을 수혜받았습니다. Rh(D)-인 어머니의 둘째로 태어난 저는, RhoGAM이라는 항체 치료제가 없었으면 무사히 태어나지 못했을 것입니다.
 
-<img src="CV2.png" onclick="openModal(this.src)" style="width: 100%; display: block; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''" alt="CV Page 2"/>
+이 이야기가 저를 약학으로, 그리고 면역학으로 이끌었습니다. 서울대학교 약학과 학사과정(Pharm.D.)과 본교 면역학 석사(M.S.)를 마치고, 지금은 UT Southwestern에서 면역학 박사과정 1년차로 지내고 있습니다.
 
-</div>
+이 블로그의 이름 'GAMRho'는 제가 언젠가 만들고 싶은 치료제의 이름입니다. 저를 살렸던 RhoGAM처럼, 저도 'GAMRho'의 개발을 통해 저와 같은 처지의 생명을 지키는데 기여하고 싶습니다. 이 블로그는 그 치료제를 향해 나아가는 여정과 함께 다양한 저의 관심사를 담아낼 예정입니다.
 
-<div id="cv-modal" onclick="closeModal()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:9999; justify-content:center; overflow-y:auto; padding:2rem 0;">
-  <button onclick="closeModal()" style="position:fixed; top:1.2rem; right:1.2rem; background:white; border:none; border-radius:50%; width:2.2rem; height:2.2rem; font-size:1.2rem; cursor:pointer; z-index:10000; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.3);">✕</button>
-  <img id="cv-modal-img" src="" onclick="toggleZoom(event)" style="display:block; margin:auto; max-width:90vw; max-height:90vh; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,0.4); cursor:zoom-in; transition:max-width 0.3s ease, max-height 0.3s ease;"/>
-</div>
+## 연구 관심사
 
-<script>
-var zoomed = false;
-function openModal(src) {
-  var modal = document.getElementById('cv-modal');
-  var img = document.getElementById('cv-modal-img');
-  img.src = src;
-  img.style.maxWidth = '90vw';
-  img.style.maxHeight = '90vh';
-  img.style.cursor = 'zoom-in';
-  zoomed = false;
-  modal.style.display = 'flex';
-  modal.style.alignItems = 'center';
-  document.body.style.overflow = 'hidden';
-}
-function toggleZoom(e) {
-  e.stopPropagation();
-  var modal = document.getElementById('cv-modal');
-  var img = document.getElementById('cv-modal-img');
-  zoomed = !zoomed;
-  if (zoomed) {
-    img.style.maxWidth = '160vw';
-    img.style.maxHeight = 'none';
-    img.style.cursor = 'zoom-out';
-    modal.style.alignItems = 'flex-start';
-    modal.scrollTop = 0;
-  } else {
-    img.style.maxWidth = '90vw';
-    img.style.maxHeight = '90vh';
-    img.style.cursor = 'zoom-in';
-    modal.style.alignItems = 'center';
-  }
-}
-function closeModal() {
-  var img = document.getElementById('cv-modal-img');
-  img.style.maxWidth = '90vw';
-  img.style.maxHeight = '90vh';
-  zoomed = false;
-  document.getElementById('cv-modal').style.display = 'none';
-  document.body.style.overflow = '';
-}
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeModal();
-});
-</script>
+어떤 항체는 생명을 구하지만, 어떤 항체는 저희 몸을 공격합니다. 저는 병원성 자가항체와 그것을 만드는 면역학적 기원이 어디서 오는지를 유전학적인 관점에서 연구하고자 합니다.
 
-<style>
-@media (max-width: 768px) {
-  div[style*="grid-template-columns: 1fr 1fr"] {
-    grid-template-columns: 1fr !important;
-  }
-}
-</style>
+- **Inherited?** 어떤 유전적 요인이 병원성 면역 클론의 등장에 기여하는가
+- **Selected?** 흉선에서의 T세포 발달과 면역관용은 자가반응성 항체를 어떻게 만드는가
+- **Expanded?** 나이가 들며 생기는 체세포 변화가 어떤 클론을 증식시키는가
+
+## 학력 및 경력
+
+| 기간 | |
+|:--|:--|
+| 2026 – | **UT Southwestern Medical Center** · Ph.D. Program in Basic Biomedical Sciences |
+| 2024 – 2025 | **KATUSA** · 병장, 3-2 GSAB, 2nd Infantry Division (Battalion Senior KATUSA) |
+| 2024 – 2025 | **서울대학교 의과대학 Functional Genomics Lab** · 연구원 (Murim Choi) |
+| 2022 – 2024 | **서울대학교 약학대학** · 약학 석사 (M.S.), T Cell Development Lab (You Jeong Lee) |
+| 2018 – 2022 | **서울대학교 약학대학** · 약학사 (Pharm.D.), 대한민국 약사 면허 취득 |
+
+## 대표 논문
+
+**Lee M\*, Park S\***, Choi J, Bae SY, Ryu HS, Kim M, Kwak JG, Lee YJ. [Human MAIT cells undergo clonal selection and expansion during thymic maturation and aging.](https://doi.org/10.1038/s12276-025-01509-x) *Experimental & Molecular Medicine* 57, 1789–1801 (2025). \*공동 제1저자
+
+## CV
+
+전체 이력은 [CV (PDF)](cv/Suyeong-Park-CV.pdf)에서 볼 수 있습니다.
+저와 이야기하고 싶으신 분이 계시다면 CV에 기재된 메일 주소로 연락주시면 됩니다.
