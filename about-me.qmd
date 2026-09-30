@@ -20,10 +20,11 @@ about:
 /* 소제목은 왼쪽, 본문은 양쪽 맞춤 (한글은 단어 단위로 줄바꿈) */
 .quarto-about-jolla h2 { text-align: left; }
 .quarto-about-jolla p, .quarto-about-jolla li { text-align: justify; word-break: keep-all; }
+.quarto-about-jolla .pub p { text-align: left; }
 </style>
 ```
 
-<video src="videos/rhogam-boy-reel.mp4" poster="videos/rhogam-boy-reel-poster.png" autoplay muted playsinline controls preload="metadata" style="width: 100%; display: block; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);"></video>
+<video src="videos/rhogam-boy-reel.mp4" poster="videos/rhogam-boy-reel-poster.png" autoplay muted playsinline controls preload="metadata" style="width: 100%; display: block; margin-top: 1rem; margin-bottom: 2.5rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);"></video>
 
 ## RhoGAM Boy
 
@@ -37,23 +38,23 @@ about:
 
 어떤 항체는 생명을 구하지만, 어떤 항체는 저희 몸을 공격합니다. 저는 병원성 자가항체와 그것을 만드는 면역학적 기원이 어디서 오는지를 유전학적인 관점에서 연구하고자 합니다.
 
-- **Inherited?** 어떤 유전적 요인이 병원성 면역 클론의 등장에 기여하는가
-- **Selected?** 흉선에서의 T세포 발달과 면역관용은 자가반응성 항체를 어떻게 만드는가
-- **Expanded?** 나이가 들며 생기는 체세포 변화가 어떤 클론을 증식시키는가
+- **Inherited?** 어떤 유전적 요인이 자가 반응성 항체 형성에 기여하는가
+- **Selected?** 자가 반응성 항체에 기여하는 T 세포는 어떻게 선택되는가
+- **Expanded?** 나이가 들며 자가 반응성 항체의 구성이 어떻게 변화하는가
 
 ## 학력 및 경력
 
-| 기간 | |
-|:--|:--|
-| 2026 – | **UT Southwestern Medical Center** · Ph.D. Program in Basic Biomedical Sciences |
-| 2024 – 2025 | **KATUSA** · 병장, 3-2 GSAB, 2nd Infantry Division (Battalion Senior KATUSA) |
-| 2024 – 2025 | **서울대학교 의과대학 Functional Genomics Lab** · 연구원 (Murim Choi) |
-| 2022 – 2024 | **서울대학교 약학대학** · 약학 석사 (M.S.), T Cell Development Lab (You Jeong Lee) |
-| 2018 – 2022 | **서울대학교 약학대학** · 약학사 (Pharm.D.), 대한민국 약사 면허 취득 |
+- 2026 – : UT Southwestern Medical Center · Ph.D. Program in Basic Biomedical Sciences
+- 2024 – 2025 : KATUSA · 병장, 3-2 GSAB, 2nd Infantry Division (Battalion Senior KATUSA)
+- 2024 – 2025 : 서울대학교 의과대학 Functional Genomics Lab · 연구원 (Murim Choi)
+- 2022 – 2024 : 서울대학교 약학대학 · 약학 석사 (M.S.), T Cell Development Lab (You Jeong Lee)
+- 2018 – 2022 : 서울대학교 약학대학 · 약학사 (Pharm.D.), 대한민국 약사 면허 취득
 
 ## 대표 논문
 
+::: {.pub}
 **Lee M\*, Park S\***, Choi J, Bae SY, Ryu HS, Kim M, Kwak JG, Lee YJ. [Human MAIT cells undergo clonal selection and expansion during thymic maturation and aging.](https://doi.org/10.1038/s12276-025-01509-x) *Experimental & Molecular Medicine* 57, 1789–1801 (2025). \*공동 제1저자
+:::
 
 ## CV
 

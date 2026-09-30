@@ -20,10 +20,11 @@ about:
 <style>
 .quarto-about-jolla h2 { text-align: left; }
 .quarto-about-jolla p, .quarto-about-jolla li { text-align: justify; }
+.quarto-about-jolla .pub p { text-align: left; }
 </style>
 ```
 
-<video src="videos/rhogam-boy-reel.mp4" poster="videos/rhogam-boy-reel-poster.png" autoplay muted playsinline controls preload="metadata" style="width: 100%; display: block; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);"></video>
+<video src="videos/rhogam-boy-reel.mp4" poster="videos/rhogam-boy-reel-poster.png" autoplay muted playsinline controls preload="metadata" style="width: 100%; display: block; margin-top: 1rem; margin-bottom: 2.5rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);"></video>
 
 ## RhoGAM Boy
 
@@ -37,23 +38,23 @@ The name of this blog, 'GAMRho', is the name of a therapy I hope to create one d
 
 Some antibodies save lives, while others attack our own bodies. I want to study where pathogenic autoantibodies, and the immunological origins that produce them, come from, through the lens of genetics.
 
-- **Inherited?** Which genetic factors contribute to the emergence of pathogenic immune clones?
-- **Selected?** How do T cell development and immune tolerance in the thymus give rise to autoreactive antibodies?
-- **Expanded?** Which clones expand through the somatic changes that come with age?
+- **Inherited?** Which genetic factors contribute to the formation of autoreactive antibodies?
+- **Selected?** How are the T cells that contribute to autoreactive antibodies selected?
+- **Expanded?** How does the makeup of autoreactive antibodies change as we age?
 
 ## Education & Experience
 
-| Years | |
-|:--|:--|
-| 2026 – | **UT Southwestern Medical Center** · Ph.D. Program in Basic Biomedical Sciences |
-| 2024 – 2025 | **KATUSA** · Sergeant, 3-2 GSAB, 2nd Infantry Division (Battalion Senior KATUSA) |
-| 2024 – 2025 | **Seoul National University College of Medicine, Functional Genomics Lab** · Research Assistant (Murim Choi) |
-| 2022 – 2024 | **Seoul National University College of Pharmacy** · M.S., T Cell Development Lab (You Jeong Lee) |
-| 2018 – 2022 | **Seoul National University College of Pharmacy** · Pharm.D., licensed pharmacist in Korea |
+- 2026 – : UT Southwestern Medical Center · Ph.D. Program in Basic Biomedical Sciences
+- 2024 – 2025 : KATUSA · Sergeant, 3-2 GSAB, 2nd Infantry Division (Battalion Senior KATUSA)
+- 2024 – 2025 : Seoul National University College of Medicine, Functional Genomics Lab · Research Assistant (Murim Choi)
+- 2022 – 2024 : Seoul National University College of Pharmacy · M.S., T Cell Development Lab (You Jeong Lee)
+- 2018 – 2022 : Seoul National University College of Pharmacy · Pharm.D., licensed pharmacist in Korea
 
 ## Selected publication
 
+::: {.pub}
 **Lee M\*, Park S\***, Choi J, Bae SY, Ryu HS, Kim M, Kwak JG, Lee YJ. [Human MAIT cells undergo clonal selection and expansion during thymic maturation and aging.](https://doi.org/10.1038/s12276-025-01509-x) *Experimental & Molecular Medicine* 57, 1789–1801 (2025). \*Co-first authors
+:::
 
 ## CV
 
