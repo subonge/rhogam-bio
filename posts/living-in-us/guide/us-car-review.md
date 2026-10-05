@@ -9,7 +9,7 @@ draft: false
 image: ../../images/living-in-us/guide/us-car-actual.jpg
 body-classes: diary-post
 ---
-![](../../images/living-in-us/guide/us-car-actual.jpg)
+q![](../../images/living-in-us/guide/us-car-actual.jpg)
 
 이전 글([미국 유학 첫 차 구매 준비](us-car.html))에서는 도착 전 딜러 기준으로 준비 과정을 정리했었다. 실제로는 딜러가 아니라 **개인간 거래(private-party)** 로 2022 Hyundai Santa Fe XRT를 샀다. 한인 커뮤니티에서 매물을 봤고, 상태가 좋아 보여서 직접 진행했다. 이 글은 그 실제 과정을 순서대로 정리한 후기다.
 
