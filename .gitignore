@@ -7,3 +7,6 @@
 
 # Quarto 단일 파일 렌더 부산물
 **/*_files/
+
+# 숏폼 스킬 (공개 저장소에 올리지 않음)
+.claude/skills/rhogam-short/
