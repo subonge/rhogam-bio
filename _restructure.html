@@ -232,9 +232,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // 글 폴더 구조가 바뀌어도(예: /posts/diary/x.html → /posts/living-in-us/diary/x.html)
   // 기존 댓글이 유지되도록 /posts/ 아래 글은 (언어, 파일명)으로 매칭한다.
+  // 파일명이 바뀐 글은 옛 이름으로 달린 댓글도 새 이름으로 묶는다.
+  var RENAMED = {
+    '2026-08-week5.html': '2026-09-week5.html',
+    '2026-08-week6.html': '2026-09-week6.html',
+    '2026-08-week7.html': '2026-09-week7.html',
+    '2026-08-week8.html': '2026-09-week8.html',
+    '2026-08-week9.html': '2026-10-week9.html',
+    '2026-08-week10.html': '2026-10-week10.html'
+  };
   function pageKey(path) {
     var m = path.match(/^\/posts\/(en\/)?(?:.*\/)?([^\/]+)$/);
-    return m ? (m[1] ? 'en:' : 'ko:') + m[2] : path;
+    if (!m) return path;
+    return (m[1] ? 'en:' : 'ko:') + (RENAMED[m[2]] || m[2]);
   }
   var pageKeyNow = pageKey(pageId);
 
