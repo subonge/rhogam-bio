@@ -6,7 +6,10 @@ categories:
   - Human Genetics
 description: Nature Genetics에 실린 리뷰는 한쪽 대립유전자 변이를 해석할 때, 변이가 얼마나 심각한지뿐 아니라 그 영향을 몸이 얼마나 견딜 수 있는지도 함께 봐야 한다고 말한다.
 draft: false
+image: ../../images/research/human-genetics/monoallelic-iei-systems.jpg
 ---
+![](../../images/research/human-genetics/monoallelic-iei-systems.jpg)
+
 유전자 한쪽이 고장 났다. 그런데 어떤 사람은 심하게 아프고, 같은 변이를 가진 가족은 아무 증상 없이 살아간다.
 
 희귀 유전질환을 연구하다 보면 이런 상황을 자주 만난다. 변이는 분명히 단백질 기능을 떨어뜨린다. 환자의 증상과도 관련 있어 보인다. 그런데 건강한 부모에게서 똑같은 변이가 발견된다. 그렇다면 이 변이는 원인이 아닌 걸까? 아니면 아직 병을 일으킬 조건을 만나지 않은 걸까?

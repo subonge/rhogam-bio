@@ -7,7 +7,10 @@ categories:
   - Human Genetics
 description: A review in Nature Genetics argues that interpreting a variant in one copy of a gene means asking not only how damaging the variant is, but also how well the body can tolerate its effects.
 draft: false
+image: ../../../images/research/human-genetics/monoallelic-iei-systems.jpg
 ---
+![](../../../images/research/human-genetics/monoallelic-iei-systems.jpg)
+
 One copy of a gene is broken. One person gets seriously ill, while a family member carrying the exact same variant lives without any symptoms at all.
 
 If you study rare genetic diseases, you run into this constantly. The variant clearly impairs the protein. It seems to fit the patient's symptoms. And then the same variant turns up in a perfectly healthy parent. So is the variant not the cause after all? Or has it simply not yet met the conditions it needs to cause disease?
