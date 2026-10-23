@@ -48,8 +48,6 @@ website:
             text: Autoantibodies
           - href: research-human-genetics.qmd
             text: Human Genetics
-          - href: research-iei.qmd
-            text: IEI
           - href: research-reviews.qmd
             text: Reviews
 format:

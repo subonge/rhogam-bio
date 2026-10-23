@@ -4,7 +4,7 @@ title: Why the Same Genetic Variant Makes One Person Sick and Leaves Another Fin
 date: 2026-10-23
 categories:
   - Research
-  - IEI
+  - Human Genetics
 description: A review in Nature Genetics argues that interpreting a variant in one copy of a gene means asking not only how damaging the variant is, but also how well the body can tolerate its effects.
 draft: false
 ---
@@ -178,7 +178,7 @@ That said, this paper doesn't offer a tool for calculating the odds that a given
 
 So the value of this review lies less in handing us new criteria for calling variants, and more in sharpening the questions about what to check next.
 
-Put it side by side with the [LFA-1 deficiency study](../human-genetics/lfa1-skin-immunity.html) I read earlier, and this perspective comes into even sharper focus. Even when a broadly expressed protein is missing, other pathways can cover for many of its functions. Actual disease shows up at the point where that compensation falls short.
+Put it side by side with the [LFA-1 deficiency study](lfa1-skin-immunity.html) I read earlier, and this perspective comes into even sharper focus. Even when a broadly expressed protein is missing, other pathways can cover for many of its functions. Actual disease shows up at the point where that compensation falls short.
 
 A variant's effect starts with the protein — but a patient's symptoms are shaped by passing through all of the biology surrounding that protein.
 
