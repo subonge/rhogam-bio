@@ -25,6 +25,18 @@ listing:
     exclude:
       draft: true
       lang: en
+  - id: iei
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    include:
+      categories: "IEI"
+    exclude:
+      draft: true
+      lang: en
   - id: reviews
     contents: posts
     sort: "date desc"
@@ -49,6 +61,11 @@ title-block-banner: false
 ## Human Genetics
 
 :::{#human-genetics}
+:::
+
+## IEI
+
+:::{#iei}
 :::
 
 ## Reviews
