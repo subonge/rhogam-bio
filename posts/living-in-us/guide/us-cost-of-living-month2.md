@@ -4,7 +4,7 @@ date: 2026-11-09
 categories:
   - Living in US
   - Practical Guide
-description: 일회성 지출을 제외한 매달 반복 지출만 정리한 '한 달 생활 견적서'.
+description: 반복 지출과 굵직한 일시적 지출까지 정리한 세 달 결산
 draft: false
 image: ../../images/living-in-us/guide/us-cost-of-living-month3-dashboard.png
 ---
