@@ -6,7 +6,7 @@ categories:
   - Practical Guide
 description: 매달 반복되는 고정비와 정착 초기에만 몰린 일회성 지출을 나눠서 진짜 '한 달 생활비'가 얼마인지에 대한 계산서 발행.
 draft: false
-image: ../../images/living-in-us/guide/watch_hamilton.jpeg
+image: ../../images/living-in-us/guide/us-cost-of-living-month1-summary.jpeg
 ---
 ![](../../images/living-in-us/guide/us-cost-of-living-month1-summary.jpeg)
 
