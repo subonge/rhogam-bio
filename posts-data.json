@@ -1,7 +1,40 @@
 [
   {
+    "title": "미국 생활 물가 - 세 달간 소비 점검",
+    "date": "2026-11-09",
+    "description": "일회성 지출을 제외한 매달 반복 지출만 정리한 '한 달 생활 견적서'.",
+    "image": "/posts/living-in-us/guide/../../images/living-in-us/guide/us-cost-of-living-month3-dashboard.png",
+    "categories": [
+      "Living in US",
+      "Practical Guide"
+    ],
+    "url": "/posts/living-in-us/guide/us-cost-of-living-month2.html"
+  },
+  {
+    "title": "미국 박사과정 2달차 — 프로젝트를 마무리하는 법",
+    "date": "2026-11-09",
+    "description": "첫번째 로테이션을 성공적으로 마무리하는 법.",
+    "image": "/posts/phd-in-us/journey/../../images/phd-in-us/journey/lake.JPG",
+    "categories": [
+      "PhD in US",
+      "PhD Journey"
+    ],
+    "url": "/posts/phd-in-us/journey/phd_month_2.html"
+  },
+  {
+    "title": "미국에서 14주차 — LoL Worlds와 Genes 두번째 시험",
+    "date": "2026-11-08",
+    "description": "시험 직전의 일탈이 가장 재밌는 법",
+    "image": "/posts/living-in-us/diary/../../images/living-in-us/diary/2026-11-week14/w14-d3-lunch1.JPG",
+    "categories": [
+      "Living in US",
+      "Life in Dallas"
+    ],
+    "url": "/posts/living-in-us/diary/2026-10-week14.html"
+  },
+  {
     "title": "미국에서 13주차 — Dallas Mavs 농구 경기와 보드게임",
-    "date": "2026-11-02",
+    "date": "2026-11-01",
     "description": "평일에는 집들이 겸 마라탕과 보드게임, 주말에는 Dallas Mavs 농구 경기 관람!",
     "image": "/posts/living-in-us/diary/../../images/living-in-us/diary/2026-11-week13/w13-d5-basketball_game4.JPG",
     "categories": [
@@ -107,13 +140,13 @@
       "PhD in US",
       "PhD Journey"
     ],
-    "url": "/posts/phd-in-us/journey/month1.html"
+    "url": "/posts/phd-in-us/journey/phd_month_1.html"
   },
   {
     "title": "미국 생활 물가 - 실제 한 달 후기",
     "date": "2026-09-13",
     "description": "매달 반복되는 고정비와 정착 초기에만 몰린 일회성 지출을 나눠서 진짜 '한 달 생활비'가 얼마인지에 대한 계산서 발행.",
-    "image": "/posts/living-in-us/guide/../../images/living-in-us/guide/watch_hamilton.jpeg",
+    "image": "/posts/living-in-us/guide/../../images/living-in-us/guide/us-cost-of-living-month1-summary.jpeg",
     "categories": [
       "Living in US",
       "Practical Guide"
