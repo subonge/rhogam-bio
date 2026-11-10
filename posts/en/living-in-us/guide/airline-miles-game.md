@@ -113,6 +113,49 @@ To sum up:
 - **From year two, SKYPASS comes out slightly below Freedom on its own.** It only earns its annual fee if you redeem miles for well above 1.3 cents — business-class award tickets being the classic example.
 - **Sapphire's year-two value depends on whether you actually use the $100 hotel credit.**
 
+### But 1.3 cents is a generous assumption for SKYPASS
+
+The tables above value Chase points and Korean Air miles the same, at 1.3 cents each. But the two currencies work very differently.
+
+- **Chase points have a floor.** You can use them at 1 cent each for flights and hotels through Chase Travel. Even at worst, a 75,000-point bonus is worth $750.
+- **Korean Air miles have no floor.** There's practically no way to use them like cash; they only gain value once you turn them into award tickets. And that value swings a lot with dates, seats, and taxes and fuel surcharges.
+
+I looked up what that actually comes out to below.
+
+---
+
+## I looked it up — May 2027 DFW ↔ Incheon award tickets
+
+Using the dates of my next trip to Korea (departing May 8, returning May 23), I searched for award tickets on the Korean Air website.
+
+| Route | Date | Economy | Taxes & fuel surcharges |
+|---|---|---|---|
+| DFW → Incheon | May 8 | 52,500 miles (peak) | $384.90 |
+| Incheon → DFW | May 23 | 35,000 miles (off-peak) | $415.49 |
+| **Round-trip total** | | **87,500 miles** | **$800.39** |
+
+Prestige (business) class was **sold out** on both flights.
+
+If I used this instead of paying cash for an economy round trip, here's what each mile would be worth:
+
+| Cash round-trip price | Cash saved with miles | Value per mile |
+|---|---|---|
+| $1,500 | $699.61 | 0.80¢ |
+| $1,750 | $949.61 | 1.09¢ |
+| $2,000 | $1,199.61 | 1.37¢ |
+
+The 1.3 cents I assumed in the tables only shows up **when the cash round trip gets close to $2,000**.
+
+What I learned from looking it up:
+
+1. **Award tickets aren't free.** Korean Air awards departing the US come with about $800 round trip in taxes and fuel surcharges.
+2. **Peak season costs 1.5x the miles.** The same one-way economy seat is 35,000 miles off-peak and 52,500 miles at peak. Early May fell into peak season.
+3. **Prestige seats may not be available on the dates you want.** Collecting miles doesn't help if there's no seat.
+4. **"Buy cheap, upgrade with miles" doesn't work.** Mileage upgrades are only allowed on pricier fares like Flex. For my dates, Saver and Flex were **more than $1,000 apart** for the round trip. Add the miles needed to upgrade, and you'd be spending about $1,500 more than an economy round trip to fly business one way.
+5. **If you're after Prestige, go for an award ticket, not an upgrade.** But if you only book one direction with miles, the cash fare for the other direction is expensive, so you really need to save up for a round-trip award to make it efficient. The most reliable way to see exact mileage costs is to search by date on the Korean Air website.
+
+Seeing these results **made me even more certain that my first travel card should be the Sapphire.** Korean Air miles shine when you can actually lock in a Prestige seat; spending them on economy is a waste.
+
 ---
 
 ## Can my spending meet the bonus requirements?
@@ -147,6 +190,7 @@ The miles game assumes you **pay your balance in full every month**. A single in
 ## So here's my plan
 
 - **For now**: build credit history with Freedom Unlimited alone. Keep the balance reported on the statement closing date low relative to my limit, and pay in full every month.
+- **May 2027 trip to Korea**: skip the miles and pay cash for the cheapest economy fare (Saver).
 - **From April 2027**: check for preapproval offers and start thinking about a first travel card, timing the application around paying for my next flight to Korea.
 - **I'm leaning toward the Sapphire Preferred as my first travel card.** The bonus is bigger, and with Freedom's points pooled in, I can use them flexibly on airlines and hotels beyond Korean Air.
 - **I'll add SKYPASS if I set a goal of flying Korean Air business class on miles.** Whether to carry two annual-fee cards is something I'll decide after seeing how I actually used them in the first year.
