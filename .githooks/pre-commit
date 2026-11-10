@@ -1,0 +1,21 @@
+#!/bin/bash
+# Shrink newly added/changed photos under posts/ before they are committed
+# (max 2000px, EXIF/GPS removed). Originals stay on the phone / iCloud.
+# Enabled with: git config core.hooksPath .githooks
+PY="$HOME/.cache/rhogam-bio/venv/bin/python"
+if [ ! -x "$PY" ]; then
+  echo "[pre-commit] photo shrink skipped: run .githooks/setup.sh once" >&2
+  exit 0
+fi
+ROOT=$(git rev-parse --show-toplevel)
+cd "$ROOT" || exit 0
+files=()
+while IFS= read -r -d '' f; do
+  case "$(printf '%s' "$f" | tr '[:upper:]' '[:lower:]')" in
+    posts/*.jpg|posts/*.jpeg|posts/*.png) files+=("$f") ;;
+  esac
+done < <(git diff --cached --name-only --diff-filter=AM -z)
+[ ${#files[@]} -eq 0 ] && exit 0
+"$PY" .github/scripts/shrink_images.py "${files[@]}" >&2
+git add -- "${files[@]}"
+exit 0

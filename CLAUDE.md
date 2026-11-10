@@ -111,6 +111,14 @@ posts/en/research/notes/<slug>.md    # 영어 번역본
 주간 일기 작성 워크플로우는 `posts/living-in-us/diary/_workflow.md`에 더 자세히
 정리되어 있음 (사이트에는 발행되지 않는 내부 메모 파일).
 
+## 사진 용량
+
+`posts/` 아래 사진은 커밋 직전에 `.githooks/pre-commit`이 자동으로 줄인다 (긴 쪽 2000px,
+세로로 긴 스크린샷은 폭 1200px, EXIF·GPS 제거, 파일명·형식 유지). 원본은 휴대폰/iCloud에 둔다.
+새 컴퓨터에서는 한 번만 `bash .githooks/setup.sh` 실행 (Pillow venv + `core.hooksPath` 설정).
+배포 워크플로도 같은 스크립트(`.github/scripts/shrink_images.py`)로 `_site`를 한 번 더 줄인다
+(GitHub Pages 아티팩트 1GB 한도).
+
 ## Deployment
 
 - `main` push → GitHub Actions → `gh-pages` 브랜치 자동 빌드 → `rhogam.bio` 서빙
