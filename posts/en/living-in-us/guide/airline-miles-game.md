@@ -1,6 +1,6 @@
 ---
 lang: en
-title: How Much Can a Credit Card Save on Flights Home to Korea? — A PhD Student's Intro to the Miles Game
+title: "A PhD Student's Intro to the Miles Game"
 date: 2026-11-10
 categories:
   - Living in US
