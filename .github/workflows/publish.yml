@@ -29,6 +29,12 @@ jobs:
       - name: Render
         run: quarto render
 
+      - name: Shrink images (Pages artifact limit is 1 GB)
+        run: |
+          python3 -m venv /tmp/imgenv
+          /tmp/imgenv/bin/pip install --quiet pillow
+          /tmp/imgenv/bin/python .github/scripts/shrink_images.py _site
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
