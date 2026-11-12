@@ -7,7 +7,10 @@ categories:
   - Practical Guide
 description: Based on a PhD student in Dallas who flies to Korea once a year, I compared Chase Freedom Unlimited, Sapphire Preferred, and the Korean Air SKYPASS card against my actual spending.
 draft: false
+image: ../../../images/living-in-us/guide/skypass-vs-sapphire.png
 ---
+![](../../../images/living-in-us/guide/skypass-vs-sapphire.png)
+
 A few months after moving to the US, once you've gotten used to your first credit card, the next question comes naturally.
 
 > "I'm flying to Korea once a year anyway — couldn't I save at least a little on that ticket with a credit card?"

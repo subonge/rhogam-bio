@@ -6,7 +6,10 @@ categories:
   - Practical Guide
 description: 댈러스에서 1년에 한 번 한국을 오가는 박사과정생 기준으로, Chase Freedom Unlimited·Sapphire Preferred·대한항공 SKYPASS 카드를 실제 소비 패턴에 넣어 비교했다.
 draft: false
+image: ../../images/living-in-us/guide/skypass-vs-sapphire.png
 ---
+![](../../images/living-in-us/guide/skypass-vs-sapphire.png)
+
 미국에 온 지 몇 달이 지나고 첫 신용카드도 손에 익을 즈음, 자연스럽게 다음 질문이 생긴다.
 
 > "어차피 1년에 한 번은 한국에 가는데, 그 비행기표를 카드로 조금이라도 아낄 수 있지 않을까?"
