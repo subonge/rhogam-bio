@@ -7,6 +7,8 @@ categories:
 description: 새로운 연구실에 빠르게 적응하는 법, 논문을 읽는 법, 로테이션을 활용하는 법 — 미국 박사과정 첫 한 달 동안 정리해본 세 가지.
 draft: false
 image: ../../images/phd-in-us/journey/utsw.jpeg
+aliases:
+  - month1.html
 ---
 ![](../../images/phd-in-us/journey/utsw.jpeg)
 

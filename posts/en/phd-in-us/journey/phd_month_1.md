@@ -8,6 +8,8 @@ categories:
 description: Adapting quickly to a new lab, how I read papers, and how I'm using rotations — three things I worked out during my first month of a US PhD.
 draft: false
 image: ../../../images/phd-in-us/journey/utsw.jpeg
+aliases:
+  - month1.html
 ---
 
 ![](../../../images/phd-in-us/journey/utsw.jpeg)

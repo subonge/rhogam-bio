@@ -34,7 +34,7 @@ image: ../../images/phd-in-us/journey/lake.JPG
 나의 경우 Autoantibodies, Inborn errors of immunity, Human genetics 이렇게 세 분야로 나누어서
 매주 월요일마다 세 주제와 밀접한 논문이 새롭게 publish 된 경우가 있으면 AI가 알려주는 방식이다.
 
-![](../../Pasted%20image%2020261109161159.png)
+![](../../images/phd-in-us/journey/weekly-paper-digest.png)
 
 아직은 스크리닝 단계라 논문을 붙잡고 깊이 있게 읽기보다는, 대략 어떤 연구들이 최근 발행되고 있는지를 살펴보기 위함이다. 꼭 읽을 것-관심-참고 이렇게 세 단계로 분류해서 각 논문을 어떤 무게감으로 바라봐야 할지 대략 분류를 하고 있다.
 
