@@ -7,7 +7,7 @@ categories:
   - Practical Guide
 description: "Splitting a full month of Dallas spending into recurring monthly costs vs. one-time settling-in costs, to find out what my 'real' monthly cost of living actually is."
 draft: false
-image: ../../../images/living-in-us/guide/watch_hamilton.jpeg
+image: ../../../images/living-in-us/guide/us-cost-of-living-month1-summary.jpeg
 ---
 
 ![](../../../images/living-in-us/guide/us-cost-of-living-month1-summary.jpeg)
